@@ -1715,6 +1715,11 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
             Clear Orders
           </button>
+
+          <button type="button" class="btn-action-sm" id="btn-top-clear-db" style="color: #991b1b; border-color: #fca5a5; background: #fff1f2; font-weight: 700;" title="Clear and reset live MySQL database">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+            Clear Database
+          </button>
         </div>
       </div>
 
@@ -1891,6 +1896,62 @@
           </div>
         </section>
       </div>
+
+      <!-- Database Maintenance & Reset Card -->
+      <section class="admin-card" style="margin-top: 1.5rem; border: 1px solid #fecaca; background: #fffdfd;">
+        <div class="card-header-flex">
+          <div class="card-title-wrap">
+            <div class="card-title-icon" style="background:#fee2e2; color:#dc2626;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+            </div>
+            <div>
+              <div class="card-title" style="color: #991b1b;">Database Clear & Maintenance (ડેટાબેઝ ક્લિયર & મેઈન્ટેનન્સ)</div>
+              <div class="card-desc">Quickly clear test data, wipe orders/carts, or reset database to clean defaults with 1 click</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.25rem;">
+          <!-- Action 1: Clear Orders & Carts -->
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #1e293b; margin-bottom: 0.25rem;">🧹 Clear Orders & Carts</div>
+              <div style="font-size: 0.8rem; color: #64748b; line-height: 1.4; margin-bottom: 1rem;">
+                Deletes all test orders, saved customer addresses, active carts, and wishlist items. Products & banners remain untouched.
+              </div>
+            </div>
+            <button type="button" class="btn-action-sm btn-clear-db-action" data-mode="orders" style="background: #fff1f2; color: #e11d48; border-color: #fecdd3; font-weight: 700; width: 100%; justify-content: center;">
+              Clear All Orders & Carts
+            </button>
+          </div>
+
+          <!-- Action 2: Reset Uploads & Banners -->
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #1e293b; margin-bottom: 0.25rem;">🖼️ Reset Uploaded Files & Banners</div>
+              <div style="font-size: 0.8rem; color: #64748b; line-height: 1.4; margin-bottom: 1rem;">
+                Clears custom uploaded test images and restores initial clean default slider banners.
+              </div>
+            </div>
+            <button type="button" class="btn-action-sm btn-clear-db-action" data-mode="uploads" style="background: #fff7ed; color: #ea580c; border-color: #ffedd5; font-weight: 700; width: 100%; justify-content: center;">
+              Reset Uploads & Banners
+            </button>
+          </div>
+
+          <!-- Action 3: Full Database Reset -->
+          <div style="background: #ffffff; border: 1px solid #fca5a5; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #991b1b; margin-bottom: 0.25rem;">⚡ Full Database Reset (સંપૂર્ણ રીસેટ)</div>
+              <div style="font-size: 0.8rem; color: #64748b; line-height: 1.4; margin-bottom: 1rem;">
+                Wipes all test orders, carts, test uploaded images, and restores fresh default banners and products.
+              </div>
+            </div>
+            <button type="button" class="btn-action-sm btn-clear-db-action" data-mode="full_reset" style="background: #dc2626; color: #ffffff; border-color: #dc2626; font-weight: 700; width: 100%; justify-content: center;">
+              Full Database Reset
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- ==================== SECTION: HOMEPAGE BANNERS ==================== -->
@@ -2548,6 +2609,54 @@
     </div>
   </div>
 
+  <!-- ==================== CLEAR DATABASE MODAL ==================== -->
+  <div id="modal-clear-db" class="modal-backdrop" style="display: none;">
+    <div class="order-modal" style="max-width: 520px; padding: 1.75rem;">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div style="width: 44px; height: 44px; border-radius: 10px; background: #fee2e2; color: #dc2626; display: flex; align-items: center; justify-content: center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin: 0;">Clear Live Database</h3>
+            <p style="font-size: 0.8rem; color: #64748b; margin: 0.2rem 0 0;">Select what data you want to clear from MySQL</p>
+          </div>
+        </div>
+        <button type="button" id="btn-close-clear-db-modal" class="modal-close-btn" style="background: none; border: none; cursor: pointer; color: #64748b; font-size: 1.25rem;">&times;</button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.85rem; margin: 1.25rem 0;">
+        <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; background: #f8fafc; display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+          <div>
+            <div style="font-weight: 700; font-size: 0.9rem; color: #0f172a;">🧹 Orders & Cart Data</div>
+            <div style="font-size: 0.775rem; color: #64748b;">Deletes test orders, carts, addresses, and wishlist</div>
+          </div>
+          <button type="button" class="btn-action-sm btn-clear-db-action" data-mode="orders" style="background: #fff1f2; color: #e11d48; border-color: #fecdd3; font-weight: 700; white-space: nowrap;">Clear Orders</button>
+        </div>
+
+        <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; background: #f8fafc; display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+          <div>
+            <div style="font-weight: 700; font-size: 0.9rem; color: #0f172a;">🖼️ Uploads & Banners</div>
+            <div style="font-size: 0.775rem; color: #64748b;">Deletes uploaded files & restores default banners</div>
+          </div>
+          <button type="button" class="btn-action-sm btn-clear-db-action" data-mode="uploads" style="background: #fff7ed; color: #ea580c; border-color: #ffedd5; font-weight: 700; white-space: nowrap;">Reset Uploads</button>
+        </div>
+
+        <div style="border: 1px solid #fecaca; border-radius: 8px; padding: 1rem; background: #fffdfd; display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+          <div>
+            <div style="font-weight: 700; font-size: 0.9rem; color: #991b1b;">⚡ Full Database Reset</div>
+            <div style="font-size: 0.775rem; color: #64748b;">Wipes test orders, uploads, and restores clean defaults</div>
+          </div>
+          <button type="button" class="btn-action-sm btn-clear-db-action" data-mode="full_reset" style="background: #dc2626; color: #ffffff; border-color: #dc2626; font-weight: 700; white-space: nowrap;">Full Reset</button>
+        </div>
+      </div>
+
+      <div style="text-align: right; margin-top: 1rem;">
+        <button type="button" id="btn-cancel-clear-db-modal" class="btn-action-sm" style="padding: 0.5rem 1.25rem;">Close</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Container -->
   <div class="toast-container" id="toast-container"></div>
 
@@ -3196,6 +3305,69 @@
           Clear Orders
         `;
       }
+    });
+
+    // ==================== DATABASE CLEAR HANDLERS ====================
+    const modalClearDb = document.getElementById('modal-clear-db');
+    const btnTopClearDb = document.getElementById('btn-top-clear-db');
+    const btnCloseClearDb = document.getElementById('btn-close-clear-db-modal');
+    const btnCancelClearDb = document.getElementById('btn-cancel-clear-db-modal');
+
+    if (btnTopClearDb) {
+      btnTopClearDb.addEventListener('click', () => {
+        if (modalClearDb) modalClearDb.style.display = 'flex';
+      });
+    }
+
+    if (btnCloseClearDb) {
+      btnCloseClearDb.addEventListener('click', () => {
+        if (modalClearDb) modalClearDb.style.display = 'none';
+      });
+    }
+
+    if (btnCancelClearDb) {
+      btnCancelClearDb.addEventListener('click', () => {
+        if (modalClearDb) modalClearDb.style.display = 'none';
+      });
+    }
+
+    document.querySelectorAll('.btn-clear-db-action').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const mode = btn.dataset.mode || 'orders';
+        let confirmMsg = 'Are you sure you want to clear orders and cart data?';
+        if (mode === 'uploads') confirmMsg = 'Are you sure you want to delete uploaded files and reset banners?';
+        if (mode === 'full_reset') confirmMsg = 'WARNING: Are you sure you want to completely reset the live database? This action cannot be undone.';
+
+        if (!window.confirm(confirmMsg)) return;
+
+        const originalText = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<span>Clearing...</span>';
+
+        try {
+          const res = await fetch('/api/admin/database/clear', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ mode }),
+          });
+          const data = await res.json();
+          if (data.success) {
+            showToast('Database cleared successfully! (' + mode + ')', 'success');
+            if (modalClearDb) modalClearDb.style.display = 'none';
+            // Refresh dashboard data
+            loadAnalytics();
+            loadOrders();
+            loadBanners();
+          } else {
+            showToast(data.error || 'Failed to clear database', 'error');
+          }
+        } catch (err) {
+          showToast('Network error while clearing database', 'error');
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = originalText;
+        }
+      });
     });
 
     // Order Modal Logic

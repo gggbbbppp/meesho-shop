@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { pool } from '../db.js';
+import { pool, initDb } from '../db.js';
 import {
   PAYU_CONFIG,
   getPayuConfig,
@@ -731,6 +731,66 @@ adminRouter.post('/orders/clear', requireAdminAuth, async (req, res) => {
   } catch (err) {
     console.error('[Admin] Clear orders error:', err);
     res.status(500).json({ success: false, error: 'Failed to clear order data' });
+  }
+});
+
+/**
+ * POST /api/admin/database/clear
+ * Clear database data by mode: 'orders', 'uploads', 'banners', or 'full_reset'
+ */
+adminRouter.post('/database/clear', requireAdminAuth, async (req, res) => {
+  try {
+    const { mode = 'all' } = req.body || {};
+    const summary = {};
+
+    if (mode === 'orders' || mode === 'all' || mode === 'full_reset') {
+      const [o] = await pool.query('DELETE FROM orders');
+      const [c] = await pool.query('DELETE FROM cart_items');
+      const [w] = await pool.query('DELETE FROM wishlist_items');
+      const [a] = await pool.query('DELETE FROM addresses');
+      summary.orders = o.affectedRows;
+      summary.cartItems = c.affectedRows;
+      summary.wishlist = w.affectedRows;
+      summary.addresses = a.affectedRows;
+    }
+
+    if (mode === 'uploads' || mode === 'all' || mode === 'full_reset') {
+      const [u] = await pool.query('DELETE FROM uploaded_files');
+      summary.uploadedFiles = u.affectedRows;
+    }
+
+    if (mode === 'banners' || mode === 'all' || mode === 'full_reset') {
+      await pool.query('DELETE FROM banners');
+      const defaultBanners = [
+        ['assets/kurti1-CcoeKMaM.webp', 'First slide', '#', 1, 1],
+        ['assets/kurti2-BijmMluk.jpg', 'Second slide', '#', 2, 1],
+        ['assets/kurti3-VJxgG-0W.jpg', 'Third slide', '#', 3, 1],
+        ['assets/kurti4-BPcNrcZO.jpg', 'Fourth slide', '#', 4, 1],
+      ];
+      for (const [img, alt, link, sort, active] of defaultBanners) {
+        await pool.query(
+          'INSERT INTO banners (image_url, alt_text, link_url, sort_order, is_active) VALUES (?, ?, ?, ?, ?)',
+          [img, alt, link, sort, active]
+        );
+      }
+      summary.bannersReset = true;
+    }
+
+    if (mode === 'full_reset') {
+      await initDb();
+      summary.initialized = true;
+    }
+
+    console.log(`[Admin DB] Database cleared (${mode}):`, summary);
+    res.json({
+      success: true,
+      message: 'Database cleared successfully.',
+      mode,
+      summary,
+    });
+  } catch (err) {
+    console.error('[Admin DB] Clear error:', err);
+    res.status(500).json({ success: false, error: err.message || 'Failed to clear database' });
   }
 });
 
