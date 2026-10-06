@@ -1,0 +1,4780 @@
+[
+  {
+    "id": 10001,
+    "slug": "prod-meesho-p1",
+    "title": "Floral Print Rayon Straight Fit",
+    "image": "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.54 PM.jpeg",
+    "images": [
+      "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.54 PM.jpeg",
+      "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.55 PM (1).jpeg",
+      "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.55 PM (2).jpeg",
+      "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.55 PM.jpeg",
+      "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.56 PM (1).jpeg",
+      "images/products/p1/WhatsApp Image 2026-08-03 at 4.07.56 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 400,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10002,
+    "slug": "prod-meesho-2combo-1",
+    "title": "Combo of 2 Printed Straight Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.16 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.16 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 650,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10003,
+    "slug": "prod-meesho-p2",
+    "title": "Embroidered Chanderi Silk Kurta & Pants",
+    "image": "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.42 PM.jpeg",
+    "images": [
+      "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.42 PM.jpeg",
+      "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.43 PM (1).jpeg",
+      "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.43 PM (2).jpeg",
+      "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.43 PM.jpeg",
+      "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.44 PM (1).jpeg",
+      "images/products/p2/WhatsApp Image 2026-08-03 at 4.13.44 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 537,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10004,
+    "slug": "prod-meesho-3combo-1",
+    "title": "3-Pcs Set Royal Embroidered Kurti & Pants with Dupatta - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.16 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.16 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 890,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10005,
+    "slug": "prod-meesho-p3",
+    "title": "Bandhani Print Silk Blend Nayra Cut",
+    "image": "images/products/p3/WhatsApp Image 2026-08-03 at 4.13.44 PM (2).jpeg",
+    "images": [
+      "images/products/p3/WhatsApp Image 2026-08-03 at 4.13.44 PM (2).jpeg",
+      "images/products/p3/WhatsApp Image 2026-08-03 at 4.13.45 PM (1).jpeg",
+      "images/products/p3/WhatsApp Image 2026-08-03 at 4.13.45 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 674,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10006,
+    "slug": "prod-meesho-2combo-2",
+    "title": "Pack of 2 Daily Wear Cotton Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 841,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10007,
+    "slug": "prod-meesho-p4",
+    "title": "Chikankari Sanderi Silk Party Wear",
+    "image": "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.45 PM (2).jpeg",
+    "images": [
+      "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.45 PM (2).jpeg",
+      "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.45 PM (3).jpeg",
+      "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.46 PM (1).jpeg",
+      "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.46 PM (2).jpeg",
+      "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.46 PM.jpeg",
+      "images/products/p4/WhatsApp Image 2026-08-03 at 4.13.47 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 811,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10008,
+    "slug": "prod-meesho-3combo-2",
+    "title": "Combo Pack of 3 Printed Ethnic Kurti Sets - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 1113,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10009,
+    "slug": "prod-meesho-p5",
+    "title": "Jaipuri Print Georgette A-Line",
+    "image": "images/products/p5/WhatsApp Image 2026-08-03 at 4.13.47 PM (1).jpeg",
+    "images": [
+      "images/products/p5/WhatsApp Image 2026-08-03 at 4.13.47 PM (1).jpeg",
+      "images/products/p5/WhatsApp Image 2026-08-03 at 4.13.47 PM (2).jpeg",
+      "images/products/p5/WhatsApp Image 2026-08-03 at 4.13.47 PM (3).jpeg",
+      "images/products/p5/WhatsApp Image 2026-08-03 at 4.13.48 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 948,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10010,
+    "slug": "prod-meesho-2combo-3",
+    "title": "Combo Pack of 2 Embroidered Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 1032,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10011,
+    "slug": "prod-meesho-p6",
+    "title": "Gota Patti Work Pure Cotton Designer Fit",
+    "image": "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.48 PM (1).jpeg",
+    "images": [
+      "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.48 PM (1).jpeg",
+      "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.48 PM (2).jpeg",
+      "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.48 PM (3).jpeg",
+      "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.49 PM (1).jpeg",
+      "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.49 PM (2).jpeg",
+      "images/products/p6/WhatsApp Image 2026-08-03 at 4.13.49 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 1085,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10012,
+    "slug": "prod-meesho-3combo-3",
+    "title": "3-Pcs Set Festive Special Anarkali Suit Combo - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 1336,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10013,
+    "slug": "prod-meesho-p7",
+    "title": "Abstract Print Crepe Flared",
+    "image": "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.49 PM (3).jpeg",
+    "images": [
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.49 PM (3).jpeg",
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.50 PM (1).jpeg",
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.50 PM (2).jpeg",
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.50 PM.jpeg",
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.51 PM (1).jpeg",
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.51 PM (2).jpeg",
+      "images/products/p7/WhatsApp Image 2026-08-03 at 4.13.51 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 1222,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10014,
+    "slug": "prod-meesho-2combo-4",
+    "title": "Set of 2 Floral Print Casual Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.17 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 1223,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10015,
+    "slug": "prod-meesho-p8",
+    "title": "Foil Print Cotton Blend Anarkali",
+    "image": "images/products/p8/WhatsApp Image 2026-08-03 at 4.13.51 PM (3).jpeg",
+    "images": [
+      "images/products/p8/WhatsApp Image 2026-08-03 at 4.13.51 PM (3).jpeg",
+      "images/products/p8/WhatsApp Image 2026-08-03 at 4.13.52 PM (1).jpeg",
+      "images/products/p8/WhatsApp Image 2026-08-03 at 4.13.52 PM.jpeg",
+      "images/products/p8/WhatsApp Image 2026-08-03 at 4.13.53 PM (1).jpeg",
+      "images/products/p8/WhatsApp Image 2026-08-03 at 4.13.53 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 1359,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10016,
+    "slug": "prod-meesho-3combo-4",
+    "title": "Exclusive 3-Pcs Rayon Nayra Cut Dress Combo - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.20 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.20 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 1559,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10017,
+    "slug": "prod-meesho-p9",
+    "title": "Geometric Print Muslin Cotton Casual Wear",
+    "image": "images/products/p9/WhatsApp Image 2026-08-03 at 4.18.14 PM (1).jpeg",
+    "images": [
+      "images/products/p9/WhatsApp Image 2026-08-03 at 4.18.14 PM (1).jpeg",
+      "images/products/p9/WhatsApp Image 2026-08-03 at 4.18.14 PM.jpeg",
+      "images/products/p9/WhatsApp Image 2026-08-03 at 4.18.15 PM (1).jpeg",
+      "images/products/p9/WhatsApp Image 2026-08-03 at 4.18.15 PM (2).jpeg",
+      "images/products/p9/WhatsApp Image 2026-08-03 at 4.18.15 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 1496,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10018,
+    "slug": "prod-meesho-2combo-5",
+    "title": "2-Pcs Set Jaipuri Printed Kurti Combo - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 1414,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10019,
+    "slug": "prod-meesho-p10",
+    "title": "Ajrakh Print Viscose Rayon Sharara Suit",
+    "image": "images/products/p10/WhatsApp Image 2026-08-03 at 4.18.15 PM (3).jpeg",
+    "images": [
+      "images/products/p10/WhatsApp Image 2026-08-03 at 4.18.15 PM (3).jpeg",
+      "images/products/p10/WhatsApp Image 2026-08-03 at 4.18.16 PM (1).jpeg",
+      "images/products/p10/WhatsApp Image 2026-08-03 at 4.18.16 PM (2).jpeg",
+      "images/products/p10/WhatsApp Image 2026-08-03 at 4.18.16 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 1633,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10020,
+    "slug": "prod-meesho-3combo-5",
+    "title": "Set of 3 Daily Wear Cotton Kurti Sets - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.20 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.20 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 1782,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10021,
+    "slug": "prod-meesho-p11",
+    "title": "Leheriya Print Rayon Festive Special",
+    "image": "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.17 PM (1).jpeg",
+    "images": [
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.17 PM (1).jpeg",
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.17 PM (2).jpeg",
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.17 PM (3).jpeg",
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.17 PM.jpeg",
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.18 PM (1).jpeg",
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.18 PM (2).jpeg",
+      "images/products/p11/WhatsApp Image 2026-08-03 at 4.18.18 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 1770,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10022,
+    "slug": "prod-meesho-2combo-6",
+    "title": "Combo of 2 Festive Special Silk Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 1605,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10023,
+    "slug": "prod-meesho-p12",
+    "title": "Ikat Print Chanderi Silk Angrakha Style",
+    "image": "images/products/p12/WhatsApp Image 2026-08-03 at 4.18.19 PM (1).jpeg",
+    "images": [
+      "images/products/p12/WhatsApp Image 2026-08-03 at 4.18.19 PM (1).jpeg",
+      "images/products/p12/WhatsApp Image 2026-08-03 at 4.18.19 PM (2).jpeg",
+      "images/products/p12/WhatsApp Image 2026-08-03 at 4.18.19 PM (3).jpeg",
+      "images/products/p12/WhatsApp Image 2026-08-03 at 4.18.19 PM.jpeg",
+      "images/products/p12/WhatsApp Image 2026-08-03 at 4.18.20 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 1907,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10024,
+    "slug": "prod-meesho-3combo-6",
+    "title": "3-Pcs Trio Pack Bandhani Silk Kurti Sets - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.20 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.20 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 2005,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10025,
+    "slug": "prod-meesho-p13",
+    "title": "Mirror Work Silk Blend Straight Fit",
+    "image": "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.20 PM (1).jpeg",
+    "images": [
+      "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.20 PM (1).jpeg",
+      "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.20 PM (2).jpeg",
+      "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.20 PM (3).jpeg",
+      "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.21 PM (1).jpeg",
+      "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.21 PM (2).jpeg",
+      "images/products/p13/WhatsApp Image 2026-08-03 at 4.18.21 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 2044,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10026,
+    "slug": "prod-meesho-2combo-7",
+    "title": "2-Pcs Combo Trendy Rayon A-Line Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.18 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 1796,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10027,
+    "slug": "prod-meesho-p14",
+    "title": "Zari Embroidery Sanderi Silk Kurta & Pants",
+    "image": "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.22 PM (1).jpeg",
+    "images": [
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.22 PM (1).jpeg",
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.22 PM (2).jpeg",
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.22 PM (3).jpeg",
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.22 PM.jpeg",
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.23 PM (1).jpeg",
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.23 PM (2).jpeg",
+      "images/products/p14/WhatsApp Image 2026-08-03 at 4.18.23 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 2181,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10028,
+    "slug": "prod-meesho-3combo-7",
+    "title": "Combo of 3 Elegant Chikankari Suit Sets - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 2228,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10029,
+    "slug": "prod-meesho-p15",
+    "title": "Sequins Work Georgette Nayra Cut",
+    "image": "images/products/p15/WhatsApp Image 2026-08-03 at 4.18.24 PM (1).jpeg",
+    "images": [
+      "images/products/p15/WhatsApp Image 2026-08-03 at 4.18.24 PM (1).jpeg",
+      "images/products/p15/WhatsApp Image 2026-08-03 at 4.18.24 PM (2).jpeg",
+      "images/products/p15/WhatsApp Image 2026-08-03 at 4.18.24 PM (3).jpeg",
+      "images/products/p15/WhatsApp Image 2026-08-03 at 4.18.24 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 2318,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10030,
+    "slug": "prod-meesho-2combo-8",
+    "title": "Pack of 2 Bandhani Print Cotton Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 1987,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10031,
+    "slug": "prod-meesho-p16",
+    "title": "Solid Tone Pure Cotton Party Wear",
+    "image": "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.25 PM (1).jpeg",
+    "images": [
+      "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.25 PM (1).jpeg",
+      "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.25 PM (2).jpeg",
+      "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.25 PM.jpeg",
+      "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.26 PM (1).jpeg",
+      "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.26 PM.jpeg",
+      "images/products/p16/WhatsApp Image 2026-08-03 at 4.18.27 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 2455,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10032,
+    "slug": "prod-meesho-3combo-8",
+    "title": "3-Pcs Combo Premium Silk Blend Kurti Sets - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM (3).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM (3).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 2451,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10033,
+    "slug": "prod-meesho-p17",
+    "title": "Floral Print Crepe A-Line",
+    "image": "images/products/p17/WhatsApp Image 2026-08-03 at 4.18.27 PM (1).jpeg",
+    "images": [
+      "images/products/p17/WhatsApp Image 2026-08-03 at 4.18.27 PM (1).jpeg",
+      "images/products/p17/WhatsApp Image 2026-08-03 at 4.18.27 PM (2).jpeg",
+      "images/products/p17/WhatsApp Image 2026-08-03 at 4.18.27 PM (3).jpeg",
+      "images/products/p17/WhatsApp Image 2026-08-03 at 4.18.28 PM (1).jpeg",
+      "images/products/p17/WhatsApp Image 2026-08-03 at 4.18.28 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 2592,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10034,
+    "slug": "prod-meesho-2combo-9",
+    "title": "Combo of 2 Chic Straight Fit Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 2178,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10035,
+    "slug": "prod-meesho-p18",
+    "title": "Embroidered Cotton Blend Designer Fit",
+    "image": "images/products/p18/WhatsApp Image 2026-08-03 at 4.18.28 PM (2).jpeg",
+    "images": [
+      "images/products/p18/WhatsApp Image 2026-08-03 at 4.18.28 PM (2).jpeg",
+      "images/products/p18/WhatsApp Image 2026-08-03 at 4.18.29 PM (1).jpeg",
+      "images/products/p18/WhatsApp Image 2026-08-03 at 4.18.29 PM (2).jpeg",
+      "images/products/p18/WhatsApp Image 2026-08-03 at 4.18.29 PM.jpeg",
+      "images/products/p18/WhatsApp Image 2026-08-03 at 4.18.30 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 2729,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10036,
+    "slug": "prod-meesho-3combo-9",
+    "title": "Combo Pack of 3 Traditional Ethnic Suits - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.25 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.25 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 2674,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10037,
+    "slug": "prod-meesho-p19",
+    "title": "Bandhani Print Muslin Cotton Flared",
+    "image": "images/products/p19/WhatsApp Image 2026-08-03 at 4.18.30 PM (1).jpeg",
+    "images": [
+      "images/products/p19/WhatsApp Image 2026-08-03 at 4.18.30 PM (1).jpeg",
+      "images/products/p19/WhatsApp Image 2026-08-03 at 4.18.30 PM (2).jpeg",
+      "images/products/p19/WhatsApp Image 2026-08-03 at 4.18.31 PM (1).jpeg",
+      "images/products/p19/WhatsApp Image 2026-08-03 at 4.18.31 PM (2).jpeg",
+      "images/products/p19/WhatsApp Image 2026-08-03 at 4.18.31 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 2866,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10038,
+    "slug": "prod-meesho-2combo-10",
+    "title": "2-Pcs Set Elegant Flared Kurti Pair - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 2369,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10039,
+    "slug": "prod-meesho-p20",
+    "title": "Chikankari Viscose Rayon Anarkali",
+    "image": "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.14 PM (1).jpeg",
+    "images": [
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.14 PM (1).jpeg",
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.14 PM (2).jpeg",
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.14 PM (3).jpeg",
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.14 PM.jpeg",
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.15 PM (1).jpeg",
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.15 PM (2).jpeg",
+      "images/products/p20/WhatsApp Image 2026-08-03 at 4.21.15 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 3003,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10040,
+    "slug": "prod-meesho-3combo-10",
+    "title": "3-Pcs Set Designer Printed Rayon Kurti Trio - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.25 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.25 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 2897,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10041,
+    "slug": "prod-meesho-p21",
+    "title": "Jaipuri Print Rayon Casual Wear",
+    "image": "images/products/p21/WhatsApp Image 2026-08-03 at 4.21.15 PM (3).jpeg",
+    "images": [
+      "images/products/p21/WhatsApp Image 2026-08-03 at 4.21.15 PM (3).jpeg",
+      "images/products/p21/WhatsApp Image 2026-08-03 at 4.21.16 PM (1).jpeg",
+      "images/products/p21/WhatsApp Image 2026-08-03 at 4.21.16 PM (2).jpeg",
+      "images/products/p21/WhatsApp Image 2026-08-03 at 4.21.16 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 3140,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10042,
+    "slug": "prod-meesho-2combo-11",
+    "title": "Combo Pack of 2 Casual Rayon Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.19 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 2560,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10043,
+    "slug": "prod-meesho-p22",
+    "title": "Gota Patti Work Chanderi Silk Sharara Suit",
+    "image": "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.16 PM (3).jpeg",
+    "images": [
+      "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.16 PM (3).jpeg",
+      "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.17 PM (1).jpeg",
+      "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.17 PM (2).jpeg",
+      "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.17 PM (3).jpeg",
+      "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.17 PM.jpeg",
+      "images/products/p22/WhatsApp Image 2026-08-03 at 4.21.18 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 3277,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10044,
+    "slug": "prod-meesho-3combo-11",
+    "title": "Combo of 3 Casual Wear Cotton Kurti Sets - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 3120,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10045,
+    "slug": "prod-meesho-p23",
+    "title": "Abstract Print Silk Blend Festive Special",
+    "image": "images/products/p23/WhatsApp Image 2026-08-03 at 4.21.18 PM (1).jpeg",
+    "images": [
+      "images/products/p23/WhatsApp Image 2026-08-03 at 4.21.18 PM (1).jpeg",
+      "images/products/p23/WhatsApp Image 2026-08-03 at 4.21.18 PM (2).jpeg",
+      "images/products/p23/WhatsApp Image 2026-08-03 at 4.21.19 PM (1).jpeg",
+      "images/products/p23/WhatsApp Image 2026-08-03 at 4.21.19 PM (2).jpeg",
+      "images/products/p23/WhatsApp Image 2026-08-03 at 4.21.19 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 3414,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10046,
+    "slug": "prod-meesho-2combo-12",
+    "title": "Set of 2 Anarkali Style Ethnic Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 2751,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10047,
+    "slug": "prod-meesho-p24",
+    "title": "Foil Print Sanderi Silk Angrakha Style",
+    "image": "images/products/p24/WhatsApp Image 2026-08-03 at 4.21.19 PM (3).jpeg",
+    "images": [
+      "images/products/p24/WhatsApp Image 2026-08-03 at 4.21.19 PM (3).jpeg",
+      "images/products/p24/WhatsApp Image 2026-08-03 at 4.21.20 PM (1).jpeg",
+      "images/products/p24/WhatsApp Image 2026-08-03 at 4.21.20 PM (2).jpeg",
+      "images/products/p24/WhatsApp Image 2026-08-03 at 4.21.20 PM (3).jpeg",
+      "images/products/p24/WhatsApp Image 2026-08-03 at 4.21.20 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 3551,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10048,
+    "slug": "prod-meesho-3combo-12",
+    "title": "3-Pcs Set Party Special Georgette Dress Combo - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 3343,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10049,
+    "slug": "prod-meesho-p25",
+    "title": "Geometric Print Georgette Straight Fit",
+    "image": "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.30 PM.jpeg",
+    "images": [
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.30 PM.jpeg",
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.31 PM.jpeg",
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.32 PM (1).jpeg",
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.32 PM.jpeg",
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.33 PM (1).jpeg",
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.33 PM.jpeg",
+      "images/products/p25/WhatsApp Image 2026-08-03 at 4.59.34 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 3688,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10050,
+    "slug": "prod-meesho-2combo-13",
+    "title": "Combo of 2 Printed Straight Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 2942,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10051,
+    "slug": "prod-meesho-p26",
+    "title": "Ajrakh Print Pure Cotton Kurta & Pants",
+    "image": "images/products/p26/WhatsApp Image 2026-08-03 at 4.59.34 PM (1).jpeg",
+    "images": [
+      "images/products/p26/WhatsApp Image 2026-08-03 at 4.59.34 PM (1).jpeg",
+      "images/products/p26/WhatsApp Image 2026-08-03 at 4.59.34 PM (2).jpeg",
+      "images/products/p26/WhatsApp Image 2026-08-03 at 4.59.35 PM (1).jpeg",
+      "images/products/p26/WhatsApp Image 2026-08-03 at 4.59.35 PM (2).jpeg",
+      "images/products/p26/WhatsApp Image 2026-08-03 at 4.59.35 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 3825,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10052,
+    "slug": "prod-meesho-3combo-13",
+    "title": "3-Pcs Set Royal Embroidered Kurti & Pants with Dupatta - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 3566,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10053,
+    "slug": "prod-meesho-p27",
+    "title": "Leheriya Print Crepe Nayra Cut",
+    "image": "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.41 PM.jpeg",
+    "images": [
+      "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.41 PM.jpeg",
+      "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.55 PM.jpeg",
+      "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.57 PM.jpeg",
+      "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.58 PM (1).jpeg",
+      "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.58 PM (2).jpeg",
+      "images/products/p27/WhatsApp Image 2026-08-03 at 4.59.58 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 3962,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10054,
+    "slug": "prod-meesho-2combo-14",
+    "title": "Pack of 2 Daily Wear Cotton Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.21 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 3133,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10055,
+    "slug": "prod-meesho-p28",
+    "title": "Ikat Print Cotton Blend Party Wear",
+    "image": "images/products/p28/WhatsApp Image 2026-08-03 at 4.59.59 PM (1).jpeg",
+    "images": [
+      "images/products/p28/WhatsApp Image 2026-08-03 at 4.59.59 PM (1).jpeg",
+      "images/products/p28/WhatsApp Image 2026-08-03 at 4.59.59 PM.jpeg",
+      "images/products/p28/WhatsApp Image 2026-08-03 at 5.00.00 PM (1).jpeg",
+      "images/products/p28/WhatsApp Image 2026-08-03 at 5.00.00 PM (2).jpeg",
+      "images/products/p28/WhatsApp Image 2026-08-03 at 5.00.00 PM (3).jpeg",
+      "images/products/p28/WhatsApp Image 2026-08-03 at 5.00.00 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 4099,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10056,
+    "slug": "prod-meesho-3combo-14",
+    "title": "Combo Pack of 3 Printed Ethnic Kurti Sets - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM (3).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM (3).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 3789,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10057,
+    "slug": "prod-meesho-p29",
+    "title": "Mirror Work Muslin Cotton A-Line",
+    "image": "images/products/p29/WhatsApp Image 2026-08-03 at 5.00.01 PM (1).jpeg",
+    "images": [
+      "images/products/p29/WhatsApp Image 2026-08-03 at 5.00.01 PM (1).jpeg",
+      "images/products/p29/WhatsApp Image 2026-08-03 at 5.00.01 PM (2).jpeg",
+      "images/products/p29/WhatsApp Image 2026-08-03 at 5.00.01 PM (3).jpeg",
+      "images/products/p29/WhatsApp Image 2026-08-03 at 5.00.01 PM.jpeg",
+      "images/products/p29/WhatsApp Image 2026-08-03 at 5.00.02 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 4236,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10058,
+    "slug": "prod-meesho-2combo-15",
+    "title": "Combo Pack of 2 Embroidered Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.22 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.22 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 3324,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10059,
+    "slug": "prod-meesho-p30",
+    "title": "Zari Embroidery Viscose Rayon Designer Fit",
+    "image": "images/products/p30/WhatsApp Image 2026-08-03 at 5.00.02 PM (1).jpeg",
+    "images": [
+      "images/products/p30/WhatsApp Image 2026-08-03 at 5.00.02 PM (1).jpeg",
+      "images/products/p30/WhatsApp Image 2026-08-03 at 5.00.02 PM (2).jpeg",
+      "images/products/p30/WhatsApp Image 2026-08-03 at 5.00.03 PM (1).jpeg",
+      "images/products/p30/WhatsApp Image 2026-08-03 at 5.00.03 PM.jpeg",
+      "images/products/p30/WhatsApp Image 2026-08-03 at 5.00.37 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 4373,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10060,
+    "slug": "prod-meesho-3combo-15",
+    "title": "3-Pcs Set Festive Special Anarkali Suit Combo - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 4012,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10061,
+    "slug": "prod-meesho-p31",
+    "title": "Sequins Work Rayon Flared",
+    "image": "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.45 PM.jpeg",
+    "images": [
+      "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.45 PM.jpeg",
+      "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.46 PM.jpeg",
+      "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.50 PM.jpeg",
+      "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.51 PM.jpeg",
+      "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.53 PM.jpeg",
+      "images/products/p31/WhatsApp Image 2026-08-03 at 5.00.54 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 4510,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10062,
+    "slug": "prod-meesho-2combo-16",
+    "title": "Set of 2 Floral Print Casual Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.22 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.22 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 3515,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10063,
+    "slug": "prod-meesho-p32",
+    "title": "Solid Tone Chanderi Silk Anarkali",
+    "image": "images/products/p32/WhatsApp Image 2026-08-03 at 5.01.13 PM (1).jpeg",
+    "images": [
+      "images/products/p32/WhatsApp Image 2026-08-03 at 5.01.13 PM (1).jpeg",
+      "images/products/p32/WhatsApp Image 2026-08-03 at 5.01.14 PM (1).jpeg",
+      "images/products/p32/WhatsApp Image 2026-08-03 at 5.01.14 PM (2).jpeg",
+      "images/products/p32/WhatsApp Image 2026-08-03 at 5.01.14 PM (3).jpeg",
+      "images/products/p32/WhatsApp Image 2026-08-03 at 5.01.14 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 4647,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10064,
+    "slug": "prod-meesho-3combo-16",
+    "title": "Exclusive 3-Pcs Rayon Nayra Cut Dress Combo - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 4235,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10065,
+    "slug": "prod-meesho-p33",
+    "title": "Floral Print Silk Blend Casual Wear",
+    "image": "images/products/p33/WhatsApp Image 2026-08-03 at 5.00.55 PM.jpeg",
+    "images": [
+      "images/products/p33/WhatsApp Image 2026-08-03 at 5.00.55 PM.jpeg",
+      "images/products/p33/WhatsApp Image 2026-08-03 at 5.00.56 PM (1).jpeg",
+      "images/products/p33/WhatsApp Image 2026-08-03 at 5.00.56 PM.jpeg",
+      "images/products/p33/WhatsApp Image 2026-08-03 at 5.01.13 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 4784,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10066,
+    "slug": "prod-meesho-2combo-17",
+    "title": "2-Pcs Set Jaipuri Printed Kurti Combo - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.22 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.22 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 3706,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10067,
+    "slug": "prod-meesho-p34",
+    "title": "Embroidered Sanderi Silk Sharara Suit",
+    "image": "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.15 PM (1).jpeg",
+    "images": [
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.15 PM (1).jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.15 PM (2).jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.15 PM.jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.16 PM (2).jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.16 PM (3).jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.16 PM.jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.17 PM (1).jpeg",
+      "images/products/p34/WhatsApp Image 2026-08-03 at 5.01.17 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 4921,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10068,
+    "slug": "prod-meesho-3combo-17",
+    "title": "Set of 3 Daily Wear Cotton Kurti Sets - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.36 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.36 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 4458,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10069,
+    "slug": "prod-meesho-p35",
+    "title": "Bandhani Print Georgette Festive Special",
+    "image": "images/products/p35/WhatsApp Image 2026-08-03 at 5.01.17 PM (2).jpeg",
+    "images": [
+      "images/products/p35/WhatsApp Image 2026-08-03 at 5.01.17 PM (2).jpeg",
+      "images/products/p35/WhatsApp Image 2026-08-03 at 5.01.18 PM (1).jpeg",
+      "images/products/p35/WhatsApp Image 2026-08-03 at 5.01.18 PM (2).jpeg",
+      "images/products/p35/WhatsApp Image 2026-08-03 at 5.01.18 PM (3).jpeg",
+      "images/products/p35/WhatsApp Image 2026-08-03 at 5.01.18 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 5058,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10070,
+    "slug": "prod-meesho-2combo-18",
+    "title": "Combo of 2 Festive Special Silk Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 3897,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10071,
+    "slug": "prod-meesho-p36",
+    "title": "Chikankari Pure Cotton Angrakha Style",
+    "image": "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.19 PM (1).jpeg",
+    "images": [
+      "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.19 PM (1).jpeg",
+      "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.19 PM (2).jpeg",
+      "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.19 PM.jpeg",
+      "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.20 PM (1).jpeg",
+      "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.20 PM (2).jpeg",
+      "images/products/p36/WhatsApp Image 2026-08-03 at 5.01.20 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 5195,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10072,
+    "slug": "prod-meesho-3combo-18",
+    "title": "3-Pcs Trio Pack Bandhani Silk Kurti Sets - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 4681,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10073,
+    "slug": "prod-meesho-p37",
+    "title": "Jaipuri Print Crepe Straight Fit",
+    "image": "images/products/p37/WhatsApp Image 2026-08-03 at 5.01.20 PM (3).jpeg",
+    "images": [
+      "images/products/p37/WhatsApp Image 2026-08-03 at 5.01.20 PM (3).jpeg",
+      "images/products/p37/WhatsApp Image 2026-08-03 at 5.01.21 PM (1).jpeg",
+      "images/products/p37/WhatsApp Image 2026-08-03 at 5.01.21 PM (2).jpeg",
+      "images/products/p37/WhatsApp Image 2026-08-03 at 5.01.21 PM.jpeg",
+      "images/products/p37/WhatsApp Image 2026-08-03 at 5.01.29 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 5332,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10074,
+    "slug": "prod-meesho-2combo-19",
+    "title": "2-Pcs Combo Trendy Rayon A-Line Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 4088,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10075,
+    "slug": "prod-meesho-p38",
+    "title": "Gota Patti Work Cotton Blend Kurta & Pants",
+    "image": "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.30 PM.jpeg",
+    "images": [
+      "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.30 PM.jpeg",
+      "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.31 PM.jpeg",
+      "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.32 PM (1).jpeg",
+      "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.32 PM (2).jpeg",
+      "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.32 PM.jpeg",
+      "images/products/p38/WhatsApp Image 2026-08-03 at 5.01.33 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 5469,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10076,
+    "slug": "prod-meesho-3combo-19",
+    "title": "Combo of 3 Elegant Chikankari Suit Sets - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM (3).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM (3).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 4904,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10077,
+    "slug": "prod-meesho-p39",
+    "title": "Abstract Print Muslin Cotton Nayra Cut",
+    "image": "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.33 PM (1).jpeg",
+    "images": [
+      "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.33 PM (1).jpeg",
+      "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.33 PM (2).jpeg",
+      "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.34 PM (1).jpeg",
+      "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.34 PM (2).jpeg",
+      "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.34 PM (3).jpeg",
+      "images/products/p39/WhatsApp Image 2026-08-03 at 5.01.34 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 5606,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10078,
+    "slug": "prod-meesho-2combo-20",
+    "title": "Pack of 2 Bandhani Print Cotton Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 4279,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10079,
+    "slug": "prod-meesho-p40",
+    "title": "Foil Print Viscose Rayon Party Wear",
+    "image": "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.35 PM (1).jpeg",
+    "images": [
+      "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.35 PM (1).jpeg",
+      "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.35 PM (2).jpeg",
+      "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.35 PM (3).jpeg",
+      "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.35 PM.jpeg",
+      "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.36 PM (1).jpeg",
+      "images/products/p40/WhatsApp Image 2026-08-03 at 5.01.36 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 5743,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10080,
+    "slug": "prod-meesho-3combo-20",
+    "title": "3-Pcs Combo Premium Silk Blend Kurti Sets - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.28 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.28 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 5127,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10081,
+    "slug": "prod-meesho-p41",
+    "title": "Geometric Print Rayon A-Line",
+    "image": "images/products/p41/WhatsApp Image 2026-08-03 at 5.01.37 PM (1).jpeg",
+    "images": [
+      "images/products/p41/WhatsApp Image 2026-08-03 at 5.01.37 PM (1).jpeg",
+      "images/products/p41/WhatsApp Image 2026-08-03 at 5.01.37 PM (2).jpeg",
+      "images/products/p41/WhatsApp Image 2026-08-03 at 5.01.37 PM (3).jpeg",
+      "images/products/p41/WhatsApp Image 2026-08-03 at 5.01.38 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 5880,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10082,
+    "slug": "prod-meesho-2combo-21",
+    "title": "Combo of 2 Chic Straight Fit Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.23 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 4470,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10083,
+    "slug": "prod-meesho-p42",
+    "title": "Ajrakh Print Chanderi Silk Designer Fit",
+    "image": "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.52 PM.jpeg",
+    "images": [
+      "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.52 PM.jpeg",
+      "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.53 PM (1).jpeg",
+      "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.53 PM (2).jpeg",
+      "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.53 PM (3).jpeg",
+      "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.53 PM.jpeg",
+      "images/products/p42/WhatsApp Image 2026-08-03 at 5.09.54 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 6017,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10084,
+    "slug": "prod-meesho-3combo-21",
+    "title": "Combo Pack of 3 Traditional Ethnic Suits - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.28 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.28 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 5350,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10085,
+    "slug": "prod-meesho-p43",
+    "title": "Leheriya Print Silk Blend Flared",
+    "image": "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.54 PM (1).jpeg",
+    "images": [
+      "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.54 PM (1).jpeg",
+      "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.54 PM (2).jpeg",
+      "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.54 PM (3).jpeg",
+      "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.55 PM (1).jpeg",
+      "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.55 PM (2).jpeg",
+      "images/products/p43/WhatsApp Image 2026-08-03 at 5.09.55 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 6154,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10086,
+    "slug": "prod-meesho-2combo-22",
+    "title": "2-Pcs Set Elegant Flared Kurti Pair - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 4661,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10087,
+    "slug": "prod-meesho-p44",
+    "title": "Ikat Print Sanderi Silk Anarkali",
+    "image": "images/products/p44/WhatsApp Image 2026-08-03 at 5.09.55 PM (3).jpeg",
+    "images": [
+      "images/products/p44/WhatsApp Image 2026-08-03 at 5.09.55 PM (3).jpeg",
+      "images/products/p44/WhatsApp Image 2026-08-03 at 5.09.56 PM (1).jpeg",
+      "images/products/p44/WhatsApp Image 2026-08-03 at 5.09.56 PM (2).jpeg",
+      "images/products/p44/WhatsApp Image 2026-08-03 at 5.09.56 PM (3).jpeg",
+      "images/products/p44/WhatsApp Image 2026-08-03 at 5.09.56 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 6291,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10088,
+    "slug": "prod-meesho-3combo-22",
+    "title": "3-Pcs Set Designer Printed Rayon Kurti Trio - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 5573,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10089,
+    "slug": "prod-meesho-p45",
+    "title": "Mirror Work Georgette Casual Wear",
+    "image": "images/products/p45/WhatsApp Image 2026-08-03 at 5.09.57 PM (1).jpeg",
+    "images": [
+      "images/products/p45/WhatsApp Image 2026-08-03 at 5.09.57 PM (1).jpeg",
+      "images/products/p45/WhatsApp Image 2026-08-03 at 5.09.57 PM (2).jpeg",
+      "images/products/p45/WhatsApp Image 2026-08-03 at 5.09.57 PM (3).jpeg",
+      "images/products/p45/WhatsApp Image 2026-08-03 at 5.09.57 PM.jpeg",
+      "images/products/p45/WhatsApp Image 2026-08-03 at 5.09.58 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 6428,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10090,
+    "slug": "prod-meesho-2combo-23",
+    "title": "Combo Pack of 2 Casual Rayon Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 4852,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10091,
+    "slug": "prod-meesho-p46",
+    "title": "Zari Embroidery Pure Cotton Sharara Suit",
+    "image": "images/products/p46/WhatsApp Image 2026-08-03 at 5.01.38 PM (2).jpeg",
+    "images": [
+      "images/products/p46/WhatsApp Image 2026-08-03 at 5.01.38 PM (2).jpeg",
+      "images/products/p46/WhatsApp Image 2026-08-03 at 5.03.32 PM (1).jpeg",
+      "images/products/p46/WhatsApp Image 2026-08-03 at 5.03.32 PM (2).jpeg",
+      "images/products/p46/WhatsApp Image 2026-08-03 at 5.03.32 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 6565,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10092,
+    "slug": "prod-meesho-3combo-23",
+    "title": "Combo of 3 Casual Wear Cotton Kurti Sets - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 5796,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10093,
+    "slug": "prod-meesho-p47",
+    "title": "Sequins Work Crepe Festive Special",
+    "image": "images/products/p47/WhatsApp Image 2026-08-03 at 5.03.33 PM (1).jpeg",
+    "images": [
+      "images/products/p47/WhatsApp Image 2026-08-03 at 5.03.33 PM (1).jpeg",
+      "images/products/p47/WhatsApp Image 2026-08-03 at 5.03.33 PM (2).jpeg",
+      "images/products/p47/WhatsApp Image 2026-08-03 at 5.03.33 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 6702,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10094,
+    "slug": "prod-meesho-2combo-24",
+    "title": "Set of 2 Anarkali Style Ethnic Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.24 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 5043,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10095,
+    "slug": "prod-meesho-p48",
+    "title": "Solid Tone Cotton Blend Angrakha Style",
+    "image": "images/products/p48/WhatsApp Image 2026-08-03 at 5.03.34 PM (1).jpeg",
+    "images": [
+      "images/products/p48/WhatsApp Image 2026-08-03 at 5.03.34 PM (1).jpeg",
+      "images/products/p48/WhatsApp Image 2026-08-03 at 5.03.34 PM (2).jpeg",
+      "images/products/p48/WhatsApp Image 2026-08-03 at 5.03.35 PM (1).jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 6839,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10096,
+    "slug": "prod-meesho-3combo-24",
+    "title": "3-Pcs Set Party Special Georgette Dress Combo - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (3).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (3).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 6019,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10097,
+    "slug": "prod-meesho-p49",
+    "title": "Floral Print Muslin Cotton Straight Fit",
+    "image": "images/products/p49/WhatsApp Image 2026-08-03 at 5.03.35 PM (2).jpeg",
+    "images": [
+      "images/products/p49/WhatsApp Image 2026-08-03 at 5.03.35 PM (2).jpeg",
+      "images/products/p49/WhatsApp Image 2026-08-03 at 5.03.35 PM (3).jpeg",
+      "images/products/p49/WhatsApp Image 2026-08-03 at 5.03.36 PM (1).jpeg",
+      "images/products/p49/WhatsApp Image 2026-08-03 at 5.03.36 PM (2).jpeg",
+      "images/products/p49/WhatsApp Image 2026-08-03 at 5.03.36 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 6976,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10098,
+    "slug": "prod-meesho-2combo-25",
+    "title": "Combo of 2 Printed Straight Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.25 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.25 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 5234,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10099,
+    "slug": "prod-meesho-p50",
+    "title": "Embroidered Viscose Rayon Kurta & Pants",
+    "image": "images/products/p50/WhatsApp Image 2026-08-03 at 5.03.37 PM (1).jpeg",
+    "images": [
+      "images/products/p50/WhatsApp Image 2026-08-03 at 5.03.37 PM (1).jpeg",
+      "images/products/p50/WhatsApp Image 2026-08-03 at 5.03.37 PM (2).jpeg",
+      "images/products/p50/WhatsApp Image 2026-08-03 at 5.03.37 PM.jpeg",
+      "images/products/p50/WhatsApp Image 2026-08-03 at 5.03.41 PM (1).jpeg",
+      "images/products/p50/WhatsApp Image 2026-08-03 at 5.03.41 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 7113,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10100,
+    "slug": "prod-meesho-3combo-25",
+    "title": "3-Pcs Set Royal Embroidered Kurti & Pants with Dupatta - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (4).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (4).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 6242,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10101,
+    "slug": "prod-meesho-p51",
+    "title": "Bandhani Print Rayon Nayra Cut",
+    "image": "images/products/p51/WhatsApp Image 2026-08-03 at 5.03.57 PM (1).jpeg",
+    "images": [
+      "images/products/p51/WhatsApp Image 2026-08-03 at 5.03.57 PM (1).jpeg",
+      "images/products/p51/WhatsApp Image 2026-08-03 at 5.03.57 PM (2).jpeg",
+      "images/products/p51/WhatsApp Image 2026-08-03 at 5.03.58 PM (1).jpeg",
+      "images/products/p51/WhatsApp Image 2026-08-03 at 5.03.58 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 7250,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10102,
+    "slug": "prod-meesho-2combo-26",
+    "title": "Pack of 2 Daily Wear Cotton Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 5425,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10103,
+    "slug": "prod-meesho-p52",
+    "title": "Chikankari Chanderi Silk Party Wear",
+    "image": "images/products/p52/WhatsApp Image 2026-08-03 at 5.03.58 PM (2).jpeg",
+    "images": [
+      "images/products/p52/WhatsApp Image 2026-08-03 at 5.03.58 PM (2).jpeg",
+      "images/products/p52/WhatsApp Image 2026-08-03 at 5.03.59 PM (1).jpeg",
+      "images/products/p52/WhatsApp Image 2026-08-03 at 5.03.59 PM (2).jpeg",
+      "images/products/p52/WhatsApp Image 2026-08-03 at 5.03.59 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 7387,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10104,
+    "slug": "prod-meesho-3combo-26",
+    "title": "Combo Pack of 3 Printed Ethnic Kurti Sets - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (5).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM (5).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 6465,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10105,
+    "slug": "prod-meesho-p53",
+    "title": "Jaipuri Print Silk Blend A-Line",
+    "image": "images/products/p53/WhatsApp Image 2026-08-03 at 5.03.59 PM (3).jpeg",
+    "images": [
+      "images/products/p53/WhatsApp Image 2026-08-03 at 5.03.59 PM (3).jpeg",
+      "images/products/p53/WhatsApp Image 2026-08-03 at 5.04.06 PM (1).jpeg",
+      "images/products/p53/WhatsApp Image 2026-08-03 at 5.04.06 PM.jpeg",
+      "images/products/p53/WhatsApp Image 2026-08-03 at 5.04.42 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 7524,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10106,
+    "slug": "prod-meesho-2combo-27",
+    "title": "Combo Pack of 2 Embroidered Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 5616,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10107,
+    "slug": "prod-meesho-p54",
+    "title": "Gota Patti Work Sanderi Silk Designer Fit",
+    "image": "images/products/p54/WhatsApp Image 2026-08-03 at 5.04.43 PM (1).jpeg",
+    "images": [
+      "images/products/p54/WhatsApp Image 2026-08-03 at 5.04.43 PM (1).jpeg",
+      "images/products/p54/WhatsApp Image 2026-08-03 at 5.04.43 PM (2).jpeg",
+      "images/products/p54/WhatsApp Image 2026-08-03 at 5.04.43 PM (3).jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 7661,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10108,
+    "slug": "prod-meesho-3combo-27",
+    "title": "3-Pcs Set Festive Special Anarkali Suit Combo - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.29 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 6688,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10109,
+    "slug": "prod-meesho-p55",
+    "title": "Abstract Print Georgette Flared",
+    "image": "images/products/p55/WhatsApp Image 2026-08-03 at 5.04.44 PM (1).jpeg",
+    "images": [
+      "images/products/p55/WhatsApp Image 2026-08-03 at 5.04.44 PM (1).jpeg",
+      "images/products/p55/WhatsApp Image 2026-08-03 at 5.04.44 PM (2).jpeg",
+      "images/products/p55/WhatsApp Image 2026-08-03 at 5.04.45 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 7798,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10110,
+    "slug": "prod-meesho-2combo-28",
+    "title": "Set of 2 Floral Print Casual Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 5807,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10111,
+    "slug": "prod-meesho-p56",
+    "title": "Foil Print Pure Cotton Anarkali",
+    "image": "images/products/p56/WhatsApp Image 2026-08-03 at 5.04.45 PM (1).jpeg",
+    "images": [
+      "images/products/p56/WhatsApp Image 2026-08-03 at 5.04.45 PM (1).jpeg",
+      "images/products/p56/WhatsApp Image 2026-08-03 at 5.04.45 PM (2).jpeg",
+      "images/products/p56/WhatsApp Image 2026-08-03 at 5.04.45 PM (3).jpeg",
+      "images/products/p56/WhatsApp Image 2026-08-03 at 5.04.46 PM (2).jpeg",
+      "images/products/p56/WhatsApp Image 2026-08-03 at 5.04.46 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 435,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10112,
+    "slug": "prod-meesho-3combo-28",
+    "title": "Exclusive 3-Pcs Rayon Nayra Cut Dress Combo - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 6911,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10113,
+    "slug": "prod-meesho-p57",
+    "title": "Geometric Print Crepe Casual Wear",
+    "image": "images/products/p57/WhatsApp Image 2026-08-03 at 5.04.47 PM (1).jpeg",
+    "images": [
+      "images/products/p57/WhatsApp Image 2026-08-03 at 5.04.47 PM (1).jpeg",
+      "images/products/p57/WhatsApp Image 2026-08-03 at 5.04.47 PM (2).jpeg",
+      "images/products/p57/WhatsApp Image 2026-08-03 at 5.04.47 PM.jpeg",
+      "images/products/p57/WhatsApp Image 2026-08-03 at 5.04.48 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 572,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10114,
+    "slug": "prod-meesho-2combo-29",
+    "title": "2-Pcs Set Jaipuri Printed Kurti Combo - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.26 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 5998,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10115,
+    "slug": "prod-meesho-p58",
+    "title": "Ajrakh Print Cotton Blend Sharara Suit",
+    "image": "images/products/p58/WhatsApp Image 2026-08-03 at 5.04.49 PM (2).jpeg",
+    "images": [
+      "images/products/p58/WhatsApp Image 2026-08-03 at 5.04.49 PM (2).jpeg",
+      "images/products/p58/WhatsApp Image 2026-08-03 at 5.04.50 PM (1).jpeg",
+      "images/products/p58/WhatsApp Image 2026-08-03 at 5.04.50 PM (3).jpeg",
+      "images/products/p58/WhatsApp Image 2026-08-03 at 5.04.50 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 709,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10116,
+    "slug": "prod-meesho-3combo-29",
+    "title": "Set of 3 Daily Wear Cotton Kurti Sets - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (10).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (10).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 7134,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10117,
+    "slug": "prod-meesho-p59",
+    "title": "Leheriya Print Muslin Cotton Festive Special",
+    "image": "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.51 PM (1).jpeg",
+    "images": [
+      "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.51 PM (1).jpeg",
+      "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.51 PM (2).jpeg",
+      "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.51 PM (3).jpeg",
+      "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.52 PM (1).jpeg",
+      "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.52 PM (2).jpeg",
+      "images/products/p59/WhatsApp Image 2026-08-03 at 5.04.52 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 846,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10118,
+    "slug": "prod-meesho-2combo-30",
+    "title": "Combo of 2 Festive Special Silk Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.27 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.27 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 6189,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10119,
+    "slug": "prod-meesho-p60",
+    "title": "Ikat Print Viscose Rayon Angrakha Style",
+    "image": "images/products/p60/WhatsApp Image 2026-08-03 at 5.04.53 PM (1).jpeg",
+    "images": [
+      "images/products/p60/WhatsApp Image 2026-08-03 at 5.04.53 PM (1).jpeg",
+      "images/products/p60/WhatsApp Image 2026-08-03 at 5.04.53 PM (2).jpeg",
+      "images/products/p60/WhatsApp Image 2026-08-03 at 5.04.53 PM (3).jpeg",
+      "images/products/p60/WhatsApp Image 2026-08-03 at 5.04.54 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 983,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10120,
+    "slug": "prod-meesho-3combo-30",
+    "title": "3-Pcs Trio Pack Bandhani Silk Kurti Sets - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (3).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (3).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 7357,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10121,
+    "slug": "prod-meesho-p61",
+    "title": "Mirror Work Rayon Straight Fit",
+    "image": "images/products/p61/WhatsApp Image 2026-08-03 at 5.05.38 PM.jpeg",
+    "images": [
+      "images/products/p61/WhatsApp Image 2026-08-03 at 5.05.38 PM.jpeg",
+      "images/products/p61/WhatsApp Image 2026-08-03 at 5.05.40 PM.jpeg",
+      "images/products/p61/WhatsApp Image 2026-08-03 at 5.05.41 PM (1).jpeg",
+      "images/products/p61/WhatsApp Image 2026-08-03 at 5.05.41 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 1120,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10122,
+    "slug": "prod-meesho-2combo-31",
+    "title": "2-Pcs Combo Trendy Rayon A-Line Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.27 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.27 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 6380,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10123,
+    "slug": "prod-meesho-p62",
+    "title": "Zari Embroidery Chanderi Silk Kurta & Pants",
+    "image": "images/products/p62/WhatsApp Image 2026-08-03 at 5.05.41 PM (2).jpeg",
+    "images": [
+      "images/products/p62/WhatsApp Image 2026-08-03 at 5.05.41 PM (2).jpeg",
+      "images/products/p62/WhatsApp Image 2026-08-03 at 5.05.41 PM (3).jpeg",
+      "images/products/p62/WhatsApp Image 2026-08-03 at 5.05.42 PM (1).jpeg",
+      "images/products/p62/WhatsApp Image 2026-08-03 at 5.05.42 PM (3).jpeg",
+      "images/products/p62/WhatsApp Image 2026-08-03 at 5.05.42 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 1257,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10124,
+    "slug": "prod-meesho-3combo-31",
+    "title": "Combo of 3 Elegant Chikankari Suit Sets - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (4).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (4).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 7580,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10125,
+    "slug": "prod-meesho-p63",
+    "title": "Sequins Work Silk Blend Nayra Cut",
+    "image": "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.43 PM (1).jpeg",
+    "images": [
+      "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.43 PM (1).jpeg",
+      "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.43 PM (2).jpeg",
+      "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.43 PM.jpeg",
+      "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.44 PM (2).jpeg",
+      "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.44 PM (3).jpeg",
+      "images/products/p63/WhatsApp Image 2026-08-03 at 5.05.44 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 1394,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10126,
+    "slug": "prod-meesho-2combo-32",
+    "title": "Pack of 2 Bandhani Print Cotton Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.27 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.27 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 6571,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10127,
+    "slug": "prod-meesho-p64",
+    "title": "Solid Tone Sanderi Silk Party Wear",
+    "image": "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.45 PM.jpeg",
+    "images": [
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.45 PM.jpeg",
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.51 PM (1).jpeg",
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.51 PM.jpeg",
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.52 PM (1).jpeg",
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.52 PM (2).jpeg",
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.52 PM (3).jpeg",
+      "images/products/p64/WhatsApp Image 2026-08-03 at 5.05.52 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 1531,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10128,
+    "slug": "prod-meesho-3combo-32",
+    "title": "3-Pcs Combo Premium Silk Blend Kurti Sets - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (5).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (5).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 7803,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10129,
+    "slug": "prod-meesho-p65",
+    "title": "Floral Print Georgette A-Line",
+    "image": "images/products/p65/WhatsApp Image 2026-08-03 at 7.15.15 PM (1).jpeg",
+    "images": [
+      "images/products/p65/WhatsApp Image 2026-08-03 at 7.15.15 PM (1).jpeg",
+      "images/products/p65/WhatsApp Image 2026-08-03 at 7.15.15 PM.jpeg",
+      "images/products/p65/WhatsApp Image 2026-08-03 at 7.15.16 PM.jpeg",
+      "images/products/p65/WhatsApp Image 2026-08-03 at 7.15.19 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 1668,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10130,
+    "slug": "prod-meesho-2combo-33",
+    "title": "Combo of 2 Chic Straight Fit Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 762,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10131,
+    "slug": "prod-meesho-p66",
+    "title": "Embroidered Pure Cotton Designer Fit",
+    "image": "images/products/p66/WhatsApp Image 2026-08-03 at 7.15.22 PM.jpeg",
+    "images": [
+      "images/products/p66/WhatsApp Image 2026-08-03 at 7.15.22 PM.jpeg",
+      "images/products/p66/WhatsApp Image 2026-08-03 at 7.15.23 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 1805,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10132,
+    "slug": "prod-meesho-3combo-33",
+    "title": "Combo Pack of 3 Traditional Ethnic Suits - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (7).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (7).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 8026,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10133,
+    "slug": "prod-meesho-p67",
+    "title": "Bandhani Print Crepe Flared",
+    "image": "images/products/p67/WhatsApp Image 2026-08-03 at 7.15.28 PM.jpeg",
+    "images": [
+      "images/products/p67/WhatsApp Image 2026-08-03 at 7.15.28 PM.jpeg",
+      "images/products/p67/WhatsApp Image 2026-08-03 at 7.15.32 PM.jpeg",
+      "images/products/p67/WhatsApp Image 2026-08-03 at 7.15.55 PM (1).jpeg",
+      "images/products/p67/WhatsApp Image 2026-08-03 at 7.15.55 PM (2).jpeg",
+      "images/products/p67/WhatsApp Image 2026-08-03 at 7.15.55 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 1942,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10134,
+    "slug": "prod-meesho-2combo-34",
+    "title": "2-Pcs Set Elegant Flared Kurti Pair - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 953,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10135,
+    "slug": "prod-meesho-p68",
+    "title": "Chikankari Cotton Blend Anarkali",
+    "image": "images/products/p68/WhatsApp Image 2026-08-03 at 7.15.56 PM (1).jpeg",
+    "images": [
+      "images/products/p68/WhatsApp Image 2026-08-03 at 7.15.56 PM (1).jpeg",
+      "images/products/p68/WhatsApp Image 2026-08-03 at 7.15.56 PM (2).jpeg",
+      "images/products/p68/WhatsApp Image 2026-08-03 at 7.15.56 PM.jpeg",
+      "images/products/p68/WhatsApp Image 2026-08-03 at 7.15.57 PM (1).jpeg",
+      "images/products/p68/WhatsApp Image 2026-08-03 at 7.15.57 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 2079,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10136,
+    "slug": "prod-meesho-3combo-34",
+    "title": "3-Pcs Set Designer Printed Rayon Kurti Trio - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (8).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (8).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 8249,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10137,
+    "slug": "prod-meesho-p69",
+    "title": "Jaipuri Print Muslin Cotton Casual Wear",
+    "image": "images/products/p69/WhatsApp Image 2026-08-03 at 7.15.57 PM (2).jpeg",
+    "images": [
+      "images/products/p69/WhatsApp Image 2026-08-03 at 7.15.57 PM (2).jpeg",
+      "images/products/p69/WhatsApp Image 2026-08-03 at 7.15.57 PM (3).jpeg",
+      "images/products/p69/WhatsApp Image 2026-08-03 at 7.15.58 PM (1).jpeg",
+      "images/products/p69/WhatsApp Image 2026-08-03 at 7.15.58 PM (2).jpeg",
+      "images/products/p69/WhatsApp Image 2026-08-03 at 7.15.58 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 2216,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10138,
+    "slug": "prod-meesho-2combo-35",
+    "title": "Combo Pack of 2 Casual Rayon Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.28 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 1144,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10139,
+    "slug": "prod-meesho-p70",
+    "title": "Gota Patti Work Viscose Rayon Sharara Suit",
+    "image": "images/products/p70/WhatsApp Image 2026-08-03 at 7.15.58 PM (3).jpeg",
+    "images": [
+      "images/products/p70/WhatsApp Image 2026-08-03 at 7.15.58 PM (3).jpeg",
+      "images/products/p70/WhatsApp Image 2026-08-03 at 7.15.59 PM (1).jpeg",
+      "images/products/p70/WhatsApp Image 2026-08-03 at 7.15.59 PM (2).jpeg",
+      "images/products/p70/WhatsApp Image 2026-08-03 at 7.15.59 PM (3).jpeg",
+      "images/products/p70/WhatsApp Image 2026-08-03 at 7.15.59 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 2353,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10140,
+    "slug": "prod-meesho-3combo-35",
+    "title": "Combo of 3 Casual Wear Cotton Kurti Sets - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (9).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM (9).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 8472,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10141,
+    "slug": "prod-meesho-p71",
+    "title": "Abstract Print Rayon Festive Special",
+    "image": "images/products/p71/WhatsApp Image 2026-08-03 at 7.16.00 PM (1).jpeg",
+    "images": [
+      "images/products/p71/WhatsApp Image 2026-08-03 at 7.16.00 PM (1).jpeg",
+      "images/products/p71/WhatsApp Image 2026-08-03 at 7.16.00 PM (2).jpeg",
+      "images/products/p71/WhatsApp Image 2026-08-03 at 7.16.00 PM.jpeg",
+      "images/products/p71/WhatsApp Image 2026-08-03 at 7.16.01 PM (1).jpeg",
+      "images/products/p71/WhatsApp Image 2026-08-03 at 7.16.01 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 2490,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10142,
+    "slug": "prod-meesho-2combo-36",
+    "title": "Set of 2 Anarkali Style Ethnic Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.29 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.29 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 1335,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10143,
+    "slug": "prod-meesho-p72",
+    "title": "Foil Print Chanderi Silk Angrakha Style",
+    "image": "images/products/p72/WhatsApp Image 2026-08-03 at 7.07.41 PM.jpeg",
+    "images": [
+      "images/products/p72/WhatsApp Image 2026-08-03 at 7.07.41 PM.jpeg",
+      "images/products/p72/WhatsApp Image 2026-08-03 at 7.07.42 PM.jpeg",
+      "images/products/p72/WhatsApp Image 2026-08-03 at 7.07.43 PM (1).jpeg",
+      "images/products/p72/WhatsApp Image 2026-08-03 at 7.07.43 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 2627,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10144,
+    "slug": "prod-meesho-3combo-36",
+    "title": "3-Pcs Set Party Special Georgette Dress Combo - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.30 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 8695,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10145,
+    "slug": "prod-meesho-p73",
+    "title": "Geometric Print Silk Blend Straight Fit",
+    "image": "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.44 PM (1).jpeg",
+    "images": [
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.44 PM (1).jpeg",
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.44 PM.jpeg",
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.45 PM.jpeg",
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.46 PM.jpeg",
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.47 PM (1).jpeg",
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.47 PM.jpeg",
+      "images/products/p73/WhatsApp Image 2026-08-03 at 7.07.48 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 2764,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10146,
+    "slug": "prod-meesho-2combo-37",
+    "title": "Combo of 2 Printed Straight Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.29 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.29 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 1526,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10147,
+    "slug": "prod-meesho-p74",
+    "title": "Ajrakh Print Sanderi Silk Kurta & Pants",
+    "image": "images/products/p74/WhatsApp Image 2026-08-03 at 7.07.48 PM (1).jpeg",
+    "images": [
+      "images/products/p74/WhatsApp Image 2026-08-03 at 7.07.48 PM (1).jpeg",
+      "images/products/p74/WhatsApp Image 2026-08-03 at 7.07.49 PM.jpeg",
+      "images/products/p74/WhatsApp Image 2026-08-03 at 7.07.50 PM (1).jpeg",
+      "images/products/p74/WhatsApp Image 2026-08-03 at 7.07.50 PM.jpeg",
+      "images/products/p74/WhatsApp Image 2026-08-03 at 7.07.51 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 2901,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10148,
+    "slug": "prod-meesho-3combo-37",
+    "title": "3-Pcs Set Royal Embroidered Kurti & Pants with Dupatta - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.33 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.33 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 918,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10149,
+    "slug": "prod-meesho-p75",
+    "title": "Leheriya Print Georgette Nayra Cut",
+    "image": "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.52 PM (1).jpeg",
+    "images": [
+      "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.52 PM (1).jpeg",
+      "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.52 PM.jpeg",
+      "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.53 PM.jpeg",
+      "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.54 PM.jpeg",
+      "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.55 PM.jpeg",
+      "images/products/p75/WhatsApp Image 2026-08-03 at 7.07.56 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 3038,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10150,
+    "slug": "prod-meesho-2combo-38",
+    "title": "Pack of 2 Daily Wear Cotton Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.29 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.29 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 1717,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10151,
+    "slug": "prod-meesho-p76",
+    "title": "Ikat Print Pure Cotton Party Wear",
+    "image": "images/products/p76/WhatsApp Image 2026-08-03 at 7.07.57 PM.jpeg",
+    "images": [
+      "images/products/p76/WhatsApp Image 2026-08-03 at 7.07.57 PM.jpeg",
+      "images/products/p76/WhatsApp Image 2026-08-03 at 7.07.58 PM.jpeg",
+      "images/products/p76/WhatsApp Image 2026-08-03 at 7.08.00 PM.jpeg",
+      "images/products/p76/WhatsApp Image 2026-08-03 at 7.08.02 PM.jpeg",
+      "images/products/p76/WhatsApp Image 2026-08-03 at 7.08.03 PM.jpeg",
+      "images/products/p76/WhatsApp Image 2026-08-03 at 7.08.05 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 3175,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10152,
+    "slug": "prod-meesho-3combo-38",
+    "title": "Combo Pack of 3 Printed Ethnic Kurti Sets - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.33 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.33 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 1141,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10153,
+    "slug": "prod-meesho-p77",
+    "title": "Mirror Work Crepe A-Line",
+    "image": "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.08 PM.jpeg",
+    "images": [
+      "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.08 PM.jpeg",
+      "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.17 PM.jpeg",
+      "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.20 PM.jpeg",
+      "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.22 PM.jpeg",
+      "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.23 PM.jpeg",
+      "images/products/p77/WhatsApp Image 2026-08-03 at 7.08.24 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 3312,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10154,
+    "slug": "prod-meesho-2combo-39",
+    "title": "Combo Pack of 2 Embroidered Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.30 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.30 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 1908,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10155,
+    "slug": "prod-meesho-p78",
+    "title": "Zari Embroidery Cotton Blend Designer Fit",
+    "image": "images/products/p78/WhatsApp Image 2026-08-03 at 7.08.25 PM.jpeg",
+    "images": [
+      "images/products/p78/WhatsApp Image 2026-08-03 at 7.08.25 PM.jpeg",
+      "images/products/p78/WhatsApp Image 2026-08-03 at 7.08.28 PM.jpeg",
+      "images/products/p78/WhatsApp Image 2026-08-03 at 7.08.30 PM.jpeg",
+      "images/products/p78/WhatsApp Image 2026-08-03 at 7.08.43 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 3449,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10156,
+    "slug": "prod-meesho-3combo-39",
+    "title": "3-Pcs Set Festive Special Anarkali Suit Combo - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.34 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.34 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 1364,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10157,
+    "slug": "prod-meesho-p79",
+    "title": "Sequins Work Muslin Cotton Flared",
+    "image": "images/products/p79/WhatsApp Image 2026-08-03 at 7.08.45 PM.jpeg",
+    "images": [
+      "images/products/p79/WhatsApp Image 2026-08-03 at 7.08.45 PM.jpeg",
+      "images/products/p79/WhatsApp Image 2026-08-03 at 7.08.59 PM.jpeg",
+      "images/products/p79/WhatsApp Image 2026-08-03 at 7.09.01 PM.jpeg",
+      "images/products/p79/WhatsApp Image 2026-08-03 at 7.09.02 PM.jpeg",
+      "images/products/p79/WhatsApp Image 2026-08-03 at 7.09.03 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 3586,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10158,
+    "slug": "prod-meesho-2combo-40",
+    "title": "Set of 2 Floral Print Casual Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.30 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.30 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 2099,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10159,
+    "slug": "prod-meesho-p80",
+    "title": "Solid Tone Viscose Rayon Anarkali",
+    "image": "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.04 PM.jpeg",
+    "images": [
+      "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.04 PM.jpeg",
+      "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.10 PM.jpeg",
+      "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.14 PM.jpeg",
+      "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.15 PM.jpeg",
+      "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.38 PM.jpeg",
+      "images/products/p80/WhatsApp Image 2026-08-03 at 7.09.43 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 3723,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10160,
+    "slug": "prod-meesho-3combo-40",
+    "title": "Exclusive 3-Pcs Rayon Nayra Cut Dress Combo - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.34 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.34 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 1587,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10161,
+    "slug": "prod-meesho-p81",
+    "title": "Floral Print Rayon Casual Wear",
+    "image": "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.04 PM.jpeg",
+    "images": [
+      "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.04 PM.jpeg",
+      "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.10 PM.jpeg",
+      "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.14 PM.jpeg",
+      "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.15 PM.jpeg",
+      "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.38 PM.jpeg",
+      "images/products/p81/WhatsApp Image 2026-08-03 at 7.09.43 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 3860,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10162,
+    "slug": "prod-meesho-2combo-41",
+    "title": "2-Pcs Set Jaipuri Printed Kurti Combo - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.30 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.30 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 2290,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10163,
+    "slug": "prod-meesho-p82",
+    "title": "Embroidered Chanderi Silk Sharara Suit",
+    "image": "images/products/p82/WhatsApp Image 2026-08-03 at 7.09.57 PM.jpeg",
+    "images": [
+      "images/products/p82/WhatsApp Image 2026-08-03 at 7.09.57 PM.jpeg",
+      "images/products/p82/WhatsApp Image 2026-08-03 at 7.10.05 PM.jpeg",
+      "images/products/p82/WhatsApp Image 2026-08-03 at 7.10.17 PM.jpeg",
+      "images/products/p82/WhatsApp Image 2026-08-03 at 7.10.21 PM.jpeg",
+      "images/products/p82/WhatsApp Image 2026-08-03 at 7.10.27 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 3997,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10164,
+    "slug": "prod-meesho-3combo-41",
+    "title": "Set of 3 Daily Wear Cotton Kurti Sets - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.35 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.35 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 1810,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10165,
+    "slug": "prod-meesho-p83",
+    "title": "Bandhani Print Silk Blend Festive Special",
+    "image": "images/products/p83/WhatsApp Image 2026-08-03 at 7.10.32 PM.jpeg",
+    "images": [
+      "images/products/p83/WhatsApp Image 2026-08-03 at 7.10.32 PM.jpeg",
+      "images/products/p83/WhatsApp Image 2026-08-03 at 7.10.38 PM.jpeg",
+      "images/products/p83/WhatsApp Image 2026-08-03 at 7.10.39 PM.jpeg",
+      "images/products/p83/WhatsApp Image 2026-08-03 at 7.10.40 PM.jpeg",
+      "images/products/p83/WhatsApp Image 2026-08-03 at 7.10.42 PM (1).jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 4134,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10166,
+    "slug": "prod-meesho-2combo-42",
+    "title": "Combo of 2 Festive Special Silk Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.31 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 2481,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10167,
+    "slug": "prod-meesho-p84",
+    "title": "Chikankari Sanderi Silk Angrakha Style",
+    "image": "images/products/p84/WhatsApp Image 2026-08-03 at 7.10.43 PM.jpeg",
+    "images": [
+      "images/products/p84/WhatsApp Image 2026-08-03 at 7.10.43 PM.jpeg",
+      "images/products/p84/WhatsApp Image 2026-08-03 at 7.10.51 PM.jpeg",
+      "images/products/p84/WhatsApp Image 2026-08-03 at 7.10.52 PM.jpeg",
+      "images/products/p84/WhatsApp Image 2026-08-03 at 7.10.54 PM.jpeg",
+      "images/products/p84/WhatsApp Image 2026-08-03 at 7.10.56 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 4271,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10168,
+    "slug": "prod-meesho-3combo-42",
+    "title": "3-Pcs Trio Pack Bandhani Silk Kurti Sets - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.35 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.35 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 2033,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10169,
+    "slug": "prod-meesho-p85",
+    "title": "Jaipuri Print Georgette Straight Fit",
+    "image": "images/products/p85/WhatsApp Image 2026-08-03 at 7.10.57 PM.jpeg",
+    "images": [
+      "images/products/p85/WhatsApp Image 2026-08-03 at 7.10.57 PM.jpeg",
+      "images/products/p85/WhatsApp Image 2026-08-03 at 7.11.01 PM.jpeg",
+      "images/products/p85/WhatsApp Image 2026-08-03 at 7.11.05 PM.jpeg",
+      "images/products/p85/WhatsApp Image 2026-08-03 at 7.11.06 PM.jpeg",
+      "images/products/p85/WhatsApp Image 2026-08-03 at 7.11.15 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 4408,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10170,
+    "slug": "prod-meesho-2combo-43",
+    "title": "2-Pcs Combo Trendy Rayon A-Line Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 2672,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10171,
+    "slug": "prod-meesho-p86",
+    "title": "Gota Patti Work Pure Cotton Kurta & Pants",
+    "image": "images/products/p86/WhatsApp Image 2026-08-03 at 7.11.17 PM.jpeg",
+    "images": [
+      "images/products/p86/WhatsApp Image 2026-08-03 at 7.11.17 PM.jpeg",
+      "images/products/p86/WhatsApp Image 2026-08-03 at 7.11.18 PM.jpeg",
+      "images/products/p86/WhatsApp Image 2026-08-03 at 7.11.19 PM.jpeg",
+      "images/products/p86/WhatsApp Image 2026-08-03 at 7.11.20 PM.jpeg",
+      "images/products/p86/WhatsApp Image 2026-08-03 at 7.11.22 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 4545,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10172,
+    "slug": "prod-meesho-3combo-43",
+    "title": "Combo of 3 Elegant Chikankari Suit Sets - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.35 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.35 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 2256,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10173,
+    "slug": "prod-meesho-p87",
+    "title": "Abstract Print Crepe Nayra Cut",
+    "image": "images/products/p87/WhatsApp Image 2026-08-03 at 7.11.25 PM.jpeg",
+    "images": [
+      "images/products/p87/WhatsApp Image 2026-08-03 at 7.11.25 PM.jpeg",
+      "images/products/p87/WhatsApp Image 2026-08-03 at 7.11.26 PM.jpeg",
+      "images/products/p87/WhatsApp Image 2026-08-03 at 7.11.28 PM.jpeg",
+      "images/products/p87/WhatsApp Image 2026-08-03 at 7.11.29 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 4682,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10174,
+    "slug": "prod-meesho-2combo-44",
+    "title": "Pack of 2 Bandhani Print Cotton Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 2863,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10175,
+    "slug": "prod-meesho-p88",
+    "title": "Foil Print Cotton Blend Party Wear",
+    "image": "images/products/p88/WhatsApp Image 2026-08-03 at 7.11.29 PM (1).jpeg",
+    "images": [
+      "images/products/p88/WhatsApp Image 2026-08-03 at 7.11.29 PM (1).jpeg",
+      "images/products/p88/WhatsApp Image 2026-08-03 at 7.11.30 PM (1).jpeg",
+      "images/products/p88/WhatsApp Image 2026-08-03 at 7.11.30 PM.jpeg",
+      "images/products/p88/WhatsApp Image 2026-08-03 at 7.11.31 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 4819,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10176,
+    "slug": "prod-meesho-3combo-44",
+    "title": "3-Pcs Combo Premium Silk Blend Kurti Sets - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.36 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.36 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 2479,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10177,
+    "slug": "prod-meesho-p89",
+    "title": "Geometric Print Muslin Cotton A-Line",
+    "image": "images/products/p89/WhatsApp Image 2026-08-03 at 7.11.32 PM.jpeg",
+    "images": [
+      "images/products/p89/WhatsApp Image 2026-08-03 at 7.11.32 PM.jpeg",
+      "images/products/p89/WhatsApp Image 2026-08-03 at 7.11.33 PM.jpeg",
+      "images/products/p89/WhatsApp Image 2026-08-03 at 7.11.42 PM.jpeg",
+      "images/products/p89/WhatsApp Image 2026-08-03 at 7.11.53 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 4956,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10178,
+    "slug": "prod-meesho-2combo-45",
+    "title": "Combo of 2 Chic Straight Fit Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 3054,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10179,
+    "slug": "prod-meesho-p90",
+    "title": "Ajrakh Print Viscose Rayon Designer Fit",
+    "image": "images/products/p90/WhatsApp Image 2026-08-03 at 7.11.54 PM.jpeg",
+    "images": [
+      "images/products/p90/WhatsApp Image 2026-08-03 at 7.11.54 PM.jpeg",
+      "images/products/p90/WhatsApp Image 2026-08-03 at 7.11.55 PM.jpeg",
+      "images/products/p90/WhatsApp Image 2026-08-03 at 7.11.56 PM.jpeg",
+      "images/products/p90/WhatsApp Image 2026-08-03 at 7.11.57 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 5093,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10180,
+    "slug": "prod-meesho-3combo-45",
+    "title": "Combo Pack of 3 Traditional Ethnic Suits - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.36 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.36 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 2702,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10181,
+    "slug": "prod-meesho-p91",
+    "title": "Leheriya Print Rayon Flared",
+    "image": "images/products/p91/WhatsApp Image 2026-08-03 at 7.11.58 PM.jpeg",
+    "images": [
+      "images/products/p91/WhatsApp Image 2026-08-03 at 7.11.58 PM.jpeg",
+      "images/products/p91/WhatsApp Image 2026-08-03 at 7.12.08 PM.jpeg",
+      "images/products/p91/WhatsApp Image 2026-08-03 at 7.12.09 PM.jpeg",
+      "images/products/p91/WhatsApp Image 2026-08-03 at 7.12.10 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 5230,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10182,
+    "slug": "prod-meesho-2combo-46",
+    "title": "2-Pcs Set Elegant Flared Kurti Pair - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.32 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 3245,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10183,
+    "slug": "prod-meesho-p92",
+    "title": "Ikat Print Chanderi Silk Anarkali",
+    "image": "images/products/p92/WhatsApp Image 2026-08-03 at 6.55.21 PM (1).jpeg",
+    "images": [
+      "images/products/p92/WhatsApp Image 2026-08-03 at 6.55.21 PM (1).jpeg",
+      "images/products/p92/WhatsApp Image 2026-08-03 at 6.55.21 PM.jpeg",
+      "images/products/p92/WhatsApp Image 2026-08-03 at 6.55.22 PM (1).jpeg",
+      "images/products/p92/WhatsApp Image 2026-08-03 at 6.55.22 PM (2).jpeg",
+      "images/products/p92/WhatsApp Image 2026-08-03 at 6.55.22 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 5367,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10184,
+    "slug": "prod-meesho-3combo-46",
+    "title": "3-Pcs Set Designer Printed Rayon Kurti Trio - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.36 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.36 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 2925,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10185,
+    "slug": "prod-meesho-p93",
+    "title": "Mirror Work Silk Blend Casual Wear",
+    "image": "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.18 PM.jpeg",
+    "images": [
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.18 PM.jpeg",
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.19 PM (1).jpeg",
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.19 PM.jpeg",
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.20 PM (1).jpeg",
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.20 PM (2).jpeg",
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.20 PM (3).jpeg",
+      "images/products/p93/WhatsApp Image 2026-08-03 at 6.55.20 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 5504,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10186,
+    "slug": "prod-meesho-2combo-47",
+    "title": "Combo Pack of 2 Casual Rayon Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 3436,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10187,
+    "slug": "prod-meesho-p94",
+    "title": "Zari Embroidery Sanderi Silk Sharara Suit",
+    "image": "images/products/p94/WhatsApp Image 2026-08-03 at 6.55.15 PM (1).jpeg",
+    "images": [
+      "images/products/p94/WhatsApp Image 2026-08-03 at 6.55.15 PM (1).jpeg",
+      "images/products/p94/WhatsApp Image 2026-08-03 at 6.55.15 PM.jpeg",
+      "images/products/p94/WhatsApp Image 2026-08-03 at 6.55.16 PM.jpeg",
+      "images/products/p94/WhatsApp Image 2026-08-03 at 6.55.17 PM (1).jpeg",
+      "images/products/p94/WhatsApp Image 2026-08-03 at 6.55.17 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 5641,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10188,
+    "slug": "prod-meesho-3combo-47",
+    "title": "Combo of 3 Casual Wear Cotton Kurti Sets - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.37 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.37 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 3148,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10189,
+    "slug": "prod-meesho-p95",
+    "title": "Sequins Work Georgette Festive Special",
+    "image": "images/products/p95/WhatsApp Image 2026-08-03 at 6.55.12 PM (1).jpeg",
+    "images": [
+      "images/products/p95/WhatsApp Image 2026-08-03 at 6.55.12 PM (1).jpeg",
+      "images/products/p95/WhatsApp Image 2026-08-03 at 6.55.13 PM (1).jpeg",
+      "images/products/p95/WhatsApp Image 2026-08-03 at 6.55.13 PM.jpeg",
+      "images/products/p95/WhatsApp Image 2026-08-03 at 6.55.14 PM (1).jpeg",
+      "images/products/p95/WhatsApp Image 2026-08-03 at 6.55.14 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 5778,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10190,
+    "slug": "prod-meesho-2combo-48",
+    "title": "Set of 2 Anarkali Style Ethnic Kurtis - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 3627,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10191,
+    "slug": "prod-meesho-p96",
+    "title": "Solid Tone Pure Cotton Angrakha Style",
+    "image": "images/products/p96/WhatsApp Image 2026-08-03 at 6.55.10 PM (1).jpeg",
+    "images": [
+      "images/products/p96/WhatsApp Image 2026-08-03 at 6.55.10 PM (1).jpeg",
+      "images/products/p96/WhatsApp Image 2026-08-03 at 6.55.10 PM.jpeg",
+      "images/products/p96/WhatsApp Image 2026-08-03 at 6.55.11 PM (1).jpeg",
+      "images/products/p96/WhatsApp Image 2026-08-03 at 6.55.11 PM.jpeg",
+      "images/products/p96/WhatsApp Image 2026-08-03 at 6.55.12 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 5915,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10192,
+    "slug": "prod-meesho-3combo-48",
+    "title": "3-Pcs Set Party Special Georgette Dress Combo - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.37 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.37 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 3371,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10193,
+    "slug": "prod-meesho-p97",
+    "title": "Floral Print Crepe Straight Fit",
+    "image": "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.06 PM (1).jpeg",
+    "images": [
+      "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.06 PM (1).jpeg",
+      "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.06 PM.jpeg",
+      "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.07 PM (1).jpeg",
+      "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.07 PM.jpeg",
+      "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.08 PM.jpeg",
+      "images/products/p97/WhatsApp Image 2026-08-03 at 6.55.09 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 6052,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10194,
+    "slug": "prod-meesho-2combo-49",
+    "title": "Combo of 2 Printed Straight Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 3818,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10195,
+    "slug": "prod-meesho-p98",
+    "title": "Embroidered Cotton Blend Kurta & Pants",
+    "image": "images/products/p98/WhatsApp Image 2026-08-03 at 6.55.05 PM (1).jpeg",
+    "images": [
+      "images/products/p98/WhatsApp Image 2026-08-03 at 6.55.05 PM (1).jpeg",
+      "images/products/p98/WhatsApp Image 2026-08-03 at 6.55.05 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 6189,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10196,
+    "slug": "prod-meesho-3combo-49",
+    "title": "3-Pcs Set Royal Embroidered Kurti & Pants with Dupatta - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.38 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.38 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 3594,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10197,
+    "slug": "prod-meesho-p99",
+    "title": "Bandhani Print Muslin Cotton Nayra Cut",
+    "image": "images/products/p99/WhatsApp Image 2026-08-03 at 6.55.01 PM.jpeg",
+    "images": [
+      "images/products/p99/WhatsApp Image 2026-08-03 at 6.55.01 PM.jpeg",
+      "images/products/p99/WhatsApp Image 2026-08-03 at 6.55.02 PM.jpeg",
+      "images/products/p99/WhatsApp Image 2026-08-03 at 6.55.03 PM (1).jpeg",
+      "images/products/p99/WhatsApp Image 2026-08-03 at 6.55.03 PM.jpeg",
+      "images/products/p99/WhatsApp Image 2026-08-03 at 6.55.04 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 6326,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10198,
+    "slug": "prod-meesho-2combo-50",
+    "title": "Pack of 2 Daily Wear Cotton Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.33 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 4009,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10199,
+    "slug": "prod-meesho-p100",
+    "title": "Chikankari Viscose Rayon Party Wear",
+    "image": "images/products/p100/WhatsApp Image 2026-08-03 at 6.54.58 PM.jpeg",
+    "images": [
+      "images/products/p100/WhatsApp Image 2026-08-03 at 6.54.58 PM.jpeg",
+      "images/products/p100/WhatsApp Image 2026-08-03 at 6.54.59 PM.jpeg",
+      "images/products/p100/WhatsApp Image 2026-08-03 at 6.55.00 PM (1).jpeg",
+      "images/products/p100/WhatsApp Image 2026-08-03 at 6.55.00 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 6463,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10200,
+    "slug": "prod-meesho-3combo-50",
+    "title": "Combo Pack of 3 Printed Ethnic Kurti Sets - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.38 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.38 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 3817,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10201,
+    "slug": "prod-meesho-p101",
+    "title": "Jaipuri Print Rayon A-Line",
+    "image": "images/products/p101/WhatsApp Image 2026-08-03 at 7.12.12 PM.jpeg",
+    "images": [
+      "images/products/p101/WhatsApp Image 2026-08-03 at 7.12.12 PM.jpeg",
+      "images/products/p101/WhatsApp Image 2026-08-03 at 7.12.13 PM.jpeg",
+      "images/products/p101/WhatsApp Image 2026-08-03 at 7.12.37 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 6600,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10202,
+    "slug": "prod-meesho-2combo-51",
+    "title": "Combo Pack of 2 Embroidered Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 4200,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10203,
+    "slug": "prod-meesho-p102",
+    "title": "Gota Patti Work Chanderi Silk Designer Fit",
+    "image": "images/products/p102/WhatsApp Image 2026-08-03 at 6.55.43 PM (1).jpeg",
+    "images": [
+      "images/products/p102/WhatsApp Image 2026-08-03 at 6.55.43 PM (1).jpeg",
+      "images/products/p102/WhatsApp Image 2026-08-03 at 6.55.44 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 6737,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10204,
+    "slug": "prod-meesho-3combo-51",
+    "title": "3-Pcs Set Festive Special Anarkali Suit Combo - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.39 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.39 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 4040,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10205,
+    "slug": "prod-meesho-p103",
+    "title": "Abstract Print Silk Blend Flared",
+    "image": "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.44 PM (1).jpeg",
+    "images": [
+      "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.44 PM (1).jpeg",
+      "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.45 PM (1).jpeg",
+      "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.45 PM.jpeg",
+      "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.46 PM.jpeg",
+      "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.47 PM (1).jpeg",
+      "images/products/p103/WhatsApp Image 2026-08-03 at 6.55.47 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 6874,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10206,
+    "slug": "prod-meesho-2combo-52",
+    "title": "Set of 2 Floral Print Casual Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 4391,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10207,
+    "slug": "prod-meesho-p104",
+    "title": "Foil Print Sanderi Silk Anarkali",
+    "image": "images/products/p104/WhatsApp Image 2026-08-03 at 6.55.48 PM (1).jpeg",
+    "images": [
+      "images/products/p104/WhatsApp Image 2026-08-03 at 6.55.48 PM (1).jpeg",
+      "images/products/p104/WhatsApp Image 2026-08-03 at 6.55.48 PM.jpeg",
+      "images/products/p104/WhatsApp Image 2026-08-03 at 6.55.49 PM (1).jpeg",
+      "images/products/p104/WhatsApp Image 2026-08-03 at 6.55.49 PM (2).jpeg",
+      "images/products/p104/WhatsApp Image 2026-08-03 at 6.55.49 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 7011,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10208,
+    "slug": "prod-meesho-3combo-52",
+    "title": "Exclusive 3-Pcs Rayon Nayra Cut Dress Combo - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.39 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.39 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 4263,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10209,
+    "slug": "prod-meesho-p105",
+    "title": "Geometric Print Georgette Casual Wear",
+    "image": "images/products/p105/WhatsApp Image 2026-08-03 at 6.54.24 PM.jpeg",
+    "images": [
+      "images/products/p105/WhatsApp Image 2026-08-03 at 6.54.24 PM.jpeg",
+      "images/products/p105/WhatsApp Image 2026-08-03 at 6.54.25 PM.jpeg",
+      "images/products/p105/WhatsApp Image 2026-08-03 at 6.54.26 PM (1).jpeg",
+      "images/products/p105/WhatsApp Image 2026-08-03 at 6.54.26 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 7148,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10210,
+    "slug": "prod-meesho-2combo-53",
+    "title": "2-Pcs Set Jaipuri Printed Kurti Combo - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 4582,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10211,
+    "slug": "prod-meesho-p106",
+    "title": "Ajrakh Print Pure Cotton Sharara Suit",
+    "image": "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.27 PM (1).jpeg",
+    "images": [
+      "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.27 PM (1).jpeg",
+      "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.28 PM (1).jpeg",
+      "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.28 PM.jpeg",
+      "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.29 PM (1).jpeg",
+      "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.29 PM.jpeg",
+      "images/products/p106/WhatsApp Image 2026-08-03 at 6.54.30 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 7285,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10212,
+    "slug": "prod-meesho-3combo-53",
+    "title": "Set of 3 Daily Wear Cotton Kurti Sets - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.39 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.39 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 4486,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10213,
+    "slug": "prod-meesho-p107",
+    "title": "Leheriya Print Crepe Festive Special",
+    "image": "images/products/p107/WhatsApp Image 2026-08-03 at 6.54.31 PM (1).jpeg",
+    "images": [
+      "images/products/p107/WhatsApp Image 2026-08-03 at 6.54.31 PM (1).jpeg",
+      "images/products/p107/WhatsApp Image 2026-08-03 at 6.54.31 PM.jpeg",
+      "images/products/p107/WhatsApp Image 2026-08-03 at 6.54.32 PM (1).jpeg",
+      "images/products/p107/WhatsApp Image 2026-08-03 at 6.54.32 PM.jpeg",
+      "images/products/p107/WhatsApp Image 2026-08-03 at 6.54.33 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 7422,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10214,
+    "slug": "prod-meesho-2combo-54",
+    "title": "Combo of 2 Festive Special Silk Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.34 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 4773,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10215,
+    "slug": "prod-meesho-p108",
+    "title": "Ikat Print Cotton Blend Angrakha Style",
+    "image": "images/products/p108/WhatsApp Image 2026-08-03 at 6.54.34 PM (1).jpeg",
+    "images": [
+      "images/products/p108/WhatsApp Image 2026-08-03 at 6.54.34 PM (1).jpeg",
+      "images/products/p108/WhatsApp Image 2026-08-03 at 6.54.35 PM (1).jpeg",
+      "images/products/p108/WhatsApp Image 2026-08-03 at 6.54.35 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 7559,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10216,
+    "slug": "prod-meesho-3combo-54",
+    "title": "3-Pcs Trio Pack Bandhani Silk Kurti Sets - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.40 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.40 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 4709,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10217,
+    "slug": "prod-meesho-p109",
+    "title": "Mirror Work Muslin Cotton Straight Fit",
+    "image": "images/products/p109/WhatsApp Image 2026-08-03 at 6.54.33 PM (1).jpeg",
+    "images": [
+      "images/products/p109/WhatsApp Image 2026-08-03 at 6.54.33 PM (1).jpeg",
+      "images/products/p109/WhatsApp Image 2026-08-03 at 6.54.34 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 7696,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10218,
+    "slug": "prod-meesho-2combo-55",
+    "title": "2-Pcs Combo Trendy Rayon A-Line Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 4964,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10219,
+    "slug": "prod-meesho-p110",
+    "title": "Zari Embroidery Viscose Rayon Kurta & Pants",
+    "image": "images/products/p110/WhatsApp Image 2026-08-03 at 6.54.36 PM (1).jpeg",
+    "images": [
+      "images/products/p110/WhatsApp Image 2026-08-03 at 6.54.36 PM (1).jpeg",
+      "images/products/p110/WhatsApp Image 2026-08-03 at 6.54.36 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 7833,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10220,
+    "slug": "prod-meesho-3combo-55",
+    "title": "Combo of 3 Elegant Chikankari Suit Sets - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.40 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.40 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 4932,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10221,
+    "slug": "prod-meesho-p111",
+    "title": "Sequins Work Rayon Nayra Cut",
+    "image": "images/products/p111/WhatsApp Image 2026-08-03 at 6.54.37 PM (1).jpeg",
+    "images": [
+      "images/products/p111/WhatsApp Image 2026-08-03 at 6.54.37 PM (1).jpeg",
+      "images/products/p111/WhatsApp Image 2026-08-03 at 6.54.37 PM.jpeg",
+      "images/products/p111/WhatsApp Image 2026-08-03 at 6.54.38 PM.jpeg",
+      "images/products/p111/WhatsApp Image 2026-08-03 at 6.54.39 PM (1).jpeg",
+      "images/products/p111/WhatsApp Image 2026-08-03 at 6.54.39 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 470,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10222,
+    "slug": "prod-meesho-2combo-56",
+    "title": "Pack of 2 Bandhani Print Cotton Kurtis - Rayon",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM (3).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.35 PM (3).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 5155,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10223,
+    "slug": "prod-meesho-p112",
+    "title": "Solid Tone Chanderi Silk Party Wear",
+    "image": "images/products/p112/WhatsApp Image 2026-08-03 at 6.54.40 PM (1).jpeg",
+    "images": [
+      "images/products/p112/WhatsApp Image 2026-08-03 at 6.54.40 PM (1).jpeg",
+      "images/products/p112/WhatsApp Image 2026-08-03 at 6.54.40 PM.jpeg",
+      "images/products/p112/WhatsApp Image 2026-08-03 at 6.54.41 PM (1).jpeg",
+      "images/products/p112/WhatsApp Image 2026-08-03 at 6.54.41 PM.jpeg",
+      "images/products/p112/WhatsApp Image 2026-08-03 at 6.54.42 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 607,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10224,
+    "slug": "prod-meesho-3combo-56",
+    "title": "3-Pcs Combo Premium Silk Blend Kurti Sets - Rayon",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.41 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.41 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 5155,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10225,
+    "slug": "prod-meesho-p113",
+    "title": "Floral Print Silk Blend A-Line",
+    "image": "images/products/p113/WhatsApp Image 2026-08-03 at 6.54.43 PM (1).jpeg",
+    "images": [
+      "images/products/p113/WhatsApp Image 2026-08-03 at 6.54.43 PM (1).jpeg",
+      "images/products/p113/WhatsApp Image 2026-08-03 at 6.54.43 PM.jpeg",
+      "images/products/p113/WhatsApp Image 2026-08-03 at 6.54.44 PM.jpeg",
+      "images/products/p113/WhatsApp Image 2026-08-03 at 6.54.45 PM (1).jpeg",
+      "images/products/p113/WhatsApp Image 2026-08-03 at 6.54.45 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.1,
+    "reviews": 744,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10226,
+    "slug": "prod-meesho-2combo-57",
+    "title": "Combo of 2 Chic Straight Fit Kurtis - Georgette",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.36 PM (2).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.36 PM (2).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 5346,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10227,
+    "slug": "prod-meesho-p114",
+    "title": "Embroidered Sanderi Silk Designer Fit",
+    "image": "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.46 PM.jpeg",
+    "images": [
+      "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.46 PM.jpeg",
+      "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.47 PM.jpeg",
+      "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.48 PM (1).jpeg",
+      "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.48 PM.jpeg",
+      "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.49 PM (1).jpeg",
+      "images/products/p114/WhatsApp Image 2026-08-03 at 6.54.49 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.2,
+    "reviews": 881,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10228,
+    "slug": "prod-meesho-3combo-57",
+    "title": "Combo Pack of 3 Traditional Ethnic Suits - Muslin Cotton",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.41 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.41 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 5378,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10229,
+    "slug": "prod-meesho-p115",
+    "title": "Bandhani Print Georgette Flared",
+    "image": "images/products/p115/WhatsApp Image 2026-08-03 at 6.54.50 PM.jpeg",
+    "images": [
+      "images/products/p115/WhatsApp Image 2026-08-03 at 6.54.50 PM.jpeg",
+      "images/products/p115/WhatsApp Image 2026-08-03 at 6.54.51 PM (1).jpeg",
+      "images/products/p115/WhatsApp Image 2026-08-03 at 6.54.51 PM.jpeg",
+      "images/products/p115/WhatsApp Image 2026-08-03 at 6.54.52 PM (1).jpeg",
+      "images/products/p115/WhatsApp Image 2026-08-03 at 6.54.52 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 1018,
+    "offers": 1,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10230,
+    "slug": "prod-meesho-2combo-58",
+    "title": "2-Pcs Set Elegant Flared Kurti Pair - Muslin Cotton",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.36 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.36 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 5537,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10231,
+    "slug": "prod-meesho-p116",
+    "title": "Chikankari Pure Cotton Anarkali",
+    "image": "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.54 PM (1).jpeg",
+    "images": [
+      "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.54 PM (1).jpeg",
+      "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.54 PM.jpeg",
+      "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.55 PM.jpeg",
+      "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.56 PM (1).jpeg",
+      "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.56 PM.jpeg",
+      "images/products/p116/WhatsApp Image 2026-08-03 at 6.54.57 PM.jpeg"
+    ],
+    "price": 99,
+    "mrp": 599,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 1155,
+    "offers": 2,
+    "specialOffer": "₹89 with Special Offer",
+    "trusted": true,
+    "dealTimer": true
+  },
+  {
+    "id": 10232,
+    "slug": "prod-meesho-3combo-58",
+    "title": "3-Pcs Set Designer Printed Rayon Kurti Trio - Crepe",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.42 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.42 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.6,
+    "reviews": 5601,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10233,
+    "slug": "prod-meesho-2combo-59",
+    "title": "Combo Pack of 2 Casual Rayon Kurtis - Silk Blend",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 5728,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10234,
+    "slug": "prod-meesho-3combo-59",
+    "title": "Combo of 3 Casual Wear Cotton Kurti Sets - Georgette",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.42 PM (2).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.42 PM (2).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.7,
+    "reviews": 5824,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10235,
+    "slug": "prod-meesho-2combo-60",
+    "title": "Set of 2 Anarkali Style Ethnic Kurtis - Crepe",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.37 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 5919,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10236,
+    "slug": "prod-meesho-3combo-60",
+    "title": "3-Pcs Set Party Special Georgette Dress Combo - Silk Blend",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.42 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.42 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.8,
+    "reviews": 6047,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10237,
+    "slug": "prod-meesho-2combo-61",
+    "title": "Combo of 2 Printed Straight Kurtis (Rayon)",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.38 PM (1).jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.38 PM (1).jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.3,
+    "reviews": 6110,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10238,
+    "slug": "prod-meesho-3combo-61",
+    "title": "3-Pcs Set Royal Embroidered Kurti & Pants with Dupatta (Rayon)",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.43 PM (1).jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.43 PM (1).jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 6270,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10239,
+    "slug": "prod-meesho-2combo-62",
+    "title": "Pack of 2 Daily Wear Cotton Kurtis (Georgette)",
+    "image": "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.38 PM.jpeg",
+    "images": [
+      "images/products/2pcscombo/WhatsApp Image 2026-08-03 at 6.43.38 PM.jpeg"
+    ],
+    "price": 149,
+    "mrp": 899,
+    "discountLabel": "83% off",
+    "rating": 4.4,
+    "reviews": 6301,
+    "offers": 2,
+    "specialOffer": "₹139 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  },
+  {
+    "id": 10240,
+    "slug": "prod-meesho-3combo-62",
+    "title": "Combo Pack of 3 Printed Ethnic Kurti Sets (Muslin Cotton)",
+    "image": "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.43 PM.jpeg",
+    "images": [
+      "images/products/3pcscombo/WhatsApp Image 2026-08-03 at 6.44.43 PM.jpeg"
+    ],
+    "price": 199,
+    "mrp": 1199,
+    "discountLabel": "83% off",
+    "rating": 4.5,
+    "reviews": 6493,
+    "offers": 2,
+    "specialOffer": "₹189 with Special Offer",
+    "trusted": true,
+    "dealTimer": false
+  }
+]

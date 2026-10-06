@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed — meesho</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site-config.js"></script>
+  <style>
+    .checkout-wrap { max-width: 32rem; margin: 0 auto; }
+    .stepper { display: flex; align-items: flex-start; padding: 14px 20px 10px; }
+    .step { display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+    .step-circle { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .8125rem; font-weight: 800; border: 2px solid #038c63; color: #fff; background: #038c63; }
+    .step-label { font-size: .625rem; font-weight: 700; letter-spacing: .04em; color: #038c63; }
+    .step-line { flex: 1; height: 2px; background: #038c63; margin: 15px 6px 0; }
+  </style>
+</head>
+<body style="background:var(--background)">
+
+  <header class="site-header">
+    <div class="site-header-inner" style="max-width:32rem;justify-content:center">
+      <h1 style="font-size:.9375rem;font-weight:700;letter-spacing:.08em">ORDER CONFIRMED</h1>
+    </div>
+    <div class="checkout-wrap">
+      <div class="stepper">
+        <div class="step"><div class="step-circle">✓</div><div class="step-label">ADDRESS</div></div>
+        <div class="step-line"></div>
+        <div class="step"><div class="step-circle">✓</div><div class="step-label">REVIEW</div></div>
+        <div class="step-line"></div>
+        <div class="step"><div class="step-circle">✓</div><div class="step-label">PAYMENT</div></div>
+        <div class="step-line"></div>
+        <div class="step"><div class="step-circle">✓</div><div class="step-label">SUMMARY</div></div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto w-full" style="max-width:32rem;padding:0 0 8px 0;position:relative;">
+      <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+      </div>
+      <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+    </div>
+  </header>
+
+  <main style="max-width:32rem;margin:0 auto;padding:1rem" id="content">
+    <div class="empty-state">
+      <div class="meesho-loader"><div class="meesho-loader-dot"></div><div class="meesho-loader-dot"></div><div class="meesho-loader-dot"></div></div>
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    async function init() {
+      const params = new URLSearchParams(window.location.search);
+      const orderId = params.get('orderId');
+      const content = document.getElementById('content');
+
+      if (!orderId) {
+        content.innerHTML = `<div class="empty-state"><h2>No order found</h2><a href="index.html" class="btn btn-primary" style="margin-top:1rem">Go Home</a></div>`;
+        return;
+      }
+
+      const order = await window.Order.get(orderId);
+      if (!order) {
+        content.innerHTML = `<div class="empty-state"><h2>Order not found</h2><a href="index.html" class="btn btn-primary" style="margin-top:1rem">Go Home</a></div>`;
+        return;
+      }
+
+      const a = order.address || {};
+      content.innerHTML = `
+        <div style="text-align:center;padding:1.5rem 0">
+          <div style="width:64px;height:64px;border-radius:50%;background:#e6f9f3;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#038c63" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 style="font-size:1.25rem;font-weight:800;color:#0f172a">Order Placed Successfully!</h2>
+          <p style="font-size:.875rem;color:#64748b;margin-top:.5rem">Order ID: <b style="color:#0f172a">${order.orderId}</b></p>
+        </div>
+
+        <section style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1rem;margin-bottom:1rem">
+          <p style="font-size:.875rem;font-weight:700;color:#0f172a;margin-bottom:.75rem">Delivering to</p>
+          <p style="font-size:.875rem;color:#334155">${a.name || ''} · ${a.contactNumber || ''}</p>
+          <p style="font-size:.8125rem;color:#64748b;margin-top:4px">${[a.houseNo, a.roadArea, a.city].filter(Boolean).join(', ')}, ${a.state || ''} - ${a.pincode || ''}</p>
+        </section>
+
+        <section style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1rem;margin-bottom:1rem">
+          <p style="font-size:.875rem;font-weight:700;color:#0f172a;margin-bottom:.75rem">${order.items.length} Item${order.items.length === 1 ? '' : 's'}</p>
+          ${order.items.map((item) => `
+            <div style="display:flex;gap:.75rem;padding:.5rem 0;border-bottom:1px solid #f1f5f9">
+              <img src="${item.image}" alt="${item.title}" style="width:3rem;height:3rem;border-radius:6px;object-fit:cover;flex-shrink:0" onerror="this.style.display='none'">
+              <div style="flex:1;min-width:0">
+                <p style="font-size:.8125rem;font-weight:600;color:#334155;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.title}</p>
+                <p style="font-size:.75rem;color:#64748b">Size: ${item.size} · Qty: ${item.quantity} · ₹${item.price}</p>
+              </div>
+            </div>`).join('')}
+        </section>
+
+        <section style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1rem;margin-bottom:1.5rem">
+          <div class="price-row" style="display:flex;justify-content:space-between;font-size:.875rem;color:#334155"><span>Total Product Price</span><span>₹${order.totalPrice}</span></div>
+          <div class="price-row" style="display:flex;justify-content:space-between;font-size:.875rem;color:#038c63;font-weight:600;margin-top:.375rem"><span>You Saved</span><span>₹${order.savedAmount}</span></div>
+          <div class="price-row" style="display:flex;justify-content:space-between;font-size:1rem;font-weight:800;color:#0f172a;margin-top:.5rem;padding-top:.5rem;border-top:1px solid #e2e8f0"><span>Order Total (Paid via PayU)</span><span>₹${order.paidAmount}</span></div>
+          <p style="font-size:0.75rem;color:#038c63;font-weight:700;margin-top:0.5rem;display:flex;align-items:center;gap:4px">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#038c63" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Payment verified securely via PayU Payment Gateway
+          </p>
+        </section>
+
+        <a href="index.html" class="btn btn-primary" style="display:flex;align-items:center;justify-content:center;height:44px;background:#9f2089;color:#fff;border-radius:10px;font-weight:700;text-decoration:none;margin-bottom:1rem">Continue Shopping</a>
+      `;
+    }
+    init();
+
+    window.SearchBox.attach(
+      document.getElementById('search-input'),
+      document.getElementById('search-suggestions'),
+    );
+  </script>
+</body></html>

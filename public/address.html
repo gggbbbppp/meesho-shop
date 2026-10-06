@@ -1,0 +1,613 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — meesho</title>
+  <meta name="description" content="Add your delivery address, review your order, and choose a payment method on meesho.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site-config.js"></script>
+  <style>
+    .checkout-wrap { max-width: 32rem; margin: 0 auto; }
+    .stepper { display: flex; align-items: flex-start; padding: 14px 20px 10px; }
+    .step { display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+    .step-circle { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .8125rem; font-weight: 800; border: 2px solid #cbd5e1; color: #94a3b8; background: #fff; }
+    .step-label { font-size: .625rem; font-weight: 700; letter-spacing: .04em; color: #94a3b8; }
+    .step.current .step-circle { background: #9f2089; border-color: #9f2089; color: #fff; }
+    .step.current .step-label { color: #9f2089; }
+    .step.done .step-circle { background: #038c63; border-color: #038c63; color: #fff; }
+    .step.done .step-label { color: #038c63; }
+    .step-line { flex: 1; height: 2px; background: #e2e8f0; margin: 15px 6px 0; }
+    .step-line.done { background: #038c63; }
+
+    .co-panel { padding: 1rem; }
+    .co-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; }
+    .co-card-title { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .co-card-title h2 { font-size: .9375rem; font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 8px; }
+
+    .addr-field { margin-bottom: 14px; }
+    .addr-field label { display: block; font-size: .75rem; font-weight: 700; color: #475569; margin-bottom: 4px; }
+    .addr-field input {
+      width: 100%; padding: .625rem .75rem; border: 1px solid #cbd5e1; border-radius: 8px;
+      font-size: .875rem; font-family: inherit; box-sizing: border-box;
+    }
+    .addr-row { display: flex; gap: 10px; }
+    .addr-row .addr-field { flex: 1; }
+    .addr-error { color: var(--destructive); font-size: .75rem; margin-top: 4px; display: none; }
+    .use-location-btn {
+      display: inline-flex; align-items: center; gap: 6px; background: none; border: 1px solid #9f2089;
+      color: #9f2089; font-size: .75rem; font-weight: 700; padding: 6px 12px; border-radius: 20px; cursor: pointer;
+    }
+    .use-location-btn:disabled { opacity: .6; cursor: default; }
+
+    .review-item { display: flex; gap: .75rem; padding: .5rem 0; }
+    .review-item img { width: 3.5rem; height: 3.5rem; border-radius: 8px; object-fit: cover; flex-shrink: 0; background: #f1f5f9; }
+    .review-remove-btn { color: #ef4444; background: none; border: none; font-size: .75rem; font-weight: 700; cursor: pointer; padding: 0; display: inline-flex; align-items: center; gap: 3px; margin-top: 4px; }
+
+    .pay-method { display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 10px; cursor: pointer; background: #fff; }
+    .pay-method.selected { border-color: #9f2089; box-shadow: 0 0 0 1px #9f2089; }
+    .pay-method-icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; flex-shrink: 0; font-size: .8125rem; }
+    .pay-method-disabled { opacity: .5; pointer-events: none; }
+    .pay-method-disabled .co-status { color: #ef4444; font-size: .75rem; font-weight: 600; margin-left: auto; }
+    .pay-online-card { border: 2px solid #9f2089; border-radius: 12px; padding: 14px; margin-bottom: 1rem; }
+    .pay-online-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+    .saved-badge { background: #e6f9f3; color: #038c63; font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+    .inert-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; font-size: .875rem; font-weight: 600; color: #334155; border-top: 1px solid #f1f5f9; }
+  </style>
+</head>
+<body class="pb-32" style="background:var(--background)">
+
+  <header class="site-header" style="padding-bottom: 4px">
+    <div class="site-header-inner" style="max-width:32rem">
+      <a href="cart.html" id="back-link" aria-label="Go back" style="color:var(--foreground)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </a>
+      <h1 id="page-title" style="font-size:.9375rem;font-weight:700;letter-spacing:.08em">ADD DELIVERY ADDRESS</h1>
+      <div style="width:1.5rem"></div>
+    </div>
+    <div class="checkout-wrap" style="position:relative;padding:0 0 4px">
+      <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px 8px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+      </div>
+      <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+    </div>
+    <div class="checkout-wrap">
+      <div class="stepper" id="stepper">
+        <div class="step" data-step="1"><div class="step-circle">1</div><div class="step-label">ADDRESS</div></div>
+        <div class="step-line" data-line="1"></div>
+        <div class="step" data-step="2"><div class="step-circle">2</div><div class="step-label">REVIEW</div></div>
+        <div class="step-line" data-line="2"></div>
+        <div class="step" data-step="3"><div class="step-circle">3</div><div class="step-label">PAYMENT</div></div>
+        <div class="step-line" data-line="3"></div>
+        <div class="step" data-step="4"><div class="step-circle">4</div><div class="step-label">SUMMARY</div></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-wrap">
+
+    <!-- STEP 1: ADDRESS -->
+    <section class="co-panel" id="panel-1">
+      <div class="co-card">
+        <div class="co-card-title">
+          <h2>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0369a1" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Delivery Address
+          </h2>
+          <button type="button" class="use-location-btn" id="use-location-btn" onclick="useMyLocation()">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+            Use My Location
+          </button>
+        </div>
+
+        <form id="addr-form" onsubmit="return false">
+          <div class="addr-field">
+            <label for="f-house">House No., Building Name</label>
+            <input id="f-house" placeholder="House no. / Building Name" required>
+          </div>
+          <div class="addr-field">
+            <label for="f-road">Road Name, Area, Colony</label>
+            <input id="f-road" placeholder="Road Name / Area / Colony">
+          </div>
+          <div class="addr-field">
+            <label for="f-pincode">Pincode</label>
+            <input id="f-pincode" placeholder="Pincode" inputmode="numeric" maxlength="6" required oninput="this.value=this.value.replace(/\D/g,'')">
+          </div>
+          <div class="addr-row">
+            <div class="addr-field">
+              <label for="f-city">City</label>
+              <input id="f-city" placeholder="City" required>
+            </div>
+            <div class="addr-field">
+              <label for="f-state">State</label>
+              <input id="f-state" placeholder="State" required>
+            </div>
+          </div>
+          <div class="addr-field">
+            <label for="f-landmark">Landmark (optional)</label>
+            <input id="f-landmark" placeholder="Nearby Famous Place/Shop/School (Optional)">
+          </div>
+        </form>
+      </div>
+
+      <div class="co-card">
+        <div class="co-card-title">
+          <h2>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0369a1" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Contact Details
+          </h2>
+        </div>
+        <div class="addr-row">
+          <div class="addr-field">
+            <label for="f-name">Full Name</label>
+            <input id="f-name" placeholder="Full Name" required>
+          </div>
+          <div class="addr-field">
+            <label for="f-phone">Contact Number</label>
+            <input id="f-phone" placeholder="10-digit Mobile" inputmode="numeric" maxlength="10" required oninput="this.value=this.value.replace(/\D/g,'')">
+          </div>
+        </div>
+      </div>
+
+      <p class="addr-error" id="addr-error"></p>
+    </section>
+
+    <!-- STEP 2: REVIEW -->
+    <section class="co-panel" id="panel-2" style="display:none">
+      <div class="co-card" id="review-items-card"></div>
+
+      <div class="co-card" id="review-delivery-card">
+        <div style="display:flex;align-items:center;gap:8px">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0369a1" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <span id="review-delivery-date" style="font-weight:700;font-size:.875rem;color:#0f172a"></span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-top:10px">
+          <div>
+            <p id="review-addr-name" style="font-weight:700;font-size:.875rem;color:#0f172a"></p>
+            <p id="review-addr-text" style="font-size:.8125rem;color:#64748b;margin-top:4px;max-width:22rem"></p>
+          </div>
+          <button type="button" onclick="goToStep(1)" style="color:#9f2089;font-weight:700;font-size:.8125rem;background:none;border:none;cursor:pointer;flex-shrink:0">Change</button>
+        </div>
+      </div>
+
+      <div class="co-card" id="rv-price-card">
+        <h2 style="font-size:.9375rem;font-weight:700;color:#0f172a;margin-bottom:12px">Price Details</h2>
+        <div class="price-row" style="display:flex;justify-content:space-between;font-size:.875rem;color:#334155"><span>Total Product Price</span><span>₹<span id="rv-price">0</span></span></div>
+        <div class="price-row" style="display:flex;justify-content:space-between;font-size:.875rem;color:#334155;margin-top:.5rem"><span>Delivery Fee</span><span style="color:#038c63;font-weight:700">FREE</span></div>
+        <div class="price-row" style="display:flex;justify-content:space-between;font-size:1rem;font-weight:800;color:#0f172a;margin-top:.75rem;padding-top:.75rem;border-top:1px solid #e2e8f0"><span>Order Total</span><span>₹<span id="rv-total">0</span></span></div>
+      </div>
+
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:12px 14px;margin-bottom:1rem;display:flex;align-items:center;gap:10px">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#16a34a" stroke-width="2" style="flex-shrink:0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div style="font-size:.8125rem;color:#166534">
+          <p style="font-weight:700">100% Safe &amp; Secure Payments via PayU</p>
+          <p style="color:#15803d;font-size:.75rem;margin-top:2px">Pay directly via UPI (Google Pay, PhonePe, Paytm), Cards &amp; NetBanking</p>
+        </div>
+      </div>
+
+      <p class="addr-error" id="review-pay-error" style="display:none"></p>
+    </section>
+
+    <!-- STEP 3: PAYMENT -->
+    <section class="co-panel" id="panel-3" style="display:none">
+      <div class="pay-online-card">
+        <div class="pay-online-head">
+          <span style="text-decoration:line-through;color:#94a3b8;font-size:.875rem" id="pay-mrp"></span>
+          <span style="font-size:1.25rem;font-weight:800;color:#0f172a" id="pay-price"></span>
+          <span class="saved-badge">Saved ₹<span id="pay-saved"></span></span>
+        </div>
+        <p style="font-weight:700;font-size:.875rem;color:#0f172a;margin-bottom:12px;display:flex;align-items:center;gap:8px">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#9f2089" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Pay Online
+        </p>
+
+        <p style="font-size:.75rem;font-weight:700;color:#9f2089;margin-bottom:8px">UPI · Pay by any UPI App</p>
+        <div id="pay-methods"></div>
+
+        <div id="pay-methods-disabled"></div>
+      </div>
+
+      <div class="co-card" style="padding-top:4px;padding-bottom:4px">
+        <div class="inert-row" style="border-top:none">
+          <span>Reselling this order?</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </div>
+
+      <div class="co-card">
+        <h2 style="font-size:.9375rem;font-weight:700;color:#0f172a;margin-bottom:12px">Price Details (<span id="pay-item-count">0</span> Item)</h2>
+        <div id="pay-items-list" style="font-size:.8125rem;color:#64748b;margin-bottom:8px"></div>
+        <div class="price-row" style="display:flex;justify-content:space-between;font-size:.875rem;font-weight:700;color:#0f172a"><span>Item Total</span><span>₹<span id="pay-item-total">0</span></span></div>
+        <div class="price-row" style="display:flex;justify-content:space-between;font-size:.875rem;color:#334155;margin-top:.5rem"><span>Delivery</span><span>₹0</span></div>
+        <div class="price-row" style="display:flex;justify-content:space-between;font-size:1rem;font-weight:800;color:#0f172a;margin-top:.75rem;padding-top:.75rem;border-top:1px solid #e2e8f0"><span>Total</span><span>₹<span id="pay-total">0</span></span></div>
+      </div>
+
+      <p class="addr-error" id="pay-error"></p>
+    </section>
+  </main>
+
+  <div class="sticky-footer-bar" style="background:#ffffff;border-top:1px solid #e2e8f0;box-shadow:0 -4px 16px rgba(0,0,0,0.06);position:fixed;bottom:0;left:0;right:0;z-index:100">
+    <p style="font-size:11px;text-align:center;color:#038c63;font-weight:600;padding:6px 1rem;border-bottom:1px solid #f1f5f9;background:#f0fdf4;display:flex;align-items:center;justify-content:center;gap:6px">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#038c63" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Secured by PayU Payment Gateway · 100% Safe &amp; Encrypted Payments
+    </p>
+    <div id="footer-summary" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;max-width:32rem;margin:0 auto">
+      <div>
+        <p style="font-size:1.35rem;font-weight:800;color:#0f172a;line-height:1">₹<span id="footer-total">0</span></p>
+        <button type="button" onclick="document.querySelector('#panel-2, #panel-3').scrollIntoView({behavior:'smooth'})" style="font-size:11px;font-weight:800;color:#9f2089;margin-top:4px;cursor:pointer;background:none;border:none;padding:0;letter-spacing:0.05em" id="view-price-link">VIEW PRICE DETAILS</button>
+      </div>
+      <button id="footer-btn" onclick="handleFooterButton()" class="btn btn-primary" style="background:#9f2089;color:#ffffff;font-weight:700;font-size:0.9375rem;padding:12px 36px;border-radius:10px;border:none;cursor:pointer;height:44px;display:flex;align-items:center;gap:6px">Save Address and Continue</button>
+    </div>
+  </div>
+
+  <div class="verify-overlay" id="verify-overlay">
+    <div class="meesho-loader"><div class="meesho-loader-dot"></div><div class="meesho-loader-dot"></div><div class="meesho-loader-dot"></div></div>
+    <p style="font-weight:700">Verifying Payment…</p>
+    <p style="font-size:.8125rem;opacity:.8">This won't take long (<span id="verify-seconds">3</span>s)</p>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    let currentStep = 1;
+    let selectedPayment = 'payu';
+
+    function setStepperVisual(step) {
+      for (let i = 1; i <= 4; i++) {
+        const el = document.querySelector(`.step[data-step="${i}"]`);
+        el.classList.remove('current', 'done');
+        if (i < step) el.classList.add('done');
+        else if (i === step) el.classList.add('current');
+      }
+      for (let i = 1; i <= 3; i++) {
+        document.querySelector(`.step-line[data-line="${i}"]`).classList.toggle('done', i < step);
+      }
+    }
+
+    function goToStep(step) {
+      currentStep = step;
+      document.getElementById('panel-1').style.display = step === 1 ? '' : 'none';
+      document.getElementById('panel-2').style.display = step === 2 ? '' : 'none';
+      document.getElementById('panel-3').style.display = step === 3 ? '' : 'none';
+      setStepperVisual(step);
+
+      const titles = { 1: 'ADD DELIVERY ADDRESS', 2: 'REVIEW', 3: 'PAYMENT METHOD' };
+      document.getElementById('page-title').textContent = titles[step];
+
+      const backLink = document.getElementById('back-link');
+      backLink.onclick = (e) => {
+        e.preventDefault();
+        if (step === 1) window.location.href = 'cart.html';
+        else goToStep(step - 1);
+      };
+
+      const footerBtn = document.getElementById('footer-btn');
+      const viewPriceLink = document.getElementById('view-price-link');
+      if (step === 1) {
+        footerBtn.innerHTML = 'Save Address and Continue';
+        viewPriceLink.style.display = 'none';
+      } else if (step === 2) {
+        footerBtn.innerHTML = 'Continue';
+        viewPriceLink.style.display = '';
+        viewPriceLink.onclick = () => document.getElementById('rv-price-card')?.scrollIntoView({ behavior: 'smooth' });
+        renderReview();
+      } else {
+        const { totalPrice } = window.Cart.getTotals();
+        footerBtn.innerHTML = `Proceed to Pay ₹${totalPrice} <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"/></svg>`;
+        viewPriceLink.style.display = '';
+        viewPriceLink.onclick = () => document.getElementById('panel-3')?.scrollIntoView({ behavior: 'smooth' });
+        renderPayment();
+      }
+      window.scrollTo(0, 0);
+    }
+
+    function handleFooterButton() {
+      if (currentStep === 1) submitAddress();
+      else placeOrder();
+    }
+
+    async function useMyLocation() {
+      const btn = document.getElementById('use-location-btn');
+      if (!navigator.geolocation) { alert('Location is not supported in this browser.'); return; }
+
+      btn.disabled = true;
+      btn.textContent = 'Detecting…';
+
+      navigator.geolocation.getCurrentPosition(async (pos) => {
+        try {
+          const { latitude, longitude } = pos.coords;
+          const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=16&addressdetails=1`);
+          const data = await res.json();
+          const a = data.address || {};
+          document.getElementById('f-road').value = [a.road, a.suburb || a.neighbourhood].filter(Boolean).join(', ');
+          document.getElementById('f-city').value = a.city || a.town || a.village || a.county || '';
+          document.getElementById('f-state').value = a.state || '';
+          document.getElementById('f-pincode').value = a.postcode || '';
+        } catch (err) {
+          alert('Could not detect your address. Please enter it manually.');
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Use My Location';
+        }
+      }, () => {
+        alert('Location permission denied. Please enter your address manually.');
+        btn.disabled = false;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Use My Location';
+      });
+    }
+
+    function readForm() {
+      return {
+        name: document.getElementById('f-name').value.trim(),
+        contactNumber: document.getElementById('f-phone').value.trim(),
+        pincode: document.getElementById('f-pincode').value.trim(),
+        houseNo: document.getElementById('f-house').value.trim(),
+        roadArea: document.getElementById('f-road').value.trim(),
+        city: document.getElementById('f-city').value.trim(),
+        state: document.getElementById('f-state').value.trim(),
+        landmark: document.getElementById('f-landmark').value.trim(),
+      };
+    }
+
+    function validateForm(a) {
+      if (!a.houseNo) return 'Please enter your house/building';
+      if (!/^\d{6}$/.test(a.pincode)) return 'Enter a valid 6-digit pincode';
+      if (!a.city) return 'Please enter your city';
+      if (!a.state) return 'Please enter your state';
+      if (!a.name) return 'Please enter your name';
+      if (!/^\d{10}$/.test(a.contactNumber)) return 'Enter a valid 10-digit phone number';
+      return null;
+    }
+
+    async function submitAddress() {
+      const { totalItems } = window.Cart.getTotals();
+      const errEl = document.getElementById('addr-error');
+      errEl.style.display = 'none';
+
+      if (totalItems === 0) {
+        errEl.textContent = 'Your cart is empty.';
+        errEl.style.display = '';
+        return;
+      }
+
+      const address = readForm();
+      const problem = validateForm(address);
+      if (problem) {
+        errEl.textContent = problem;
+        errEl.style.display = '';
+        return;
+      }
+
+      const btn = document.getElementById('footer-btn');
+      btn.disabled = true;
+      try {
+        await window.DeliveryAddress.save(address);
+        goToStep(2);
+      } catch (err) {
+        errEl.textContent = err.message || 'Could not save address.';
+        errEl.style.display = '';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function renderReview() {
+      const items = window.Cart.getItems();
+      const { totalPrice } = window.Cart.getTotals();
+      const a = (window.DeliveryAddress.load && window.DeliveryAddress.load()) || readForm() || {};
+      const itemsCard = document.getElementById('review-items-card');
+      const footerBtn = document.getElementById('footer-btn');
+
+      if (items.length === 0) {
+        itemsCard.innerHTML = '<div style="padding:1.5rem;text-align:center;color:#64748b">Your cart is empty. <a href="index.html" style="color:#9f2089;font-weight:700">Shop now</a></div>';
+        if (footerBtn) footerBtn.disabled = true;
+        document.getElementById('rv-price').textContent = '0';
+        document.getElementById('rv-total').textContent = '0';
+        updateFooterTotal();
+        return;
+      }
+
+      if (footerBtn) footerBtn.disabled = false;
+      itemsCard.innerHTML = items.map((item) => `
+        <div class="review-item">
+          <img src="${item.image}" alt="${item.title}" onerror="this.style.visibility='hidden'">
+          <div style="flex:1;min-width:0">
+            <p style="font-size:.8125rem;font-weight:600;color:#334155;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.title}</p>
+            <p style="font-size:.9375rem;font-weight:800;color:#0f172a;margin-top:2px">₹${item.price} <span style="font-size:.75rem;color:#94a3b8;text-decoration:line-through;font-weight:500">₹${item.mrp}</span></p>
+            <p style="font-size:.75rem;color:#64748b;margin-top:2px">Size: ${item.size} · Qty: ${item.quantity}</p>
+            <button class="review-remove-btn" onclick="Cart.removeItem(${item.id},'${item.size}');renderReview()">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Remove
+            </button>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.75rem;color:#64748b;padding-top:.5rem;border-top:1px solid #f1f5f9;margin-top:.5rem">
+          <span>Sold by: <b style="color:#0f172a">${item.seller || 'Meesho Seller'}</b></span>
+          <span style="color:#038c63;font-weight:700">Free Delivery</span>
+        </div>`).join('');
+
+      const est = window.ProductHelpers ? window.ProductHelpers.estimateDelivery(a.pincode || '') : 'a few days';
+      document.getElementById('review-delivery-date').textContent = `Delivery by ${est || 'a few days'}`;
+      if (a.name) {
+        document.getElementById('review-addr-name').textContent = `${a.name} · ${a.contactNumber || ''}`;
+        document.getElementById('review-addr-text').textContent =
+          `${[a.houseNo, a.roadArea, a.city].filter(Boolean).join(', ')}, ${a.state || ''} - ${a.pincode || ''}`;
+      }
+
+      document.getElementById('rv-price').textContent = totalPrice;
+      document.getElementById('rv-total').textContent = totalPrice;
+      updateFooterTotal();
+    }
+
+    function renderPayment() {
+      const items = window.Cart.getItems();
+      const { totalPrice, totalMrp } = window.Cart.getTotals();
+
+      document.getElementById('pay-mrp').textContent = `₹${totalMrp}`;
+      document.getElementById('pay-price').textContent = `₹${totalPrice}`;
+      document.getElementById('pay-saved').textContent = totalMrp - totalPrice;
+
+      const list = document.getElementById('pay-methods');
+      list.innerHTML = window.PaymentConfig.PAYMENT_APPS.map((m) => `
+        <div class="pay-method${m.id === selectedPayment ? ' selected' : ''}" onclick="selectPayment('${m.id}')">
+          <div class="pay-method-icon" style="background:${m.logoBg}">${m.initial}</div>
+          <div style="flex:1">
+            <p style="font-weight:700;font-size:.875rem;color:#0f172a">${m.label}</p>
+            <p style="font-size:.75rem;color:#64748b">${m.subtitle}</p>
+          </div>
+          <div style="width:18px;height:18px;border-radius:50%;border:2px solid ${m.id === selectedPayment ? '#9f2089' : '#cbd5e1'};display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            ${m.id === selectedPayment ? '<div style="width:10px;height:10px;border-radius:50%;background:#9f2089"></div>' : ''}
+          </div>
+        </div>`).join('');
+
+      document.getElementById('pay-methods-disabled').innerHTML = window.PaymentConfig.DISABLED_OPTIONS.map((m) => `
+        <div class="pay-method pay-method-disabled">
+          <div class="pay-method-icon" style="background:#94a3b8">–</div>
+          <div style="flex:1"><p style="font-weight:700;font-size:.875rem;color:#0f172a">${m.label}</p></div>
+          <span class="co-status">Server Down</span>
+        </div>`).join('');
+
+      document.getElementById('pay-item-count').textContent = items.length;
+      document.getElementById('pay-items-list').innerHTML = items.map((item) => `
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+          <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:70%">${item.title}</span><span>₹${item.price}</span>
+        </div>`).join('');
+      document.getElementById('pay-item-total').textContent = totalPrice;
+      document.getElementById('pay-total').textContent = totalPrice;
+      updateFooterTotal();
+    }
+
+    function selectPayment(id) { selectedPayment = id; renderPayment(); }
+
+    function updateFooterTotal() {
+      const { totalPrice } = window.Cart.getTotals();
+      document.getElementById('footer-total').textContent = totalPrice;
+    }
+
+    function hidePaymentErrors() {
+      const err1 = document.getElementById('review-pay-error');
+      if (err1) { err1.style.display = 'none'; err1.textContent = ''; }
+      const err2 = document.getElementById('pay-error');
+      if (err2) { err2.style.display = 'none'; err2.textContent = ''; }
+    }
+
+    function showPaymentError(msg) {
+      const target = currentStep === 2 ? document.getElementById('review-pay-error') : document.getElementById('pay-error');
+      const errEl = target || document.getElementById('review-pay-error') || document.getElementById('pay-error');
+      if (errEl) {
+        errEl.textContent = msg;
+        errEl.style.display = 'block';
+        errEl.style.padding = '12px 14px';
+        errEl.style.background = '#fef2f2';
+        errEl.style.border = '1px solid #fecaca';
+        errEl.style.borderRadius = '8px';
+        errEl.style.color = '#b91c1c';
+        errEl.style.fontWeight = '600';
+        errEl.style.margin = '12px 0';
+        errEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    async function placeOrder() {
+      const { totalItems } = window.Cart.getTotals();
+      if (totalItems === 0) {
+        showPaymentError('Your cart is empty. Please add items to your cart before proceeding.');
+        return;
+      }
+
+      hidePaymentErrors();
+
+      const btn = document.getElementById('footer-btn');
+      btn.disabled = true;
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border:2px solid #ffffff;border-top-color:transparent;border-radius:50%;display:inline-block;animation:spin .8s linear infinite"></span> Opening PayU Gateway…</span>';
+
+      // Visually indicate payment step is active
+      setStepperVisual(3);
+
+      const overlay = document.getElementById('verify-overlay');
+      if (overlay) {
+        overlay.querySelector('p').textContent = 'Opening PayU Payment Gateway…';
+        const sub = overlay.querySelectorAll('p')[1];
+        if (sub) sub.textContent = 'Please wait while we redirect you to secure PayU checkout…';
+        overlay.classList.add('open');
+      }
+
+      try {
+        await window.PayUCheckout.initiate();
+      } catch (err) {
+        if (overlay) overlay.classList.remove('open');
+        setStepperVisual(currentStep);
+
+        showPaymentError(err.message || 'Could not initiate PayU checkout. Please try again.');
+
+        btn.disabled = false;
+        btn.innerHTML = currentStep === 2 ? 'Continue' : originalText;
+      }
+    }
+
+    async function prefillAddress() {
+      const a = (window.DeliveryAddress.load && window.DeliveryAddress.load()) || await window.DeliveryAddress.ready;
+      if (!a) return;
+      if (document.getElementById('f-name')) document.getElementById('f-name').value = a.name || '';
+      if (document.getElementById('f-phone')) document.getElementById('f-phone').value = a.contactNumber || '';
+      if (document.getElementById('f-pincode')) document.getElementById('f-pincode').value = a.pincode || '';
+      if (document.getElementById('f-house')) document.getElementById('f-house').value = a.houseNo || '';
+      if (document.getElementById('f-road')) document.getElementById('f-road').value = a.roadArea || '';
+      if (document.getElementById('f-city')) document.getElementById('f-city').value = a.city || '';
+      if (document.getElementById('f-state')) document.getElementById('f-state').value = a.state || '';
+      if (document.getElementById('f-landmark')) document.getElementById('f-landmark').value = a.landmark || '';
+    }
+
+    async function initPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const isPaymentFailed = urlParams.get('payment') === 'failed';
+      const orderId = urlParams.get('orderId');
+      const errorMsg = urlParams.get('error') || 'Payment was cancelled or unsuccessful';
+
+      // 1. If returning from failed or cancelled PayU, restore session using orderId
+      if (isPaymentFailed && orderId) {
+        try {
+          await fetch('/api/payu/restore-session', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ orderId }),
+          });
+        } catch (e) {
+          console.error('Failed to restore session:', e);
+        }
+      }
+
+      // 2. Ensure both Cart and DeliveryAddress are fully loaded from server
+      await Promise.all([
+        window.Cart.reload ? window.Cart.reload() : window.Cart.ready,
+        window.DeliveryAddress.reload ? window.DeliveryAddress.reload() : window.DeliveryAddress.ready,
+      ]);
+
+      // 3. Prefill address form and update summary total
+      prefillAddress();
+      updateFooterTotal();
+
+      // 4. Navigate to correct step with all product data loaded
+      if (isPaymentFailed) {
+        goToStep(2);
+        showPaymentError(`Payment Notice: ${errorMsg}. Please click 'Continue' to try again.`);
+      } else if (urlParams.get('step') === '2') {
+        goToStep(2);
+      } else {
+        goToStep(1);
+      }
+
+      // 5. Keep Review and totals in sync if cart changes
+      window.Cart.onChange(() => {
+        if (currentStep === 2) renderReview();
+        updateFooterTotal();
+      });
+    }
+
+    initPage();
+
+    window.SearchBox.attach(
+      document.getElementById('search-input'),
+      document.getElementById('search-suggestions'),
+    );
+  </script>
+</body></html>

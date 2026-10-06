@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist — meesho</title>
+  <meta name="description" content="Your wishlist on meesho.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site-config.js"></script>
+  <style>
+    .wish-item { display: flex; gap: 1rem; padding: 1rem; background: #fff; border-bottom: 1px solid #f1f5f9; }
+    .wish-item-img { width: 5.5rem; height: 5.5rem; border-radius: 8px; overflow: hidden; flex-shrink: 0; display: block; background: #f8fafc; }
+    .wish-item-img img { width: 100%; height: 100%; object-fit: cover; }
+    .wish-remove-btn { color: #9f2089; background: none; border: none; cursor: pointer; padding: 4px; flex-shrink: 0; }
+  </style>
+</head>
+<body class="pb-20" style="background:var(--background)">
+
+  <header class="site-header">
+    <div class="site-header-inner" style="max-width:32rem">
+      <a href="index.html" aria-label="Go back" style="color:var(--foreground)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </a>
+      <h1 style="font-size:.9375rem;font-weight:700;letter-spacing:.08em">WISHLIST</h1>
+      <div style="width:1.5rem"></div>
+    </div>
+    <div class="max-w-7xl mx-auto w-full" style="padding:0 0 8px 0;position:relative;">
+      <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+      </div>
+      <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+    </div>
+  </header>
+
+  <main style="max-width:32rem;margin:0 auto">
+    <div id="empty-wishlist" class="empty-state" style="display:none">
+      <div class="empty-state-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <h2 style="font-size:1.125rem;font-weight:600">Your wishlist is empty</h2>
+      <p style="font-size:.875rem;color:var(--muted-foreground);margin-top:.5rem;max-width:18rem">Tap the heart on any product to save it here for later.</p>
+      <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem">Start Shopping</a>
+    </div>
+
+    <div id="wish-list"></div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    async function render() {
+      const res = await fetch('/api/wishlist');
+      const { items } = await res.json();
+
+      document.getElementById('empty-wishlist').style.display = items.length === 0 ? '' : 'none';
+
+      document.getElementById('wish-list').innerHTML = items.map((p) => {
+        const discount = p.mrp > p.price ? Math.round(((p.mrp - p.price) / p.mrp) * 100) : 0;
+        return `<article class="wish-item">
+          <a href="product.html?id=${p.id}" class="wish-item-img">
+            <img src="${p.image}" alt="${p.title}" onerror="this.style.display='none'">
+          </a>
+          <div style="flex:1;min-width:0">
+            <a href="product.html?id=${p.id}" style="text-decoration:none;color:#0f172a">
+              <p style="font-size:.9375rem;font-weight:600;line-height:1.35;color:#1e293b;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${p.title}</p>
+            </a>
+            <div style="display:flex;align-items:baseline;gap:.375rem;margin-top:6px;flex-wrap:wrap">
+              <span style="font-size:1rem;font-weight:700;color:#1e293b">₹${p.price}</span>
+              ${p.mrp > p.price ? `<span style="font-size:.75rem;color:#94a3b8;text-decoration:line-through">₹${p.mrp}</span><span style="font-size:.6875rem;color:#038c63;font-weight:700">${discount}% off</span>` : ''}
+            </div>
+            <button onclick="addToCartFromWishlist(${p.id})" class="btn btn-outline btn-sm" style="margin-top:8px;padding:.375rem .875rem;font-size:.75rem;border-radius:8px;font-weight:700">Add to Cart</button>
+          </div>
+          <button class="wish-remove-btn" aria-label="Remove from wishlist" onclick="removeFromWishlist(${p.id})">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#9f2089" stroke="#9f2089" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </button>
+        </article>`;
+      }).join('');
+    }
+
+    async function removeFromWishlist(id) {
+      await window.Wishlist.remove(id);
+      render();
+    }
+
+    async function addToCartFromWishlist(id) {
+      const res = await fetch(`/api/products/${id}`);
+      const p = await res.json();
+      const sizes = window.ProductHelpers.getSizes(p);
+      window.Cart.addItem({ id: p.id, title: p.title, image: p.image, price: p.price, mrp: p.mrp, size: sizes[0] || 'Free Size', easyReturns: true, seller: 'Meesho Seller' });
+      CartDrawer.open();
+    }
+
+    render();
+
+    window.SearchBox.attach(
+      document.getElementById('search-input'),
+      document.getElementById('search-suggestions'),
+    );
+  </script>
+</body></html>

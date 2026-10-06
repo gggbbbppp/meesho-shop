@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — meesho</title>
+  <meta name="description" content="Browse all product categories on meesho.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site-config.js"></script>
+  <style>
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 12px;
+    }
+    @media (min-width: 640px) {
+      .cat-grid { grid-template-columns: repeat(5, 1fr); }
+    }
+    .cat-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      gap: 6px;
+    }
+    .cat-tile-img-wrap {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #f8fafc;
+      border: 1px solid #f1f5f9;
+    }
+    .cat-tile-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .cat-tile-name { font-size: .75rem; font-weight: 700; color: #334155; text-align: center; line-height: 1.3; }
+    .cat-tile-count { font-size: .6875rem; color: #94a3b8; }
+  </style>
+</head>
+<body class="pb-20" style="background:var(--background)">
+
+  <header class="site-header">
+    <div class="site-header-inner" style="max-width:56rem">
+      <a href="index.html" aria-label="Go back" style="color:var(--foreground)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </a>
+      <h1 style="font-size:.9375rem;font-weight:700;letter-spacing:.08em">CATEGORIES</h1>
+      <div style="width:1.5rem"></div>
+    </div>
+    <div class="max-w-7xl mx-auto w-full" style="padding:0 0 8px 0;position:relative;">
+      <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+      </div>
+      <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+    </div>
+  </header>
+
+  <main style="max-width:56rem;margin:0 auto">
+    <div class="cat-grid" id="cat-grid">
+      <div style="grid-column:1/-1;display:flex;justify-content:center;padding:2rem">
+        <div class="meesho-loader"><div class="meesho-loader-dot"></div><div class="meesho-loader-dot"></div><div class="meesho-loader-dot"></div></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    let allCategoryTiles = [];
+
+    function renderTiles(list) {
+      const grid = document.getElementById('cat-grid');
+      if (list.length === 0) {
+        grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:2rem;color:#94a3b8;font-size:.875rem">No matching categories</div>`;
+        return;
+      }
+      grid.innerHTML = list.map((c) => `
+        <a href="index.html?category=${encodeURIComponent(c.category)}" class="cat-tile">
+          <div class="cat-tile-img-wrap">
+            <img src="${c.image}" alt="${c.category}" loading="lazy" onerror="this.parentElement.style.background='#f0f0f0'">
+          </div>
+          <span class="cat-tile-name">${c.category}</span>
+          <span class="cat-tile-count">${c.count} items</span>
+        </a>`).join('');
+    }
+
+    async function init() {
+      const res = await fetch('/api/products/meta/categories');
+      allCategoryTiles = await res.json();
+      renderTiles(allCategoryTiles);
+    }
+    init();
+
+    window.SearchBox.attach(
+      document.getElementById('search-input'),
+      document.getElementById('search-suggestions'),
+      {
+        onQueryChange: (q) => {
+          renderTiles(q ? allCategoryTiles.filter((c) => c.category.toLowerCase().includes(q.toLowerCase())) : allCategoryTiles);
+        },
+      },
+    );
+  </script>
+
+  <nav class="bottom-nav fixed bottom-0 left-0 right-0 w-full bg-white border-t border-border z-40">
+    <div class="grid grid-cols-5 max-w-7xl mx-auto bg-white">
+      <a href="index.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+        <span>Home</span>
+      </a>
+      <a href="categories.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-primary cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span class="font-semibold">Categories</span>
+      </a>
+      <a href="orders.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+        <span>My Orders</span>
+      </a>
+      <a href="index.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        <span>Help</span>
+      </a>
+      <a href="index.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <span>Account</span>
+      </a>
+    </div>
+  </nav>
+
+</body></html>

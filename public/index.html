@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>meesho - Lowest Prices, Best Quality Shopping</title>
+  <meta name="description" content="Shop elegant kurtis, dress materials, suits, accessories, and jewellery at the lowest prices on meesho. Free delivery, COD available.">
+  <style>
+    .loader-wrap { display: flex; justify-content: center; padding: 2rem; }
+    #load-trigger { height: 1px; }
+  </style>
+  <link rel="stylesheet" href="assets/styles.css?v=2">
+  <script src="assets/site-config.js"></script>
+</head>
+<body class="min-h-screen bg-background pb-20">
+
+  <!-- Header -->
+  <header class="site-header sticky top-0 z-50 w-full bg-white border-b border-border" style="background:#ffffff !important">
+    <div class="flex items-center justify-between px-4 py-3 max-w-7xl mx-auto w-full">
+      <div class="flex items-center gap-3">
+        <button aria-label="Menu" class="text-foreground border-none bg-none p-0 cursor-pointer">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+        <a href="index.html" class="site-brand-logo text-2xl font-bold text-primary lowercase tracking-tight">meesho</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="wishlist.html" aria-label="Wishlist" class="relative border-none bg-none p-0 cursor-pointer text-primary" style="display:inline-flex">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--primary)" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+          <span class="cart-badge wishlist-badge" style="display:none">0</span>
+        </a>
+        <a href="cart.html" class="relative" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span class="cart-badge absolute -top-1.5 -right-1.5 h-4 w-4 rounded-full bg-destructive text-[10px] font-bold text-destructive-foreground flex items-center justify-center" style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto w-full" style="padding:0 0 8px 0;position:relative;">
+      <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+      </div>
+      <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+    </div>
+  </header>
+
+  <main class="w-full" style="margin:0;padding:0;">
+    <div class="top-marquee-bar" style="background-color:#970e71 !important;color:#ffffff !important;">
+      <div class="marquee__inner">
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span>
+      </div>
+      <div class="marquee__inner" aria-hidden="true">
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span><span>&nbsp;</span>
+        <span>LAST DAY SALE AT 3 PIC COMBO PRICE 299/- ONLY</span>
+      </div>
+    </div>
+
+    <section class="home-hero" style="display:flex;flex-direction:column;margin:0;padding:0;gap:0;">
+      <div class="_3lqN6b">
+        <div class="WhKF32">
+          <div class="IF3BzC">
+            <div class="_1fhgRH">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12 p-0">
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="assets/kurti1-CcoeKMaM.webp" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="assets/kurti2-BijmMluk.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="assets/kurti3-VJxgG-0W.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="assets/kurti4-BPcNrcZO.jpg" alt="Fourth slide">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="trust-benefits" aria-label="Shopping benefits">
+        <img src="assets/1-Crt5p7WI.webp" alt="Easy returns and refunds, Cash on delivery, Lowest price" class="trust-benefits-img" loading="lazy">
+        <p class="trust-benefits-tnc">*T&amp;C apply</p>
+      </section>
+
+      <section class="meesho-daily-deals" aria-label="Meesho Daily Deals">
+        <div class="meesho-daily-deals-inner">
+          <p class="meesho-daily-deals-title">Meesho Daily Deals</p>
+          <div class="meesho-daily-deals-timer" data-testid="offer-wrapper">
+            <span class="meesho-daily-deals-timer-text" id="deal-countdown">10h : 19m : 03s</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="px-3 pt-3 pb-6 bg-background">
+      <h1 class="text-lg font-bold text-foreground mb-3 flex items-baseline">
+        <span id="feed-title">Products For You</span>
+        <span class="text-sm font-normal text-muted-foreground ml-2" id="product-count">(0)</span>
+      </h1>
+      <a href="index.html" id="category-chip" style="display:none;align-items:center;gap:6px;background:#ffe7fb;color:#9f2089;font-size:.75rem;font-weight:700;padding:6px 12px;border-radius:20px;margin:-8px 0 12px;width:fit-content;text-decoration:none">
+        <span id="category-chip-label"></span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </a>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="loader-wrap" id="loader" style="display: none;">
+        <div class="meesho-loader">
+          <div class="meesho-loader-dot"></div>
+          <div class="meesho-loader-dot"></div>
+          <div class="meesho-loader-dot"></div>
+        </div>
+      </div>
+      <div id="load-trigger"></div>
+    </section>
+  </main>
+
+  <footer class="bg-muted border-t border-border mt-6">
+    <div class="max-w-7xl mx-auto px-4 py-8 text-center">
+      <h2 class="text-base font-bold text-foreground">Shop Non-Stop on Meesho</h2>
+      <p class="text-xs text-muted-foreground mt-2">Trusted by crores of Indians</p>
+      <p class="text-xs text-muted-foreground">Cash on Delivery | Free Delivery</p>
+      <div class="my-6 border-t border-border"></div>
+      <div class="grid grid-cols-2 gap-6 text-left max-w-xl mx-auto">
+        <div>
+          <h3 class="text-sm font-bold text-foreground mb-3">Careers</h3>
+          <ul class="space-y-2 text-xs text-muted-foreground">
+            <li>Become a supplier</li>
+            <li>Hall of Fame</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-foreground mb-3">Legal &amp; Policies</h3>
+          <ul class="space-y-2 text-xs text-muted-foreground">
+            <li>Meesho Tech Blog</li>
+            <li>Notices and Returns</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-[11px] text-muted-foreground text-center mt-8">This is a personal learning project, not affiliated with the real Meesho. All checkout on this site is simulated — no payment is ever processed.</p>
+      <div class="text-center mt-3">
+        <a href="/admin" class="text-xs font-semibold text-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          PayU Gateway Admin Console
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav fixed bottom-0 left-0 right-0 w-full bg-white border-t border-border z-30">
+    <div class="grid grid-cols-5 max-w-7xl mx-auto bg-white">
+      <button type="button" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-primary cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+        <span class="font-semibold">Home</span>
+      </button>
+      <a href="categories.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit" style="text-decoration:none">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span>Categories</span>
+      </a>
+      <a href="orders.html" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit" style="text-decoration:none">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+        <span>My Orders</span>
+      </a>
+      <button type="button" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        <span>Help</span>
+      </button>
+      <button type="button" class="flex flex-col items-center gap-1 py-2.5 text-[11px] text-muted-foreground cursor-pointer border-none bg-none font-inherit">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <span>Account</span>
+      </button>
+    </div>
+  </nav>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    (function() {
+      const target = new Date();
+      target.setHours(23, 59, 59, 999);
+      function pad(n) { return String(n).padStart(2, '0'); }
+      function tick() {
+        const diff = Math.max(0, target - Date.now());
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        const el = document.getElementById('deal-countdown');
+        if (el) el.textContent = `${pad(h)}h : ${pad(m)}m : ${pad(s)}s`;
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+
+    let currentPage = 1; let loading = false; let allLoaded = false;
+    const PAGE_SIZE = 10;
+    let allProducts = [];
+    let baseProducts = [];
+    let filteredProducts = [];
+    const urlParams = new URLSearchParams(window.location.search);
+    const activeCategory = urlParams.get('category');
+    const initialSearch = urlParams.get('search') || '';
+
+    function openProductPage(id) {
+      try { sessionStorage.setItem('selected_product_id', String(id)); } catch(e){}
+      window.location.href = 'product.html?id=' + id;
+    }
+
+    function renderCard(p) {
+      const discount = Math.round(((p.mrp - p.price) / p.mrp) * 100);
+      const discountLabel = p.discountLabel || `${discount}% off`;
+      const specialOfferText = p.specialOffer || `Save ₹${p.mrp - p.price} with ${p.offers} special offer`;
+      const trustedBadgeSVG = p.trusted ? `<span class="meesho-trusted-badge" style="font-size:10px;font-weight:700;color:#9f2089;background:#ffe7fb;padding:2px 8px;border-radius:6px;flex-shrink:0">m Trusted</span>` : '';
+      return `<a href="product.html?id=${p.id}" onclick="openProductPage('${p.id}')" class="product-card" style="text-decoration:none;color:inherit;display:flex" role="link" tabindex="0" aria-label="${p.title}">
+        <div class="product-card-img-wrap">
+          <img src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.parentElement.style.background='#f0f0f0'"/>
+          <button type="button" aria-label="Add to wishlist" onclick="toggleWish(event,${p.id})" class="product-card-wish-btn wish-toggle-btn" data-wish-id="${p.id}">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </button>
+          ${p.dealTimer ? `<div style="position:absolute;bottom:4px;left:4px;right:4px"><span class="deal-timer-badge">🔥 Deal Ends Soon</span></div>` : ''}
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-title">${p.title}</p>
+          <div class="product-card-price-row">
+            <span class="product-card-price">₹${p.price}</span>
+            ${p.mrp > p.price ? `<span class="product-card-mrp">₹${p.mrp}</span><span class="product-card-discount">${discountLabel}</span>` : ''}
+          </div>
+          <p class="product-card-offer">${specialOfferText}</p>
+          <p class="product-card-delivery">Free Delivery</p>
+          <div class="product-card-footer">
+            <div class="product-card-rating-row">
+              <span class="product-card-rating">${p.rating.toFixed(1)} <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+              <span class="product-card-reviews">(${p.reviews.toLocaleString('en-IN')})</span>
+            </div>
+            ${trustedBadgeSVG}
+          </div>
+        </div>
+      </a>`;
+    }
+
+    function loadMore() {
+      if (loading || allLoaded) return;
+      loading = true;
+      document.getElementById('loader').style.display = 'flex';
+      setTimeout(() => {
+        const start = (currentPage-1)*PAGE_SIZE;
+        const page  = filteredProducts.slice(start, start+PAGE_SIZE);
+        if (page.length === 0) { allLoaded = true; document.getElementById('loader').style.display='none'; return; }
+        const grid = document.getElementById('product-grid');
+        page.forEach(p => {
+          const el = document.createElement('div');
+          el.innerHTML = renderCard(p);
+          grid.appendChild(el.firstElementChild);
+        });
+        currentPage++;
+        if (start + PAGE_SIZE >= filteredProducts.length) allLoaded = true;
+        document.getElementById('loader').style.display = 'none';
+        loading = false;
+        window.Wishlist.ready.then(() => window.Wishlist.bindAll());
+      }, 300);
+    }
+
+    async function initFeed() {
+      allProducts = await window.ProductsReady;
+
+      if (activeCategory) {
+        baseProducts = allProducts.filter((p) => p.category === activeCategory);
+        document.getElementById('feed-title').textContent = activeCategory;
+        const chip = document.getElementById('category-chip');
+        document.getElementById('category-chip-label').textContent = activeCategory;
+        chip.style.display = 'inline-flex';
+      } else {
+        baseProducts = allProducts;
+      }
+
+      if (initialSearch) {
+        document.getElementById('search-input').value = initialSearch;
+        filteredProducts = baseProducts.filter((p) => p.title.toLowerCase().includes(initialSearch.toLowerCase()));
+      } else {
+        filteredProducts = baseProducts;
+      }
+
+      const countEl = document.getElementById('product-count');
+      if (countEl) countEl.textContent = `(${filteredProducts.length})`;
+      loadMore();
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !allLoaded) loadMore();
+    }, { rootMargin: '200px' });
+    observer.observe(document.getElementById('load-trigger'));
+
+    function applySearch(q) {
+      filteredProducts = q ? baseProducts.filter(p => p.title.toLowerCase().includes(q.toLowerCase())) : baseProducts;
+      document.getElementById('product-count').textContent = `(${filteredProducts.length})`;
+      currentPage = 1; allLoaded = false; loading = false;
+      document.getElementById('product-grid').innerHTML = '';
+      loadMore();
+    }
+
+    const homeSearchBox = window.SearchBox.attach(
+      document.getElementById('search-input'),
+      document.getElementById('search-suggestions'),
+      {
+        onQueryChange: applySearch,
+        onSubmit: () => homeSearchBox.close(),
+      },
+    );
+
+    initFeed();
+
+    (async function initCarouselEngine() {
+      const carousel = document.getElementById('carouselExampleIndicators');
+      if (!carousel) return;
+      const inner = carousel.querySelector('.carousel-inner');
+      if (!inner) return;
+
+      // Fetch dynamic banners from MySQL if available
+      try {
+        const res = await fetch('/api/banners');
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.banners && data.banners.length > 0) {
+            inner.innerHTML = data.banners.map((b, idx) => `
+              <div class="carousel-item ${idx === 0 ? 'active' : ''}">
+                <img class="d-block w-100" src="${b.image_url}" alt="${b.alt_text || 'Banner slide'}">
+              </div>
+            `).join('');
+          }
+        }
+      } catch (e) {
+        console.warn('Using static banner fallback:', e);
+      }
+
+      const items = carousel.querySelectorAll('.carousel-item');
+      if (items.length === 0) return;
+
+      let currentIndex = 0;
+      items.forEach((item, idx) => { if (item.classList.contains('active')) currentIndex = idx; });
+      let slideInterval;
+
+      function updateHeight() {
+        const activeItem = items[currentIndex];
+        const activeImg = activeItem ? activeItem.querySelector('img') : null;
+        if (activeImg) {
+          const h = activeImg.getBoundingClientRect().height || activeImg.offsetHeight;
+          if (h > 0) carousel.style.height = h + 'px';
+        }
+      }
+      function showSlide(index) {
+        if (index < 0) index = items.length - 1;
+        if (index >= items.length) index = 0;
+        currentIndex = index;
+        inner.style.transform = `translateX(-${currentIndex * 100}%)`;
+        items.forEach((item, idx) => { item.classList.toggle('active', idx === currentIndex); });
+        updateHeight();
+      }
+      function nextSlide() { showSlide(currentIndex + 1); }
+      function startAutoPlay() { stopAutoPlay(); slideInterval = setInterval(nextSlide, 4000); }
+      function stopAutoPlay() { if (slideInterval) clearInterval(slideInterval); }
+
+      carousel.addEventListener('mouseenter', stopAutoPlay);
+      carousel.addEventListener('mouseleave', startAutoPlay);
+
+      let touchStartX = 0, touchEndX = 0;
+      carousel.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; stopAutoPlay(); }, { passive: true });
+      carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > 35) { if (diff < 0) nextSlide(); else showSlide(currentIndex - 1); }
+        startAutoPlay();
+      }, { passive: true });
+
+      items.forEach(item => {
+        const img = item.querySelector('img');
+        if (img) { if (img.complete) updateHeight(); else img.addEventListener('load', updateHeight); }
+      });
+      window.addEventListener('resize', updateHeight);
+      showSlide(currentIndex);
+      startAutoPlay();
+    })();
+  </script>
+</body></html>

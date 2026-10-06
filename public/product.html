@@ -1,0 +1,483 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product — meesho</title>
+    <meta name="description" content="Buy quality products at meesho. Free Delivery. COD available.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --meesho-pink: #9f2089;
+        --meesho-pink-dark: #80186d;
+        --meesho-green: #038c63;
+        --meesho-bg: #f4f6f8;
+        --meesho-border: #e2e8f0;
+        --meesho-text: #1e293b;
+        --meesho-muted: #64748b;
+      }
+      body {
+        background-color: #ffffff;
+        color: var(--meesho-text);
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .max-container { max-width: 1100px; margin: 0 auto; padding: 12px; }
+      .product-top-grid { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: flex-start; }
+      @media (min-width: 768px) { .product-top-grid { grid-template-columns: 440px 1fr; } }
+      .product-card-section { background: #ffffff; border-radius: 16px; padding: 20px 24px; border: none; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); margin-bottom: 16px; }
+      .product-img-box { display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 16px; overflow: hidden; padding: 12px; border: none; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+      @media (min-width: 768px) { .product-img-box { position: sticky; top: 80px; align-self: flex-start; height: fit-content; } }
+      .product-main-img { width: 100%; height: 100%; max-height: 520px; object-fit: contain; border-radius: 8px; }
+      .product-title-heading { font-size: 1.25rem; font-weight: 700; color: #0f172a; line-height: 1.35; letter-spacing: -0.01em; }
+      .product-price-row { display: flex; align-items: baseline; gap: 12px; margin-top: 14px; }
+      .price-main { font-size: 2rem; font-weight: 800; color: #0f172a; letter-spacing: -0.02em; }
+      .price-mrp { font-size: 1rem; color: #94a3b8; text-decoration: line-through; font-weight: 500; }
+      .price-discount-tag { font-size: 0.9375rem; font-weight: 700; color: #334155; }
+      .offer-pill-badge { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 6px 14px; background: #e6f9f3; border-radius: 20px; font-size: 0.8125rem; color: #038c63; font-weight: 700; }
+      .rating-trusted-row { display: flex; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; font-size: 0.8125rem; }
+      .rating-badge-green { background: #038c63; color: #ffffff; font-size: 0.8125rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 3px; }
+      .rating-count-text { color: #64748b; font-size: 0.8125rem; font-weight: 500; }
+      .meesho-trusted-badge { display: inline-flex; align-items: center; gap: 4px; background: #ffe7fb; color: #9f2089; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+      .section-subheading { font-size: 0.9375rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; }
+      .size-pill-container { display: flex; gap: 10px; flex-wrap: wrap; }
+      .size-pill-btn { min-width: 48px; height: 48px; border-radius: 12px; border: 1px solid #e2e8f0; background: #ffffff; font-size: 0.9375rem; font-weight: 700; color: #0f172a; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+      .size-pill-btn.selected { border-color: #0f172a; background: #0f172a; color: #ffffff; }
+      .seller-card-box { margin-top: 12px; padding: 16px 20px; background: #f8fafc; border-radius: 16px; border: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; }
+      .seller-avatar { width: 50px; height: 50px; border-radius: 50%; background: #eef2ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+      .seller-name { font-size: 1rem; font-weight: 700; color: #0f172a; }
+      .seller-meta { font-size: 0.8125rem; color: #64748b; font-weight: 500; }
+      .seller-view-btn { background: #9f2089; color: #ffffff; border: none; padding: 10px 24px; border-radius: 24px; font-size: 0.875rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+      .seller-view-btn:hover { background: #80186d; }
+      .spec-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 8px; overflow: hidden; border: 1px solid #f1f5f9; margin-top: 10px; }
+      .spec-table tr:nth-child(even) { background-color: #f8fafc; }
+      .spec-table td { padding: 10px 14px; font-size: 0.8125rem; border-bottom: 1px solid #edf2f7; }
+      .spec-table td.spec-lbl { color: #64748b; width: 40%; }
+      .spec-table td.spec-val { color: #0f172a; font-weight: 600; }
+      .similar-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .similar-product-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: inherit; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02); transition: transform 0.2s, box-shadow 0.2s; }
+      .similar-product-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
+      .similar-card-img-wrap { position: relative; width: 100%; padding-top: 112%; background: #f8fafc; overflow: hidden; }
+      .similar-card-img-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+      .wishlist-heart-btn { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border-radius: 50%; background: #ffffff; border: none; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; transition: transform 0.15s; }
+      .wishlist-heart-btn:hover { transform: scale(1.08); }
+      .similar-card-body { padding: 12px; display: flex; flex-direction: column; flex: 1; }
+      .similar-card-title { font-size: 0.9375rem; font-weight: 600; color: #1e293b; line-height: 1.35; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.5rem; }
+      .similar-card-price-row { display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px; }
+      .similar-price { font-size: 1rem; font-weight: 800; color: #0f172a; }
+      .similar-mrp { font-size: 0.75rem; color: #94a3b8; text-decoration: line-through; font-weight: 500; }
+      .similar-discount { font-size: 0.75rem; font-weight: 700; color: #038c63; }
+      .similar-offer-text { font-size: 0.6875rem; color: #64748b; margin-bottom: 2px; font-weight: 500; }
+      .similar-delivery-text { font-size: 0.6875rem; color: #475569; margin-bottom: 8px; font-weight: 500; }
+      .similar-card-footer { display: flex; align-items: center; gap: 6px; margin-top: auto; font-size: 0.6875rem; }
+      .similar-rating-pill { background: #038c63; color: #ffffff; font-weight: 700; font-size: 0.6875rem; padding: 2px 6px; border-radius: 4px; }
+      .similar-reviews-count { color: #64748b; font-size: 0.6875rem; }
+      .similar-trusted-badge { margin-left: auto; background: #ffe7fb; color: #9f2089; font-weight: 700; font-size: 0.625rem; padding: 2px 6px; border-radius: 4px; }
+      .meesho-footer-section { background: #f1f5f9; border-radius: 16px; padding: 36px 24px; margin: 32px auto 40px auto; max-width: 1100px; width: calc(100% - 24px); }
+      .meesho-footer-inner { width: 100%; }
+      .meesho-footer-top { text-align: center; margin-bottom: 24px; }
+      .meesho-footer-title { font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 6px; }
+      .meesho-footer-subtitle { font-size: 0.8125rem; color: #64748b; line-height: 1.5; margin-bottom: 16px; }
+      .app-badges-row { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+      .app-badge-btn { display: inline-block; transition: transform 0.15s; }
+      .app-badge-btn:hover { transform: scale(1.03); }
+      .footer-divider { border: none; border-top: 1px solid #e2e8f0; margin: 24px 0; }
+      .meesho-footer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 24px; }
+      @media (min-width: 640px) { .meesho-footer-grid { grid-template-columns: repeat(4, 1fr); } }
+      .footer-col-title { font-size: 0.9375rem; font-weight: 700; color: #0f172a; margin-bottom: 10px; }
+      .footer-links { list-style: none; padding: 0; margin: 0; }
+      .footer-links li { margin-bottom: 8px; }
+      .footer-links a { color: #64748b; font-size: 0.8125rem; text-decoration: none; transition: color 0.15s; }
+      .footer-links a:hover { color: #9f2089; }
+      .footer-social-wrap { margin-bottom: 24px; }
+      .social-icons-row { display: flex; align-items: center; gap: 16px; }
+      .social-icon-btn { color: #334155; transition: color 0.15s, transform 0.15s; display: inline-flex; }
+      .social-icon-btn:hover { color: #9f2089; transform: translateY(-2px); }
+      .footer-address-text { font-size: 0.8125rem; color: #334155; font-weight: 600; }
+      .footer-address-subtext { font-size: 0.75rem; color: #64748b; margin-top: 2px; }
+      .fixed-bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #ffffff; border-top: 1px solid #e2e8f0; padding: 10px 16px; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06); }
+      .fixed-bottom-bar-inner { display: flex; gap: 16px; width: 100%; max-width: 760px; }
+      .btn-add-to-cart { flex: 1; height: 48px; border: 2px solid #9f2089; background: #ffffff; color: #9f2089; font-weight: 700; font-size: 0.9375rem; border-radius: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s; }
+      .btn-add-to-cart:hover { background: #fdf2f9; }
+      .btn-buy-now { flex: 1; height: 48px; border: none; background: #9f2089; color: #ffffff; font-weight: 700; font-size: 0.9375rem; border-radius: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s; box-shadow: 0 4px 12px rgba(159, 32, 137, 0.25); }
+      .btn-buy-now:hover { background: #80186d; }
+    </style>
+    <link rel="stylesheet" href="assets/styles.css?v=2">
+    <script src="assets/site-config.js"></script>
+  </head>
+  <body class="pb-28">
+    <button type="button" onclick="location.href = 'address.html'" class="announcement-bar">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="oklch(0.55 0.15 250)" stroke-width="2">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span style="flex: 1; font-size: 0.75rem; color: rgba(0, 0, 0, 0.8)">Add delivery location to check extra discount</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2">
+        <polyline points="13 17 18 12 13 7"></polyline>
+        <polyline points="6 17 11 12 6 7"></polyline>
+      </svg>
+    </button>
+
+    <header class="site-header">
+      <div class="site-header-inner" style="max-width: 56rem">
+        <a href="index.html" class="flex items-center gap-2" aria-label="Go back" style="color: var(--foreground)">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </a>
+        <div class="header-actions">
+          <button class="header-icon-btn" aria-label="Share" style="color: var(--foreground)">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+          </button>
+          <a href="wishlist.html" class="header-icon-btn relative" aria-label="Wishlist" style="color: var(--foreground);display:inline-flex">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="cart-badge wishlist-badge" style="display:none">0</span>
+          </a>
+          <button id="cart-icon-btn" class="header-icon-btn" onclick="CartDrawer.toggle()" aria-label="Cart" style="color: var(--foreground)">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-badge" id="cart-badge-header" style="display: none">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto w-full" style="max-width: 56rem;padding:0 0 8px 0;position:relative;">
+        <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+        </div>
+        <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+      </div>
+    </header>
+
+    <nav class="breadcrumb" style="max-width: 56rem; margin: 0 auto" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> /
+      <a id="bc-category-link" href="#">Category</a> /
+      <span id="bc-title">Product</span>
+    </nav>
+
+    <main class="max-container" id="product-main">
+      <div id="product-loading" class="flex items-center justify-center" style="padding: 4rem;">
+        <div class="meesho-loader">
+          <div class="meesho-loader-dot"></div>
+          <div class="meesho-loader-dot"></div>
+          <div class="meesho-loader-dot"></div>
+        </div>
+      </div>
+      <div id="product-content" style="display:none"></div>
+    </main>
+
+    <footer class="meesho-footer-section">
+      <div class="meesho-footer-inner">
+        <div class="meesho-footer-top">
+          <h2 class="meesho-footer-title">Shop Non-Stop on Meesho</h2>
+          <p class="meesho-footer-subtitle">Trusted by crores of Indians<br>Cash on Delivery | Free Delivery</p>
+          <div class="app-badges-row">
+            <a href="#" class="app-badge-btn" aria-label="Get it on Google Play">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="42" style="height: 42px; width: auto; display: block">
+            </a>
+            <a href="#" class="app-badge-btn" aria-label="Download on the App Store">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" height="42" style="height: 42px; width: auto; display: block">
+            </a>
+          </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="meesho-footer-grid">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Careers</h4>
+            <ul class="footer-links"><li><a href="#">Become a supplier</a></li><li><a href="#">Hall of Fame</a></li><li><a href="#">Sitemap</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Legal and Policies</h4>
+            <ul class="footer-links"><li><a href="#">Meesho Tech Blog</a></li><li><a href="#">Notices and Returns</a></li></ul>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 24px; padding-top: 16px; font-size: 12px; color: #64748b;">
+          This is a personal learning project, not affiliated with the real Meesho. All checkout on this site is simulated.
+        </div>
+      </div>
+    </footer>
+
+    <div class="fixed-bottom-bar" id="sticky-bar">
+      <div class="fixed-bottom-bar-inner">
+        <button class="btn-add-to-cart" onclick="handleAddToCart()">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#9f2089" stroke-width="2.2">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          Add to Cart
+        </button>
+        <button class="btn-buy-now" onclick="handleBuyNow()">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: -2px">
+            <polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>
+          </svg>
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+      const SELLER = { name: "Meesho Seller", rating: 4.2, ratingsCount: 45839 };
+      const RATING_BREAKDOWN = [
+        { label: "Excellent", pct: 62 }, { label: "Very Good", pct: 22 },
+        { label: "Good", pct: 8 }, { label: "Average", pct: 5 }, { label: "Poor", pct: 3 },
+      ];
+      const SAMPLE_REVIEWS = [
+        { id: 1, name: "Ravina Bhale", rating: 5.0, date: "1 Mar 2024", text: "Thank you meesho, absolutely beautiful product! Value for money.", helpful: 48 },
+        { id: 2, name: "Annu Kesri", rating: 4.5, date: "15 Feb 2024", text: "Good quality, looks exactly as pictured. Fits well.", helpful: 32 },
+        { id: 3, name: "Kavita Ghosh", rating: 4.0, date: "8 Mar 2024", text: "Very nice. Packaging was also very good.", helpful: 79 },
+      ];
+
+      let currentProduct = null;
+      let selectedSize = "";
+
+      function getSelectedProductId() {
+        const params = new URLSearchParams(window.location.search || "");
+        let id = params.get("id");
+        if (!id) { try { id = sessionStorage.getItem("selected_product_id"); } catch (e) {} }
+        return id;
+      }
+
+      async function initProduct() {
+        const allProducts = await window.ProductsReady;
+        const rawId = getSelectedProductId();
+
+        if (rawId) {
+          const idNum = Number(rawId);
+          currentProduct = allProducts.find((p) => p.id === idNum || String(p.id) === String(rawId) || p.slug === rawId);
+        }
+        if (!currentProduct && !rawId) currentProduct = allProducts[0];
+
+        if (!currentProduct) {
+          document.getElementById("product-loading").style.display = "none";
+          document.getElementById("product-content").style.display = "";
+          document.getElementById("product-content").innerHTML =
+            '<div class="empty-state"><h2>Product not found</h2><a href="index.html" class="btn btn-primary" style="margin-top:1rem">Go Home</a></div>';
+          return;
+        }
+
+        const p = currentProduct;
+        const sizes = window.ProductHelpers.getSizes(p);
+        selectedSize = sizes[0] || 'Free Size';
+        const category = p.category || window.ProductHelpers.getCategory(p) || 'Marrige Purse';
+        const discount = Math.round(((p.mrp - p.price) / p.mrp) * 100);
+        const ratingsCount = Math.round(p.reviews * 2.1);
+
+        document.title = `${p.title} — meesho`;
+        document.querySelector("meta[name=description]").content = `Buy ${p.title} at ₹${p.price}. Free Delivery. COD available.`;
+        const bcCategoryLink = document.getElementById("bc-category-link");
+        bcCategoryLink.textContent = category;
+        bcCategoryLink.href = `index.html?category=${encodeURIComponent(category)}`;
+        document.getElementById("bc-title").textContent = p.title;
+
+        document.getElementById("product-content").innerHTML = `
+          <div class="product-top-grid">
+            <div class="product-img-box" style="flex-direction:column;gap:12px;">
+              <img src="${p.image}" alt="${p.title}" id="main-img" class="product-main-img" onerror="this.style.display='none'"/>
+              ${p.images && p.images.length > 1 ? `
+                <div class="product-gallery-thumbnails" style="display:flex;gap:8px;justify-content:center;margin-top:8px;flex-wrap:wrap;">
+                  ${p.images.map((imgSrc, i) => `
+                    <img src="${imgSrc}" class="gallery-thumb${i === 0 ? " active" : ""}" onclick="document.getElementById('main-img').src='${imgSrc}';document.querySelectorAll('.gallery-thumb').forEach(t=>t.style.borderColor='#e2e8f0');this.style.borderColor='#9f2089';" style="width:64px;height:64px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid ${i === 0 ? "#9f2089" : "#e2e8f0"};transition:all 0.2s;" />
+                  `).join("")}
+                </div>` : ""}
+            </div>
+            <div class="product-right-col">
+              <div class="product-card-section">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem">
+                  <h1 class="product-title-heading">${p.title}</h1>
+                  <div style="display:flex;gap:1rem;flex-shrink:0;text-align:center">
+                    <button class="icon-circle-btn flex-col wish-toggle-btn" onclick="toggleWish(event,${p.id})" data-wish-id="${p.id}" data-wish-stroke="#334155" aria-label="Wishlist" style="width:auto;height:auto;border:none;background:none"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#334155" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span style="font-size:11px;color:#64748b;display:block;margin-top:2px">Wishlist</span></button>
+                    <button class="icon-circle-btn flex-col" aria-label="Share" style="width:auto;height:auto;border:none;background:none"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#334155" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg><span style="font-size:11px;color:#64748b;display:block;margin-top:2px">Share</span></button>
+                  </div>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-main">₹${p.price}.00</span>
+                  ${p.mrp > p.price ? `<span class="price-mrp">₹${p.mrp}.00</span><span class="price-discount-tag">${discount}% off</span>` : ""}
+                </div>
+                ${p.offers > 0 ? `<div class="offer-pill-badge">${p.specialOffer || 'Special Offer available'}</div>` : ""}
+                <div class="rating-trusted-row">
+                  <span class="rating-badge-green">${p.rating} ★</span>
+                  <span class="rating-count-text">${ratingsCount.toLocaleString("en-IN")} ratings and reviews</span>
+                  <span style="color:#cbd5e1">•</span>
+                  <span class="meesho-trusted-badge">m Trusted</span>
+                </div>
+                ${sizes.length > 0 ? `
+                <div style="margin-top:1.25rem;border-top:1px solid #f1f5f9;padding-top:1rem">
+                  <p class="section-subheading">Select Size</p>
+                  <div class="size-pill-container" id="size-btns">
+                    ${sizes.map((s) => `<button class="size-pill-btn${s === selectedSize ? " selected" : ""}" onclick="selectSize('${s}')" data-size="${s}">${s}</button>`).join("")}
+                  </div>
+                </div>` : ""}
+                <div style="margin-top:1.25rem;border-top:1px solid #f1f5f9;padding-top:1rem">
+                  <p class="section-subheading">Sold By</p>
+                  <div class="seller-card-box" style="margin-top:8px">
+                    <div style="display:flex;align-items:center;gap:.75rem">
+                      <div class="seller-avatar">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9f2089" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9h12v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                      </div>
+                      <div>
+                        <p class="seller-name">${SELLER.name}</p>
+                        <p class="seller-meta"><span style="background:#eff6ff;color:#2563eb;font-weight:700;padding:2px 6px;border-radius:4px">${SELLER.rating} ★</span> ${SELLER.ratingsCount.toLocaleString('en-IN')} Ratings</p>
+                      </div>
+                    </div>
+                    <button class="seller-view-btn">View Shop</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card-section">
+                <p class="section-subheading">Check Delivery</p>
+                <div class="flex gap-2">
+                  <input type="text" id="pincode-input" class="input" placeholder="Enter 6-digit pincode" inputmode="numeric" maxlength="6" style="max-width:14rem;padding:.5rem .75rem;border:1px solid #cbd5e1;border-radius:6px" oninput="this.value=this.value.replace(/\\D/g,'')"/>
+                  <button class="btn btn-outline btn-sm" onclick="checkDelivery()" style="padding:.5rem 1rem;border-radius:6px;font-weight:700">Check</button>
+                </div>
+                <p id="pincode-error" style="font-size:.75rem;color:var(--destructive);margin-top:.25rem;display:none"></p>
+                <p id="delivery-date" style="font-size:.8125rem;font-weight:600;color:var(--meesho-green);margin-top:.375rem;display:none"></p>
+              </div>
+
+              <div class="product-card-section">
+                <p class="section-subheading">Product Highlights</p>
+                <p style="font-size:.875rem;color:#475569;line-height:1.6;margin-bottom:1rem" id="product-desc">Loading...</p>
+                <div id="spec-list"></div>
+              </div>
+
+              <div class="product-card-section">
+                <p class="section-subheading">Product Ratings &amp; Reviews</p>
+                <div class="flex items-center gap-4" style="margin-bottom:1rem">
+                  <div style="text-align:center;padding-right:1rem;border-right:1px solid #e2e8f0">
+                    <p style="font-size:2.5rem;font-weight:800;line-height:1;color:#0f172a">${p.rating} <span style="font-size:1.5rem;color:var(--meesho-green)">★</span></p>
+                    <p style="font-size:.75rem;color:#64748b;margin-top:.25rem">${ratingsCount.toLocaleString("en-IN")} Ratings &amp; Reviews</p>
+                  </div>
+                  <div style="flex:1">
+                    ${RATING_BREAKDOWN.map((r) => `<div class="rating-bar-row" style="margin-bottom:.3rem;display:flex;align-items:center;gap:.5rem;font-size:.75rem"><span style="width:4.5rem;color:#64748b">${r.label}</span><div class="rating-bar-track" style="flex:1;height:6px;background:#e2e8f0;border-radius:3px;overflow:hidden"><div class="rating-bar-fill" style="width:${r.pct}%;height:100%;background:var(--meesho-green)"></div></div><span style="width:2rem;text-align:right;color:#0f172a;font-weight:600">${r.pct}%</span></div>`).join("")}
+                  </div>
+                </div>
+                <div style="margin-top:1rem">
+                  ${SAMPLE_REVIEWS.map((r) => `<div class="review-item" style="padding:.75rem 0;border-bottom:1px solid #f1f5f9">
+                    <div class="flex items-center gap-2" style="margin-bottom:.375rem">
+                      <div style="width:2.25rem;height:2.25rem;background:#f472b6;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.875rem;font-weight:700">${r.name[0]}</div>
+                      <div><p style="font-size:.875rem;font-weight:700;color:#1e293b">${r.name}</p><p style="font-size:.6875rem;color:#94a3b8">${r.date}</p></div>
+                      <span style="margin-left:auto;background:var(--meesho-green);color:#fff;font-size:.75rem;font-weight:700;padding:.15rem .5rem;border-radius:4px">★ ${r.rating}</span>
+                    </div>
+                    <p style="font-size:.875rem;color:#334155;line-height:1.5">${r.text}</p>
+                    <button style="margin-top:.5rem;background:#f8fafc;border:1px solid #cbd5e1;padding:4px 12px;border-radius:20px;font-size:12px;color:#475569;cursor:pointer">👍 Helpful (${r.helpful})</button>
+                  </div>`).join("")}
+                </div>
+              </div>
+
+              <div style="margin-top:1.5rem">
+                <p class="section-subheading" style="padding-left:4px">People Also Viewed</p>
+                <div class="similar-grid" id="similar-grid"></div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        const details = getProductDetails(p.title);
+        document.getElementById("product-desc").textContent = details.description;
+        const specList = document.getElementById("spec-list");
+        if (specList) specList.innerHTML = `<table class="spec-table">${details.specs.map((s) => `<tr><td class="spec-lbl">${s.label}</td><td class="spec-val">${s.value}</td></tr>`).join("")}</table>`;
+
+        const pCat = p.category || window.ProductHelpers.getCategory(p) || 'Marrige Purse';
+        let similarList = allProducts.filter((x) => x.id !== p.id);
+        const sameCatList = similarList.filter((x) => (x.category || window.ProductHelpers.getCategory(x)) === pCat);
+        if (sameCatList.length >= 4) similarList = sameCatList;
+        similarList = similarList.slice(0, 6);
+
+        const simGrid = document.getElementById("similar-grid");
+        if (simGrid) simGrid.innerHTML = similarList.map((s) => {
+          const disc = s.mrp > s.price ? Math.round(((s.mrp - s.price) / s.mrp) * 100) : 0;
+          const offerPrice = Math.max(10, s.price - 10);
+          return `
+          <a href="product.html?id=${s.id}" onclick="try{sessionStorage.setItem('selected_product_id','${s.id}')}catch(e){}" class="similar-product-card">
+            <div class="similar-card-img-wrap">
+              <img src="${s.image}" alt="${s.title}" loading="lazy" onerror="this.parentElement.style.background='#f8fafc'"/>
+              <button class="wishlist-heart-btn wish-toggle-btn" onclick="toggleWish(event,${s.id})" data-wish-id="${s.id}" data-wish-stroke="#64748b" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="similar-card-body">
+              <p class="similar-card-title">${s.title}</p>
+              <div class="similar-card-price-row">
+                <span class="similar-price">₹${s.price}</span>
+                ${s.mrp > s.price ? `<span class="similar-mrp">₹${s.mrp}</span><span class="similar-discount">${disc}% off</span>` : ""}
+              </div>
+              <p class="similar-offer-text">₹${offerPrice} with 1 Special Offer</p>
+              <p class="similar-delivery-text">Free Delivery</p>
+              <div class="similar-card-footer">
+                <div class="similar-rating-pill"><span>${s.rating} ★</span></div>
+                <span class="similar-reviews-count">(${s.reviews.toLocaleString("en-IN")})</span>
+                <span class="similar-trusted-badge">m Trusted</span>
+              </div>
+            </div>
+          </a>`;
+        }).join("");
+
+        document.getElementById("product-loading").style.display = "none";
+        document.getElementById("product-content").style.display = "";
+        window.Wishlist.ready.then(() => window.Wishlist.bindAll());
+      }
+
+      function selectSize(size) {
+        selectedSize = size;
+        document.querySelectorAll("[data-size]").forEach((btn) => btn.classList.toggle("selected", btn.dataset.size === size));
+      }
+
+      function checkDelivery() {
+        const pin = document.getElementById("pincode-input").value;
+        const est = window.ProductHelpers.estimateDelivery(pin);
+        const errEl = document.getElementById("pincode-error");
+        const dateEl = document.getElementById("delivery-date");
+        if (!est) {
+          errEl.textContent = "Enter a valid 6-digit pincode"; errEl.style.display = ""; dateEl.style.display = "none";
+        } else {
+          errEl.style.display = "none"; dateEl.textContent = `✅ Estimated delivery: ${est}`; dateEl.style.display = "";
+        }
+      }
+
+      function handleAddToCart() {
+        if (!currentProduct) return;
+        const ok = window.Cart.addItem({ id: currentProduct.id, title: currentProduct.title, image: currentProduct.image, price: currentProduct.price, mrp: currentProduct.mrp, size: selectedSize, easyReturns: true, seller: SELLER.name });
+        if (ok !== false) {
+          CartDrawer.open();
+        }
+      }
+
+      function handleBuyNow() {
+        if (!currentProduct) return;
+        const ok = window.Cart.addItem({ id: currentProduct.id, title: currentProduct.title, image: currentProduct.image, price: currentProduct.price, mrp: currentProduct.mrp, size: selectedSize, easyReturns: true, seller: SELLER.name });
+        if (ok !== false) {
+          window.location.href = "address.html";
+        }
+      }
+
+      function getProductDetails(title) {
+        // Every product in this catalog is apparel (kurtis/dresses).
+        const l = title.toLowerCase();
+        return {
+          description: `This stylish ${title} is designed for comfort and style. Made from premium quality fabric, perfect for casual wear, office wear, or special occasions.`,
+          specs: [
+            { label: "Fabric", value: l.includes("silk") ? "Silk Blend" : "Cotton Blend" },
+            { label: "Pattern", value: "Printed / Embroidered" },
+            { label: "Sleeve Length", value: "Three-Quarter Sleeves" },
+            { label: "Stitch Type", value: "Stitched" },
+          ],
+        };
+      }
+
+      initProduct();
+
+      window.SearchBox.attach(
+        document.getElementById('search-input'),
+        document.getElementById('search-suggestions'),
+      );
+    </script>
+  </body></html>

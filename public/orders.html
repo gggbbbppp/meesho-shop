@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders — meesho</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site-config.js"></script>
+</head>
+<body class="pb-20" style="background:var(--background)">
+
+  <header class="site-header">
+    <div class="site-header-inner" style="max-width:32rem">
+      <a href="index.html" aria-label="Go back" style="color:var(--foreground)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </a>
+      <h1 style="font-size:.9375rem;font-weight:700;letter-spacing:.08em">MY ORDERS</h1>
+      <div style="width:1.5rem"></div>
+    </div>
+    <div class="max-w-7xl mx-auto w-full" style="max-width:32rem;padding:0 0 8px 0;position:relative;">
+      <div class="flex items-center gap-2 bg-muted rounded-md px-3 py-2.5 border border-border" style="margin:0 12px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--muted-foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="search-input" placeholder="Search for Marrige Purse, Office Purse, Kurtis, etc." class="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground" style="border:none;outline:none;box-shadow:none" autocomplete="off">
+      </div>
+      <div id="search-suggestions" class="search-suggestions" style="display:none"></div>
+    </div>
+  </header>
+
+  <main style="max-width:32rem;margin:0 auto;padding:1rem" id="orders-list"></main>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    async function init() {
+      const res = await fetch('/api/orders');
+      const orders = await res.json();
+      const el = document.getElementById('orders-list');
+
+      if (orders.length === 0) {
+        el.innerHTML = `<div class="empty-state">
+          <div class="empty-state-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/></svg></div>
+          <h2 style="font-size:1.125rem;font-weight:600">No orders yet</h2>
+          <p style="font-size:.875rem;color:var(--muted-foreground);margin-top:.5rem">Your placed orders will show up here.</p>
+          <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem">Start Shopping</a>
+        </div>`;
+        return;
+      }
+
+      el.innerHTML = orders.map((order) => `
+        <a href="order-confirmation.html?orderId=${encodeURIComponent(order.orderId)}" style="display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1rem;margin-bottom:.75rem">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+            <p style="font-size:.8125rem;font-weight:700;color:#0f172a">${order.orderId}</p>
+            <span style="font-size:.6875rem;font-weight:700;color:#038c63;background:#e6f9f3;padding:2px 8px;border-radius:6px;text-transform:capitalize">${order.status}</span>
+          </div>
+          <div style="display:flex;gap:.5rem;overflow-x:auto">
+            ${order.items.slice(0, 4).map((i) => `<img src="${i.image}" style="width:2.5rem;height:2.5rem;border-radius:6px;object-fit:cover;flex-shrink:0" onerror="this.style.display='none'">`).join('')}
+          </div>
+          <p style="font-size:.8125rem;color:#64748b;margin-top:.5rem">${order.items.length} item${order.items.length === 1 ? '' : 's'} · ₹${order.totalPrice} · ${new Date(order.createdAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+        </a>`).join('');
+    }
+    init();
+
+    window.SearchBox.attach(
+      document.getElementById('search-input'),
+      document.getElementById('search-suggestions'),
+    );
+  </script>
+</body></html>
