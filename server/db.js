@@ -119,6 +119,14 @@ const SCHEMA_QUERIES = [
     INDEX idx_created_at (created_at),
     INDEX idx_status (status)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`,
+
+  `CREATE TABLE IF NOT EXISTS uploaded_files (
+    filename VARCHAR(255) PRIMARY KEY,
+    mime_type VARCHAR(100) NOT NULL,
+    data LONGBLOB NOT NULL,
+    size INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`,
 ];
 
 export async function initDb() {

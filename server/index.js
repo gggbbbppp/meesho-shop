@@ -1,8 +1,9 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import path from 'node:path';
+import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { initDb } from './db.js';
+import { initDb, pool } from './db.js';
 import { sessionMiddleware } from './session.js';
 import { productsRouter } from './routes/products.js';
 import { cartRouter } from './routes/cart.js';
@@ -36,6 +37,29 @@ app.use('/api/admin', adminRouter);
 
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'admin.html'));
+});
+
+// Dynamic uploads handler: serve from public/uploads disk if exists, otherwise fallback to MySQL uploaded_files
+app.get('/uploads/:filename', async (req, res, next) => {
+  try {
+    const filename = path.basename(req.params.filename);
+    const diskPath = path.join(__dirname, '..', 'public', 'uploads', filename);
+    if (fs.existsSync(diskPath)) {
+      return res.sendFile(diskPath);
+    }
+    const [rows] = await pool.query(
+      'SELECT mime_type, data FROM uploaded_files WHERE filename = ? LIMIT 1',
+      [filename]
+    );
+    if (rows && rows.length > 0) {
+      res.setHeader('Content-Type', rows[0].mime_type || 'image/webp');
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+      return res.send(rows[0].data);
+    }
+  } catch (err) {
+    console.error('Error serving upload from MySQL:', err.message);
+  }
+  next();
 });
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
