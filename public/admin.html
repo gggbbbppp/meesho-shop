@@ -2552,16 +2552,30 @@
   <div class="toast-container" id="toast-container"></div>
 
   <script>
-    // ==================== AUTO-LOGOUT ON EXIT ====================
-    let isIntentionallyExiting = false;
-
-    function logoutAndNavigate(targetUrl) {
-      isIntentionallyExiting = true;
-      try {
-        navigator.sendBeacon('/api/admin/logout');
-      } catch (e) {
-        fetch('/api/admin/logout', { method: 'POST', keepalive: true }).catch(() => {});
+    // Global fetch interceptor to ensure admin token header is attached
+    const _originalFetch = window.fetch;
+    window.fetch = function(url, options = {}) {
+      const token = localStorage.getItem('admin_token');
+      if (token && typeof url === 'string' && url.includes('/api/admin')) {
+        options = options || {};
+        options.headers = options.headers || {};
+        if (options.headers instanceof Headers) {
+          if (!options.headers.has('x-admin-token')) options.headers.set('x-admin-token', token);
+        } else if (Array.isArray(options.headers)) {
+          options.headers.push(['x-admin-token', token]);
+        } else {
+          options.headers['x-admin-token'] = options.headers['x-admin-token'] || token;
+        }
       }
+      return _originalFetch.apply(this, [url, options]);
+    };
+
+    // Exit Store Handlers
+    function logoutAndNavigate(targetUrl) {
+      localStorage.removeItem('admin_token');
+      try {
+        fetch('/api/admin/logout', { method: 'POST', keepalive: true }).catch(() => {});
+      } catch (e) {}
       setTimeout(() => {
         window.location.href = targetUrl;
       }, 80);
@@ -2579,13 +2593,6 @@
         logoutAndNavigate('/');
       });
     }
-
-    window.addEventListener('pagehide', () => {
-      try { navigator.sendBeacon('/api/admin/logout'); } catch (e) {}
-    });
-    window.addEventListener('beforeunload', () => {
-      try { navigator.sendBeacon('/api/admin/logout'); } catch (e) {}
-    });
 
     // ==================== INACTIVITY TRACKER (10 MINUTES) ====================
     const INACTIVITY_LIMIT_MS = 10 * 60 * 1000;
@@ -2826,6 +2833,7 @@
           showView('dashboard');
           switchTab('orders');
         } else {
+          localStorage.removeItem('admin_token');
           showView('login');
         }
       } catch (err) {
@@ -2851,6 +2859,9 @@
 
         const data = await res.json();
         if (data.success) {
+          if (data.token) {
+            localStorage.setItem('admin_token', data.token);
+          }
           showToast('Welcome back, Admin!', 'success');
           navUserEmail.textContent = data.email;
           showView('dashboard');
@@ -2871,11 +2882,13 @@
 
     async function handleLogout() {
       try {
+        localStorage.removeItem('admin_token');
         await fetch('/api/admin/logout', { method: 'POST' });
         showToast('Signed out successfully', 'success');
         showView('login');
         loginPasswordInput.value = '';
       } catch (err) {
+        localStorage.removeItem('admin_token');
         showView('login');
       }
     }

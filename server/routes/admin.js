@@ -48,10 +48,13 @@ adminRouter.post('/login', (req, res) => {
 
     const token = createAdminSession(auth.email);
 
+    const isProduction = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
     res.cookie('admin_token', token, {
       httpOnly: true,
       maxAge: INACTIVITY_TIMEOUT_MS,
       sameSite: 'lax',
+      secure: isProduction,
+      path: '/',
     });
 
     console.log(`[Admin Auth] Successful login for ${auth.email}`);
@@ -87,7 +90,13 @@ adminRouter.post('/logout', (req, res) => {
     if (token) {
       destroyAdminSession(token);
     }
-    res.clearCookie('admin_token', { httpOnly: true, sameSite: 'lax' });
+    const isProduction = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+    res.clearCookie('admin_token', {
+      httpOnly: true,
+      sameSite: 'lax',
+      secure: isProduction,
+      path: '/',
+    });
     res.json({ success: true, message: 'Logged out successfully' });
   } catch (err) {
     console.error('[Admin] Logout error:', err);
@@ -184,7 +193,13 @@ adminRouter.get('/session', (req, res) => {
 
   const session = validateAdminSession(token);
   if (!session) {
-    res.clearCookie('admin_token');
+    const isProduction = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+    res.clearCookie('admin_token', {
+      httpOnly: true,
+      sameSite: 'lax',
+      secure: isProduction,
+      path: '/',
+    });
     return res.json({ success: true, authenticated: false });
   }
 
