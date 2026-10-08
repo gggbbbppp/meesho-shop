@@ -72,7 +72,7 @@ payuRouter.post('/initiate', async (req, res) => {
     // Sanitize user details for PayU Hosted Checkout
     const cleanFirstName = (address.name || 'Customer').trim().split(/\s+/)[0].replace(/[^a-zA-Z0-9]/g, '') || 'Customer';
     const cleanPhone = (address.contact_number || '9999999999').replace(/[^0-9]/g, '').slice(-10) || '9999999999';
-    const cleanEmail = (address.email || `customer_${cleanPhone}@meesho.com`).trim();
+    const cleanEmail = (address.email || `customer_${cleanPhone}@gmail.com`).trim();
     const productinfo = 'Meesho Order';
 
     // Callback URLs
@@ -109,7 +109,6 @@ payuRouter.post('/initiate', async (req, res) => {
         surl: callbackUrl,
         furl: callbackUrl,
         hash,
-        service_provider: 'payu_paisa',
       },
     });
   } catch (err) {
