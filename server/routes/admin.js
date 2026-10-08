@@ -762,10 +762,10 @@ adminRouter.post('/database/clear', requireAdminAuth, async (req, res) => {
     if (mode === 'banners' || mode === 'all' || mode === 'full_reset') {
       await pool.query('DELETE FROM banners');
       const defaultBanners = [
-        ['assets/kurti1-CcoeKMaM.webp', 'First slide', '#', 1, 1],
-        ['assets/kurti2-BijmMluk.jpg', 'Second slide', '#', 2, 1],
-        ['assets/kurti3-VJxgG-0W.jpg', 'Third slide', '#', 3, 1],
-        ['assets/kurti4-BPcNrcZO.jpg', 'Fourth slide', '#', 4, 1],
+        ['assets/banner1.png', 'New Arrivals - Designer Purses', '#', 1, 1],
+        ['assets/banner2.png', 'Deal Of The Day - Any 3 Purse 299/- RS', '#', 2, 1],
+        ['assets/banner3.png', 'Diwali Sale - Any 3 Purse 299/- RS', '#', 3, 1],
+        ['assets/banner4.png', 'Marriage Purse Collection', '#', 4, 1],
       ];
       for (const [img, alt, link, sort, active] of defaultBanners) {
         await pool.query(
