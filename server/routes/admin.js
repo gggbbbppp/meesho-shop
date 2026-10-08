@@ -743,6 +743,15 @@ adminRouter.post('/database/clear', requireAdminAuth, async (req, res) => {
     const { mode = 'all' } = req.body || {};
     const summary = {};
 
+    if (mode === 'products') {
+      const [c] = await pool.query('DELETE FROM cart_items');
+      const [w] = await pool.query('DELETE FROM wishlist_items');
+      const [p] = await pool.query('DELETE FROM products');
+      summary.products = p.affectedRows;
+      summary.cartItems = c.affectedRows;
+      summary.wishlist = w.affectedRows;
+    }
+
     if (mode === 'orders' || mode === 'all' || mode === 'full_reset') {
       const [o] = await pool.query('DELETE FROM orders');
       const [c] = await pool.query('DELETE FROM cart_items');
