@@ -2085,7 +2085,7 @@
               <span class="label-badge">PayU Key Parameter</span>
             </label>
             <div class="input-with-actions">
-              <input type="text" id="payu-key-input" name="key" class="admin-input" placeholder="e.g. ltA5VE" required autocomplete="off" spellcheck="false">
+              <input type="text" id="payu-key-input" name="key" class="admin-input" placeholder="e.g. rRDUw4" required autocomplete="off" spellcheck="false">
               <div class="input-actions">
                 <button type="button" class="icon-action-btn" id="copy-key-btn" title="Copy Key">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
@@ -2100,7 +2100,7 @@
               <span class="label-badge">Secret Hash Generator</span>
             </label>
             <div class="input-with-actions">
-              <input type="password" id="payu-salt-input" name="salt" class="admin-input" placeholder="e.g. 0FohIsLGiu4G5RKD8lUU0OO9aDPwwRkX" required autocomplete="off" spellcheck="false">
+              <input type="password" id="payu-salt-input" name="salt" class="admin-input" placeholder="e.g. ZXcBmSQORiKQg60CsiraUJpa54XKuY1L" required autocomplete="off" spellcheck="false">
               <div class="input-actions">
                 <button type="button" class="icon-action-btn" id="toggle-salt-visibility" title="Show / Hide Salt">
                   <svg id="eye-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
@@ -3683,7 +3683,7 @@
     });
 
     resetBtn.addEventListener('click', async () => {
-      if (!confirm('Reset PayU credentials back to default keys (Key: ltA5VE)?')) return;
+      if (!confirm('Reset PayU credentials back to default keys (Key: rRDUw4)?')) return;
 
       try {
         const res = await fetch('/api/admin/payu-config/reset', { method: 'POST' });

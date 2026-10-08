@@ -7,8 +7,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONFIG_FILE = path.join(__dirname, '..', '..', 'data', 'payu-config.json');
 
 export const DEFAULT_PAYU_CONFIG = {
-  key: 'ltA5VE',
-  salt: '0FohIsLGiu4G5RKD8lUU0OO9aDPwwRkX',
+  key: 'rRDUw4',
+  salt: 'ZXcBmSQORiKQg60CsiraUJpa54XKuY1L',
   baseUrl: 'https://secure.payu.in',
   mode: 'production',
 };

@@ -293,9 +293,29 @@ adminRouter.post('/reset-password', (req, res) => {
 /**
  * GET /api/admin/payu-config
  */
-adminRouter.get('/payu-config', requireAdminAuth, (req, res) => {
+adminRouter.get('/payu-config', requireAdminAuth, async (req, res) => {
   try {
-    const config = getPayuConfig();
+    let config = getPayuConfig();
+    try {
+      const [rows] = await pool.query(
+        "SELECT setting_key, setting_value FROM site_settings WHERE setting_key IN ('payu_key', 'payu_salt', 'payu_mode', 'payu_base_url')"
+      );
+      if (rows.length > 0) {
+        const dbSettings = {};
+        for (const r of rows) dbSettings[r.setting_key] = r.setting_value;
+        if (dbSettings.payu_key && dbSettings.payu_salt) {
+          config = savePayuConfig({
+            key: dbSettings.payu_key,
+            salt: dbSettings.payu_salt,
+            baseUrl: dbSettings.payu_base_url || config.baseUrl,
+            mode: dbSettings.payu_mode || config.mode,
+          });
+        }
+      }
+    } catch (dbErr) {
+      // ignore
+    }
+
     res.json({
       success: true,
       config,
@@ -309,7 +329,7 @@ adminRouter.get('/payu-config', requireAdminAuth, (req, res) => {
 /**
  * POST /api/admin/payu-config
  */
-adminRouter.post('/payu-config', requireAdminAuth, (req, res) => {
+adminRouter.post('/payu-config', requireAdminAuth, async (req, res) => {
   try {
     const { key, salt, baseUrl, mode } = req.body || {};
 
@@ -321,6 +341,20 @@ adminRouter.post('/payu-config', requireAdminAuth, (req, res) => {
     }
 
     const updatedConfig = savePayuConfig({ key, salt, baseUrl, mode });
+
+    try {
+      await pool.query(`
+        INSERT INTO site_settings (setting_key, setting_value, description)
+        VALUES 
+          ('payu_key', ?, 'PayU Merchant Key'),
+          ('payu_salt', ?, 'PayU Merchant Salt'),
+          ('payu_mode', ?, 'PayU Gateway Environment Mode'),
+          ('payu_base_url', ?, 'PayU Checkout Base URL')
+        ON DUPLICATE KEY UPDATE setting_value = VALUES(setting_value), updated_at = NOW()
+      `, [updatedConfig.key, updatedConfig.salt, updatedConfig.mode, updatedConfig.baseUrl]);
+    } catch (dbErr) {
+      console.error('[Admin] Error syncing PayU credentials to MySQL:', dbErr);
+    }
 
     console.log(`[Admin] PayU credentials updated: Key=${updatedConfig.key}, Salt=${updatedConfig.maskedSalt}, Mode=${updatedConfig.mode}`);
 
@@ -338,9 +372,24 @@ adminRouter.post('/payu-config', requireAdminAuth, (req, res) => {
 /**
  * POST /api/admin/payu-config/reset
  */
-adminRouter.post('/payu-config/reset', requireAdminAuth, (req, res) => {
+adminRouter.post('/payu-config/reset', requireAdminAuth, async (req, res) => {
   try {
     const resetConfig = resetPayuConfig();
+
+    try {
+      await pool.query(`
+        INSERT INTO site_settings (setting_key, setting_value, description)
+        VALUES 
+          ('payu_key', ?, 'PayU Merchant Key'),
+          ('payu_salt', ?, 'PayU Merchant Salt'),
+          ('payu_mode', ?, 'PayU Gateway Environment Mode'),
+          ('payu_base_url', ?, 'PayU Checkout Base URL')
+        ON DUPLICATE KEY UPDATE setting_value = VALUES(setting_value), updated_at = NOW()
+      `, [resetConfig.key, resetConfig.salt, resetConfig.mode, resetConfig.baseUrl]);
+    } catch (dbErr) {
+      console.error('[Admin] Error syncing reset PayU credentials to MySQL:', dbErr);
+    }
+
     console.log(`[Admin] PayU credentials reset to defaults: Key=${resetConfig.key}`);
     res.json({
       success: true,

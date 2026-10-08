@@ -11,6 +11,28 @@ function generateTxnId() {
   return `M_${timestamp}_${rand}`;
 }
 
+export async function getEffectivePayuCredentials() {
+  let key = PAYU_CONFIG.key;
+  let salt = PAYU_CONFIG.salt;
+  let baseUrl = PAYU_CONFIG.baseUrl;
+  let mode = PAYU_CONFIG.mode;
+
+  try {
+    const [settings] = await pool.query(
+      "SELECT setting_key, setting_value FROM site_settings WHERE setting_key IN ('payu_key', 'payu_salt', 'payu_base_url', 'payu_mode')"
+    );
+    for (const s of settings) {
+      if (s.setting_key === 'payu_key' && s.setting_value) key = s.setting_value.trim();
+      if (s.setting_key === 'payu_salt' && s.setting_value) salt = s.setting_value.trim();
+      if (s.setting_key === 'payu_base_url' && s.setting_value) baseUrl = s.setting_value.trim();
+      if (s.setting_key === 'payu_mode' && s.setting_value) mode = s.setting_value.trim();
+    }
+  } catch (e) {
+    // fallback to PAYU_CONFIG
+  }
+  return { key, salt, baseUrl, mode };
+}
+
 /**
  * POST /api/payu/initiate
  * Prepares the PayU transaction, writes the order as 'pending' in MySQL,
@@ -82,24 +104,27 @@ payuRouter.post('/initiate', async (req, res) => {
       ? `${process.env.APP_URL}/api/payu/response`
       : `${protocol}://${host}/api/payu/response`;
 
+    // Retrieve active credentials (from MySQL site_settings or fallback to PAYU_CONFIG)
+    const payuCreds = await getEffectivePayuCredentials();
+
     // Calculate SHA-512 Request Hash
     const hash = generatePayuHash({
-      key: PAYU_CONFIG.key,
+      key: payuCreds.key,
       txnid,
       amount: amountStr,
       productinfo,
       firstname: cleanFirstName,
       email: cleanEmail,
-      salt: PAYU_CONFIG.salt,
+      salt: payuCreds.salt,
     });
 
-    const payuAction = `${PAYU_CONFIG.baseUrl}/_payment`;
+    const payuAction = `${payuCreds.baseUrl}/_payment`;
 
     res.json({
       success: true,
       action: payuAction,
       params: {
-        key: PAYU_CONFIG.key,
+        key: payuCreds.key,
         txnid,
         amount: amountStr,
         productinfo,
@@ -189,7 +214,8 @@ payuRouter.post('/response', async (req, res) => {
       });
     }
 
-    const isHashValid = verifyPayuResponseHash(req.body, PAYU_CONFIG.salt);
+    const payuCreds = await getEffectivePayuCredentials();
+    const isHashValid = verifyPayuResponseHash(req.body, payuCreds.salt);
 
     if (!isHashValid) {
       console.error(`[PayU] Hash mismatch for txnid=${txnid}. Received: ${hash}`);
